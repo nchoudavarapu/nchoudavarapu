@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e7a3e3a6-4e28-4eb7-9a09-3fffdf263b38" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetCarrierPickupList" name="GetCarrierPickupList" bindingOperationName="GetCarrierPickupList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="dbd4773d-4d0e-4bc7-905e-75b7d8e7b9cffileName">GetCarrierPickupList</con:setting>
+    <con:setting id="f508078e-6a9a-4857-ae41-c03eb6a44b75fileName">GetCarrierPickupList</con:setting>
+    <con:setting id="e7a3e3a6-4e28-4eb7-9a09-3fffdf263b38fileName">GetCarrierPickupList</con:setting>
+  </con:settings>
+</con:operation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="29e471eb-0148-434a-85f9-4cfccb8fb23a" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/SetCodeWords" name="SetCodeWords" bindingOperationName="SetCodeWords" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fbfadf28-c0e7-4d30-9128-ca535613928dfileName">SetCodeWords</con:setting>
+    <con:setting id="4fc66327-30ee-44b7-8d8f-07e9c09606d3fileName">SetCodeWords</con:setting>
+    <con:setting id="29e471eb-0148-434a-85f9-4cfccb8fb23afileName">SetCodeWords</con:setting>
+  </con:settings>
+</con:operation>

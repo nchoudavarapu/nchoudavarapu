@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="37f56ea6-bd0c-4e86-b4ce-8ecd65575e29" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/PurchasePostage" name="PurchasePostage" bindingOperationName="PurchasePostage" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="856ff7a1-5400-4f3e-a4ca-81a092659743fileName">PurchasePostage</con:setting>
+    <con:setting id="9f53ca06-4cc0-4448-b550-cdb5d4bc27e1fileName">PurchasePostage</con:setting>
+    <con:setting id="37f56ea6-bd0c-4e86-b4ce-8ecd65575e29fileName">PurchasePostage</con:setting>
+  </con:settings>
+</con:operation>

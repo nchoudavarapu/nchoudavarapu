@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="101c3819-d5fa-4511-875e-8c605ca253c6" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/EnumCodeWordTypes" name="EnumCodeWordTypes" bindingOperationName="EnumCodeWordTypes" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3ae74b24-f60d-456e-86c4-71fbf84568c4fileName">EnumCodeWordTypes</con:setting>
+    <con:setting id="1c5c7089-2628-4770-bd89-ce3870b0b32ffileName">EnumCodeWordTypes</con:setting>
+    <con:setting id="101c3819-d5fa-4511-875e-8c605ca253c6fileName">EnumCodeWordTypes</con:setting>
+  </con:settings>
+</con:operation>

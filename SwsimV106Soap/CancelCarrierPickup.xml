@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="52bafc03-948f-4272-bade-400ed75e163c" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/CancelCarrierPickup" name="CancelCarrierPickup" bindingOperationName="CancelCarrierPickup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="07e16a2a-c646-49b0-94e1-07754369225afileName">CancelCarrierPickup</con:setting>
+    <con:setting id="25484083-4b02-442d-a313-f784b47b20f7fileName">CancelCarrierPickup</con:setting>
+    <con:setting id="52bafc03-948f-4272-bade-400ed75e163cfileName">CancelCarrierPickup</con:setting>
+  </con:settings>
+  <con:call id="4b35e81c-c414-49c9-8055-ff84cbab5c88" name="CancelCarrierPickup Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:CancelCarrierPickup>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:ConfirmationNumber>?</sws:ConfirmationNumber>\r
+         <!--Optional:-->\r
+         <sws:Carrier>USPS</sws:Carrier>\r
+         <!--Optional:-->\r
+         <sws:PickupType>Default</sws:PickupType>\r
+      </sws:CancelCarrierPickup>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/CancelCarrierPickup"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/SecurityPolicies" path="/customers/SecurityPolicies" id="ff5cdda7-85ec-4b8c-b941-ff9007d3d7f5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8d32aba8-81ae-4764-9dac-414759ff5fc5fileName">%2Fcustomers%2FSecurityPolicies</con:setting>
+    <con:setting id="21c63ba9-65b9-4e85-94b7-6abb37d10862fileName">%2Fcustomers%2FSecurityPolicies</con:setting>
+    <con:setting id="ff5cdda7-85ec-4b8c-b941-ff9007d3d7f5fileName">%2Fcustomers%2FSecurityPolicies</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetSecurityPolicies" id="b8e461f1-f3df-451b-a80b-33202eb4a78b" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "SecurityPolicyNameField" : "string",
+  "SecurityPolicyIdField" : 0
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="04650d18-1a12-49a8-a22d-e449bf10cf3a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

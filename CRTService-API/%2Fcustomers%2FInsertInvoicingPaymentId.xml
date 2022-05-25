@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/InsertInvoicingPaymentId" path="/customers/InsertInvoicingPaymentId" id="c5fbf5ee-9119-4f11-8f52-f8d3f7c92f79" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="562dcc10-68bd-4fdd-a7ed-80d69e7a56e9fileName">%2Fcustomers%2FInsertInvoicingPaymentId</con:setting>
+    <con:setting id="025a9ea1-af6c-4f1d-9788-df00f4c78570fileName">%2Fcustomers%2FInsertInvoicingPaymentId</con:setting>
+    <con:setting id="c5fbf5ee-9119-4f11-8f52-f8d3f7c92f79fileName">%2Fcustomers%2FInsertInvoicingPaymentId</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="InsertInvoicingPaymentId" id="cbae198e-3343-4d45-b5f7-c825896054fe" method="POST">
+    <con:description>Insert Invoicing PaymentId</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>paymentAccountId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="fde43537-aa4d-4f47-bd61-375f11c306b5" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="paymentAccountId" value=""/>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

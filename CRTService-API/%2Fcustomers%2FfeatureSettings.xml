@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/featureSettings" path="/customers/featureSettings" id="e0e36aeb-ceb5-4594-9ecf-c641a7547941" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2f58224d-76f7-46cf-b68c-ce1076876e94fileName">%2Fcustomers%2FfeatureSettings</con:setting>
+    <con:setting id="a1c7b61c-339e-4c45-aeee-4baf81e812d1fileName">%2Fcustomers%2FfeatureSettings</con:setting>
+    <con:setting id="e0e36aeb-ceb5-4594-9ecf-c641a7547941fileName">%2Fcustomers%2FfeatureSettings</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetFeatureSettings" id="4e84c027-da5a-440b-b1a0-502914ed4228" method="GET">
+    <con:description>Get features for the customer</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "AppCapInfo" : {
+    "AppCap1On" : 0,
+    "AppCap1Off" : 0,
+    "AppCap2On" : 0,
+    "AppCap2Off" : 0,
+    "AppCap3On" : 0,
+    "AppCap3Off" : 0,
+    "AppCap4On" : 0,
+    "AppCap4Off" : 0,
+    "AppCap5On" : 0,
+    "AppCap5Off" : 0
+  },
+  "FciLefNonDocFee" : 1.5,
+  "DdpFee" : 1.5,
+  "FcPayOnUseReturnLabelFee" : 1.5,
+  "PmPayOnUseReturnLabelFee" : 1.5,
+  "GlobalAdvantagePickupCarrierId" : 0,
+  "OutstandingLabelBalanceLimit" : 1.5,
+  "UspsPercentage" : 1.5,
+  "DhlPercentage" : 1.5,
+  "FedExPercentage" : 1.5,
+  "WeightDifferenceInOuncesToIgnoreForAdjustment" : 1.5,
+  "ParcelGuardMaximumInsuredValue" : 1.5,
+  "MaximumDateAdvanceforShippingLabels" : 0,
+  "UseActualRateIngredientsForAdjustment" : true,
+  "DhlExpressAccountNumber" : "string",
+  "HasOptedOutOfAutomatedEvents" : true,
+  "CanadaPostOuboundMarkUpPercentage" : 1.5,
+  "CanadaPostReturnMarkUpPercentage" : 1.5,
+  "ParcelGuardIncludedInsurances" : [ {
+    "ServiceId" : 0,
+    "Amount" : 1.5
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="973dc2b5-50a6-46cf-961b-83df375ba8d3" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="SetFeatureSettings" id="060018d6-8b47-49d5-93da-92be185e988a" method="POST">
+    <con:description>Set features for the customer</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="6f4e8033-1649-4262-9fb3-a853281018c0" mediaType="application/json" postQueryString="false">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

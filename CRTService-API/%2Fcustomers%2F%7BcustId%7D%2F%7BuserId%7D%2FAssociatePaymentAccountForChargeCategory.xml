@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/{userId}/AssociatePaymentAccountForChargeCategory" path="/customers/{custId}/{userId}/AssociatePaymentAccountForChargeCategory" id="55195582-6b34-4468-aecc-6c49fb9831ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="467a8bdb-de4f-41b7-a44e-d803568e17dcfileName">%2Fcustomers%2F%7BcustId%7D%2F%7BuserId%7D%2FAssociatePaymentAccountForChargeCategory</con:setting>
+    <con:setting id="b7e480a3-4f66-4ffe-be82-ffc17e69c0dbfileName">%2Fcustomers%2F%7BcustId%7D%2F%7BuserId%7D%2FAssociatePaymentAccountForChargeCategory</con:setting>
+    <con:setting id="55195582-6b34-4468-aecc-6c49fb9831cafileName">%2Fcustomers%2F%7BcustId%7D%2F%7BuserId%7D%2FAssociatePaymentAccountForChargeCategory</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>userId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="AssociatePaymentAccountForChargeCategory" id="6b697235-816f-4d18-9df6-930919be59ab" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="d3fcd56f-4192-4ea2-8a1f-a78cd0164bb8" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+        <con:entry key="userId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

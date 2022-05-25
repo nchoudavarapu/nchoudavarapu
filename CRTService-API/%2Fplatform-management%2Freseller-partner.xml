@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/reseller-partner" path="/platform-management/reseller-partner" id="639c3201-8d32-4ed3-99ec-d633f782d649" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="26d2f2ab-847c-4622-a748-6f1cbac6eb88fileName">%2Fplatform-management%2Freseller-partner</con:setting>
+    <con:setting id="639c3201-8d32-4ed3-99ec-d633f782d649fileName">%2Fplatform-management%2Freseller-partner</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="SaveResellerPartner" id="a485910c-5531-4cef-9790-67f90b40c62d" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="d0c2edc1-81f0-4fc4-83cf-dda16bec1e08" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

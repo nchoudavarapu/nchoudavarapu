@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="3c932ed2-e6e7-43f4-8cc7-87f5b4477538" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/FinishAccountVerification" name="FinishAccountVerification" bindingOperationName="FinishAccountVerification" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="880ee08a-75c8-44a0-9ebe-2f78538c6585fileName">FinishAccountVerification</con:setting>
+    <con:setting id="8725d2f7-d8f8-4462-804f-c06ec305b997fileName">FinishAccountVerification</con:setting>
+    <con:setting id="3c932ed2-e6e7-43f4-8cc7-87f5b4477538fileName">FinishAccountVerification</con:setting>
+  </con:settings>
+</con:operation>

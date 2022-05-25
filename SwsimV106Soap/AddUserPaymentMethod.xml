@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="92752575-44bb-47f6-ab32-ca0fc94e3446" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/AddUserPaymentMethod" name="AddUserPaymentMethod" bindingOperationName="AddUserPaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1548917f-0b95-4504-b7ec-28f245948483fileName">AddUserPaymentMethod</con:setting>
+    <con:setting id="5d96d7db-996b-424d-96e6-4635fc3484fefileName">AddUserPaymentMethod</con:setting>
+    <con:setting id="92752575-44bb-47f6-ab32-ca0fc94e3446fileName">AddUserPaymentMethod</con:setting>
+  </con:settings>
+  <con:call id="5fc3a4b5-8c4d-45eb-a6fc-cbdc3c7c5231" name="AddUserPaymentMethod Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:AddUserPaymentMethod>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:MachineInfo>\r
+            <sws:IPAddress>?</sws:IPAddress>\r
+            <!--Optional:-->\r
+            <sws:MacAddress>?</sws:MacAddress>\r
+            <!--Optional:-->\r
+            <sws:FP>\r
+               <!--Optional:-->\r
+               <sws:FP1>cid:174005099826</sws:FP1>\r
+               <!--Optional:-->\r
+               <sws:FP2>cid:131894973277</sws:FP2>\r
+               <!--Optional:-->\r
+               <sws:FP3>cid:1362689705808</sws:FP3>\r
+               <!--Optional:-->\r
+               <sws:FP4>cid:462011550952</sws:FP4>\r
+               <!--Optional:-->\r
+               <sws:FP5>cid:701131104860</sws:FP5>\r
+            </sws:FP>\r
+         </sws:MachineInfo>\r
+         <!--Optional:-->\r
+         <sws:DefaultPaymentMethodType>?</sws:DefaultPaymentMethodType>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:CreditCard>\r
+            <sws:CreditCardType>?</sws:CreditCardType>\r
+            <!--Optional:-->\r
+            <sws:AccountNumber>?</sws:AccountNumber>\r
+            <!--Optional:-->\r
+            <sws:CVN>?</sws:CVN>\r
+            <sws:ExpirationDate>?</sws:ExpirationDate>\r
+            <!--Optional:-->\r
+            <sws:BillingAddress>\r
+               <!--Optional:-->\r
+               <sws:FullName>?</sws:FullName>\r
+               <!--Optional:-->\r
+               <sws:NamePrefix>?</sws:NamePrefix>\r
+               <!--Optional:-->\r
+               <sws:FirstName>?</sws:FirstName>\r
+               <!--Optional:-->\r
+               <sws:MiddleName>?</sws:MiddleName>\r
+               <!--Optional:-->\r
+               <sws:LastName>?</sws:LastName>\r
+               <!--Optional:-->\r
+               <sws:NameSuffix>?</sws:NameSuffix>\r
+               <!--Optional:-->\r
+               <sws:Title>?</sws:Title>\r
+               <!--Optional:-->\r
+               <sws:Department>?</sws:Department>\r
+               <!--Optional:-->\r
+               <sws:Company>?</sws:Company>\r
+               <!--Optional:-->\r
+               <sws:Address1>?</sws:Address1>\r
+               <!--Optional:-->\r
+               <sws:Address2>?</sws:Address2>\r
+               <!--Optional:-->\r
+               <sws:Address3>?</sws:Address3>\r
+               <!--Optional:-->\r
+               <sws:City>?</sws:City>\r
+               <!--Optional:-->\r
+               <sws:State>?</sws:State>\r
+               <!--Optional:-->\r
+               <sws:ZIPCode>?</sws:ZIPCode>\r
+               <!--Optional:-->\r
+               <sws:ZIPCodeAddOn>?</sws:ZIPCodeAddOn>\r
+               <!--Optional:-->\r
+               <sws:DPB>?</sws:DPB>\r
+               <!--Optional:-->\r
+               <sws:CheckDigit>?</sws:CheckDigit>\r
+               <!--Optional:-->\r
+               <sws:Province>?</sws:Province>\r
+               <!--Optional:-->\r
+               <sws:PostalCode>?</sws:PostalCode>\r
+               <!--Optional:-->\r
+               <sws:Country>US</sws:Country>\r
+               <!--Optional:-->\r
+               <sws:Urbanization>?</sws:Urbanization>\r
+               <!--Optional:-->\r
+               <sws:PhoneNumber>?</sws:PhoneNumber>\r
+               <!--Optional:-->\r
+               <sws:Extension>?</sws:Extension>\r
+               <!--Optional:-->\r
+               <sws:CleanseHash>?</sws:CleanseHash>\r
+               <!--Optional:-->\r
+               <sws:OverrideHash>?</sws:OverrideHash>\r
+               <!--Optional:-->\r
+               <sws:EmailAddress>?</sws:EmailAddress>\r
+               <!--Optional:-->\r
+               <sws:FullAddress>?</sws:FullAddress>\r
+            </sws:BillingAddress>\r
+         </sws:CreditCard>\r
+         <!--Optional:-->\r
+         <sws:AchAccount>\r
+            <sws:AchAccountType>?</sws:AchAccountType>\r
+            <!--Optional:-->\r
+            <sws:BankName>?</sws:BankName>\r
+            <!--Optional:-->\r
+            <sws:AccountNumber>?</sws:AccountNumber>\r
+            <!--Optional:-->\r
+            <sws:RouteID>?</sws:RouteID>\r
+            <!--Optional:-->\r
+            <sws:AccountHolderName>?</sws:AccountHolderName>\r
+         </sws:AchAccount>\r
+         <!--Optional:-->\r
+         <sws:SendEmail>?</sws:SendEmail>\r
+      </sws:AddUserPaymentMethod>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/AddUserPaymentMethod"/>
+  </con:call>
+</con:operation>

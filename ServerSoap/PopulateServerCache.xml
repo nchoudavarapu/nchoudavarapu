@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="d0467b21-4210-4fde-be63-edcf4bde7e41" isOneWay="false" action="http://qa-automate01-v/tws/server/PopulateServerCache" name="PopulateServerCache" bindingOperationName="PopulateServerCache" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="141f5d1d-c408-4ab4-a1d8-d4790b926409fileName">PopulateServerCache</con:setting>
+    <con:setting id="6b8039e5-bbad-482e-b07c-b97703aab10efileName">PopulateServerCache</con:setting>
+    <con:setting id="d0467b21-4210-4fde-be63-edcf4bde7e41fileName">PopulateServerCache</con:setting>
+  </con:settings>
+</con:operation>

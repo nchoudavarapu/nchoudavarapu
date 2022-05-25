@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/tr/get_cases_by_filters/{ProjectId}" path="/tr/get_cases_by_filters/{ProjectId}" id="557ca91f-4320-4bee-a7ec-84abdfdd8ca9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="42a35cca-ee19-4a5b-80b8-6e6959c06203fileName">%2Ftr%2Fget_cases_by_filters%2F%7BProjectId%7D</con:setting>
+    <con:setting id="557ca91f-4320-4bee-a7ec-84abdfdd8ca9fileName">%2Ftr%2Fget_cases_by_filters%2F%7BProjectId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>ProjectId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="get_cases_by_filters_Post" id="7d76f0a9-d05a-40e9-bf2b-d7819d383fa8" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "Type" : "string",
+  "Priority" : "string",
+  "Estimate" : "string",
+  "Reference" : "string",
+  "TestCaseStatus" : "string",
+  "RegressionTest" : "string",
+  "AutomationType" : "string",
+  "AutomationStatus" : "string",
+  "AutomationKey" : "string",
+  "ArchiveTest" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "project_id" : 0,
+  "suites" : [ {
+    "suite_name" : "string",
+    "suite_id" : 0,
+    "cases" : [ {
+      "case_name" : "string",
+      "case_id" : 0,
+      "autokey" : "string"
+    } ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="1d0fede0-51ec-42da-85d1-04b098ac6d71" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://qa-automate01-v</con:endpoint>
+      <con:request>{\r
+  "Type" : "string",\r
+  "Priority" : "string",\r
+  "Estimate" : "string",\r
+  "Reference" : "string",\r
+  "TestCaseStatus" : "string",\r
+  "RegressionTest" : "string",\r
+  "AutomationType" : "string",\r
+  "AutomationStatus" : "string",\r
+  "AutomationKey" : "string",\r
+  "ArchiveTest" : "string"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

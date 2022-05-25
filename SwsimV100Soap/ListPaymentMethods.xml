@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="fe4d8f3d-8062-4fcb-820a-95cd9cb7d269" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/ListPaymentMethods" name="ListPaymentMethods" bindingOperationName="ListPaymentMethods" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d03f67d3-561a-4e2e-b383-b82bc0b6552cfileName">ListPaymentMethods</con:setting>
+    <con:setting id="bb77c6fe-3731-41b4-9400-2be5952a917efileName">ListPaymentMethods</con:setting>
+    <con:setting id="fe4d8f3d-8062-4fcb-820a-95cd9cb7d269fileName">ListPaymentMethods</con:setting>
+  </con:settings>
+</con:operation>

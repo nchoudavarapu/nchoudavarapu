@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="3d69e594-23e2-4cd0-9e5d-15535f23242e" isOneWay="false" action="http://qa-automate01-v/tws/server/GetHealthCheck" name="GetHealthCheck" bindingOperationName="GetHealthCheck" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4a5d3e3b-73b6-48c0-ba69-66a338744757fileName">GetHealthCheck</con:setting>
+    <con:setting id="b1d9c21f-6c9a-4890-a274-7f166d71e26bfileName">GetHealthCheck</con:setting>
+    <con:setting id="3d69e594-23e2-4cd0-9e5d-15535f23242efileName">GetHealthCheck</con:setting>
+  </con:settings>
+</con:operation>

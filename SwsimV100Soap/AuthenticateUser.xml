@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="d715d011-3bd4-4ab4-a78a-4900887a11c2" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/AuthenticateUser" name="AuthenticateUser" bindingOperationName="AuthenticateUser" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="705575df-e948-41ed-91a1-1f980270a2cbfileName">AuthenticateUser</con:setting>
+    <con:setting id="4f5ae6d1-c13c-4612-bf02-b9f4de2d5694fileName">AuthenticateUser</con:setting>
+    <con:setting id="d715d011-3bd4-4ab4-a78a-4900887a11c2fileName">AuthenticateUser</con:setting>
+  </con:settings>
+</con:operation>

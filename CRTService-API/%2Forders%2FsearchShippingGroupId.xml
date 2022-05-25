@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/orders/searchShippingGroupId" path="/orders/searchShippingGroupId" id="e2cae37c-029e-4469-88e6-25473e4e3b2d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="80e383af-355f-4180-9e07-2da46d8e03cdfileName">%2Forders%2FsearchShippingGroupId</con:setting>
+    <con:setting id="d962b391-24d3-49f7-96dc-f1a62df1cd68fileName">%2Forders%2FsearchShippingGroupId</con:setting>
+    <con:setting id="e2cae37c-029e-4469-88e6-25473e4e3b2dfileName">%2Forders%2FsearchShippingGroupId</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="SearchShippingGroupId" id="a53bde30-c31e-4ef2-8721-4ff1020234aa" method="GET">
+    <con:description>Search account and its orders by ShippingGroupId</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>shippingGroupId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "UserInfo" : {
+    "UserName" : "string",
+    "CustId" : 0,
+    "UserId" : 0,
+    "ProfileId" : "string",
+    "MeterNo" : 1.5,
+    "CompanyName" : "string",
+    "UserFullName" : {
+      "FirstName" : "string",
+      "Middlename" : "string",
+      "LastName" : "string"
+    }
+  },
+  "OrderInfo" : {
+    "OrderId" : "string",
+    "OrderStatus" : "string",
+    "ProductTotal" : "string",
+    "ShippingTotal" : "string",
+    "TaxTotal" : "string",
+    "OrderTotal" : "string",
+    "OrderDate" : "string",
+    "ReorderStatus" : "string",
+    "PreviouslyAppliedCredit" : 1.5,
+    "MaxRefundAllowed" : 1.5,
+    "Refundability" : 0
+  },
+  "PaymentInfo" : {
+    "PaymentGroupId" : "string",
+    "PaymentMethod" : "string",
+    "State" : "string",
+    "AmountCredited" : "string",
+    "AmountDebited" : "string",
+    "BillToAddress" : {
+      "Name" : {
+        "FirstName" : "string",
+        "Middlename" : "string",
+        "LastName" : "string"
+      },
+      "Address" : {
+        "Street" : "string",
+        "City" : "string",
+        "State" : "string",
+        "Zip" : "string"
+      }
+    }
+  },
+  "ShippingInfo" : [ {
+    "ShippingGroupId" : "string",
+    "ShippingTrackingNumber" : "string",
+    "ShippingStatus" : "string",
+    "ShippingMethod" : "string",
+    "ShippingDate" : "string",
+    "InternalQaRequestId" : "string",
+    "DateSubmittedToQa" : "string",
+    "LineItems" : [ {
+      "LineId" : "string",
+      "SkuId" : "string",
+      "ProductId" : "string",
+      "Quantity" : "string",
+      "ProductTotal" : "string",
+      "TaxTotal" : "string",
+      "Description" : "string"
+    } ],
+    "ShipToAddress" : [ {
+      "Name" : {
+        "FirstName" : "string",
+        "Middlename" : "string",
+        "LastName" : "string"
+      },
+      "Address" : {
+        "Street" : "string",
+        "City" : "string",
+        "State" : "string",
+        "Zip" : "string"
+      }
+    } ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="1882d6dc-64bf-4c86-a21e-49690fbd788f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="shippingGroupId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

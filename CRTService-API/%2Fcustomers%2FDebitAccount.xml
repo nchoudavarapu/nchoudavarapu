@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/DebitAccount" path="/customers/DebitAccount" id="7fed4d25-7a13-43fa-b0b8-d45cf8490b2b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d87f7447-3a17-4515-83d9-fb9a4cdc80f5fileName">%2Fcustomers%2FDebitAccount</con:setting>
+    <con:setting id="0ca8ae90-7ed9-401e-a8cf-cf6a8a938386fileName">%2Fcustomers%2FDebitAccount</con:setting>
+    <con:setting id="7fed4d25-7a13-43fa-b0b8-d45cf8490b2bfileName">%2Fcustomers%2FDebitAccount</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="DebitAccount" id="ef32f321-9c1d-40db-925f-862947a5c3e9" method="POST">
+    <con:description>Debit to customer account</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="53523485-132c-470b-822a-c3cd70a36aae" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

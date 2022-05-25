@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/RateSets/{custId}" path="/customers/RateSets/{custId}" id="8864005b-d786-4095-870d-2a3857bbbb5c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5ede07ee-3421-470a-93e0-ecb5e165f4cafileName">%2Fcustomers%2FRateSets%2F%7BcustId%7D</con:setting>
+    <con:setting id="654521c8-580d-4686-be18-d91d0db171c1fileName">%2Fcustomers%2FRateSets%2F%7BcustId%7D</con:setting>
+    <con:setting id="8864005b-d786-4095-870d-2a3857bbbb5cfileName">%2Fcustomers%2FRateSets%2F%7BcustId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetRateSets" id="b42a88c5-1cc1-4b28-8d20-721f767faabd" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "CarrierRateSetIds" : [ {
+    "Carrier" : "Usps",
+    "Id" : 0
+  } ],
+  "CarrierRateSetCatalogs" : [ {
+    "Carrier" : "Usps",
+    "RateSets" : [ {
+      "Id" : 0,
+      "Description" : "string"
+    } ]
+  } ],
+  "History" : [ {
+    "Carrier" : "Usps",
+    "Id" : 0,
+    "Description" : "string",
+    "CreationDateTime" : "2015-07-20T15:49:04-07:00"
+  } ],
+  "InsuranceRateSetId" : 0,
+  "InsuranceRateSetCatalog" : [ {
+    "Id" : 0,
+    "Description" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="8d5cc2a3-2d93-4c48-8472-b7229d470495" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="SetRateSets" id="bd11172c-17ec-423d-8ae5-884968144aef" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="bcea263e-88ad-4545-8c58-2dbfc744b3f4" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

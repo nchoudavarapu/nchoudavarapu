@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/meters/{meterNumber}/PromoPostCardHistory" path="/meters/{meterNumber}/PromoPostCardHistory" id="d679aaa7-bfc0-466e-819b-60d999c6b2d1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6ef5e927-c92e-445a-8cc0-c853b9a2c5cafileName">%2Fmeters%2F%7BmeterNumber%7D%2FPromoPostCardHistory</con:setting>
+    <con:setting id="f92c40ca-6762-4105-877b-dff6e98a7173fileName">%2Fmeters%2F%7BmeterNumber%7D%2FPromoPostCardHistory</con:setting>
+    <con:setting id="d679aaa7-bfc0-466e-819b-60d999c6b2d1fileName">%2Fmeters%2F%7BmeterNumber%7D%2FPromoPostCardHistory</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>meterNumber</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>number</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetPromoPostCardHistory" id="8a7f2d5f-1548-4e0c-a599-af1b8280f8db" method="GET">
+    <con:description>Get Promo PostCard History</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Items" : [ {
+    "Id" : 0,
+    "DateScanned" : "2015-07-20T15:49:04-07:00",
+    "DateCredited" : "2015-07-20T15:49:04-07:00",
+    "Status" : "string",
+    "PostageAmount" : 1.5
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>"string"</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="15fa8e76-7267-4e9b-bb25-d25d10b67cba" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="meterNumber" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

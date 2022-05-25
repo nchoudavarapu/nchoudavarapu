@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="9b43c2a9-3ba7-4f0c-ab1b-73ac78b0b5f8" wsaVersion="NONE" name="ServerSoap" type="wsdl" bindingName="{http://qa-automate01-v/tws/server}ServerSoap" soapVersion="1_1" anonymous="optional" definition="http://qa-automate01-v.corp.stamps.com/tws/server.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6c179f03-416b-4c1d-9194-e20d961460b5fileName">ServerSoap</con:setting>
+    <con:setting id="f3ab004e-f7d6-4481-82a1-5ec4ae5a1af5fileName">ServerSoap</con:setting>
+    <con:setting id="9b43c2a9-3ba7-4f0c-ab1b-73ac78b0b5f8fileName">ServerSoap</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="http://qa-automate01-v.corp.stamps.com/tws/server.asmx?wsdl">
+    <con:part>
+      <con:url>http://qa-automate01-v.corp.stamps.com/tws/server.asmx?wsdl</con:url>
+      <con:content><![CDATA[<wsdl:definitions targetNamespace="http://qa-automate01-v/tws/server" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://qa-automate01-v/tws/server" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>Toolkit Web Services by Joshua Beck</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://qa-automate01-v/tws/server">
+      <s:element name="GetFarms">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetFarmsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFarmsResult" type="tns:FarmResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FarmResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsError" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionType" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionMessage" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Farms" type="tns:ArrayOfString"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetEnvironments">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetEnvironmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEnvironmentsResult" type="tns:EnvironmentResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EnvironmentResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsError" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionType" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionMessage" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Environments" type="tns:ArrayOfEnvironmentInfo"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfEnvironmentInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EnvironmentInfo" nillable="true" type="tns:EnvironmentInfo"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EnvironmentInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="EnvironmentId" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetVersionedElements">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ApiVersion" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVersionedElementsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVersionedElementsResult" type="tns:VersionedElementsResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="VersionedElementsResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsError" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionType" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionMessage" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="ApiVersion" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="VersionedElements" type="tns:VersionedElements"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VersionedElements">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AddOn" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="NetStamps" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="MailingLabel" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ShipmentField" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Surcharge" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CheckServerHealth">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Service" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckServerHealthResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckServerHealthResult" type="tns:CheckHealthResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CheckHealthResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsError" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionType" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionMessage" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="IsHealthy" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Version" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Body" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetHealthCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Service" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHealthCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHealthCheckResult" type="tns:HealthCheckResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="HealthCheckResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsError" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionType" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionMessage" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="HealthChecks" type="tns:ArrayOfHealthCheck"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfHealthCheck">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="HealthCheck" nillable="true" type="tns:HealthCheck"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="HealthCheck">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Service" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="HealthCheckUrl" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetDefaultHealthCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDefaultHealthCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDefaultHealthCheckResult" type="tns:HealthCheckResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFarmHealthChecks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFarmHealthChecksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFarmHealthChecksResult" type="tns:HealthCheckResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHealthChecks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHealthChecksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHealthChecksResult" type="tns:HealthCheckResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PopulateServerCache">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PopulateServerCacheResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PopulateServerCacheResult" type="tns:PopulateCacheResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PopulateCacheResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsError" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionType" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionMessage" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="IsPopulated" type="s:boolean"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPopulateCacheUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPopulateCacheUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPopulateCacheUrlResult" type="tns:GetCacheResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCacheResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsError" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionType" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionMessage" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Caches" type="tns:ArrayOfCache"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCache">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Cache" nillable="true" type="tns:Cache"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Cache">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Url" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPopulateCacheUrls">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPopulateCacheUrlsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPopulateCacheUrlsResult" type="tns:GetCacheResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BounceServerFarm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BounceServerFarmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BounceServerFarmResult" type="tns:BounceFarmResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BounceFarmResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsError" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionType" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionMessage" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="IsBounced" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Console" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetServiceEndpoint">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Service" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Version" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceEndpointResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceEndpointResult" type="tns:ServiceEndpointResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ServiceEndpointResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsError" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionType" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionMessage" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceEndpoints" type="tns:ArrayOfServiceEndpoint"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfServiceEndpoint">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ServiceEndpoint" nillable="true" type="tns:ServiceEndpoint"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ServiceEndpoint">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Service" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Version" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Url" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Namespace" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetServiceEndpointVersions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Service" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceEndpointVersionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceEndpointVersionsResult" type="tns:ServiceEndpointResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFarmServiceEndpoints">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFarmServiceEndpointsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFarmServiceEndpointsResult" type="tns:ServiceEndpointResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceEndpoints">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Environment" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceEndpointsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceEndpointsResult" type="tns:ServiceEndpointResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWSDLs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWSDLsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWSDLsResult" type="tns:WsdlResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WsdlResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsError" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionType" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ExceptionMessage" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="WSDLs" type="tns:ArrayOfWsdlInfo"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfWsdlInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WsdlInfo" nillable="true" type="tns:WsdlInfo"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WsdlInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Service" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Version" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="WSDL" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetWsdlsForService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Service" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWsdlsForServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWsdlsForServiceResult" type="tns:WsdlResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWSDL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Farm" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Service" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Version" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWSDLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWSDLResult" type="tns:WsdlResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetFarmsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFarms"/>
+  </wsdl:message>
+  <wsdl:message name="GetFarmsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFarmsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetEnvironmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEnvironments"/>
+  </wsdl:message>
+  <wsdl:message name="GetEnvironmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEnvironmentsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetVersionedElementsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVersionedElements"/>
+  </wsdl:message>
+  <wsdl:message name="GetVersionedElementsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVersionedElementsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="CheckServerHealthSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckServerHealth"/>
+  </wsdl:message>
+  <wsdl:message name="CheckServerHealthSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckServerHealthResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetHealthCheckSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHealthCheck"/>
+  </wsdl:message>
+  <wsdl:message name="GetHealthCheckSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHealthCheckResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetDefaultHealthCheckSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDefaultHealthCheck"/>
+  </wsdl:message>
+  <wsdl:message name="GetDefaultHealthCheckSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDefaultHealthCheckResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetFarmHealthChecksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFarmHealthChecks"/>
+  </wsdl:message>
+  <wsdl:message name="GetFarmHealthChecksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFarmHealthChecksResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetHealthChecksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHealthChecks"/>
+  </wsdl:message>
+  <wsdl:message name="GetHealthChecksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHealthChecksResponse"/>
+  </wsdl:message>
+  <wsdl:message name="PopulateServerCacheSoapIn">
+    <wsdl:part name="parameters" element="tns:PopulateServerCache"/>
+  </wsdl:message>
+  <wsdl:message name="PopulateServerCacheSoapOut">
+    <wsdl:part name="parameters" element="tns:PopulateServerCacheResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetPopulateCacheUrlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPopulateCacheUrl"/>
+  </wsdl:message>
+  <wsdl:message name="GetPopulateCacheUrlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPopulateCacheUrlResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetPopulateCacheUrlsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPopulateCacheUrls"/>
+  </wsdl:message>
+  <wsdl:message name="GetPopulateCacheUrlsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPopulateCacheUrlsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="BounceServerFarmSoapIn">
+    <wsdl:part name="parameters" element="tns:BounceServerFarm"/>
+  </wsdl:message>
+  <wsdl:message name="BounceServerFarmSoapOut">
+    <wsdl:part name="parameters" element="tns:BounceServerFarmResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetServiceEndpointSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceEndpoint"/>
+  </wsdl:message>
+  <wsdl:message name="GetServiceEndpointSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceEndpointResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetServiceEndpointVersionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceEndpointVersions"/>
+  </wsdl:message>
+  <wsdl:message name="GetServiceEndpointVersionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceEndpointVersionsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetFarmServiceEndpointsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFarmServiceEndpoints"/>
+  </wsdl:message>
+  <wsdl:message name="GetFarmServiceEndpointsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFarmServiceEndpointsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetServiceEndpointsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceEndpoints"/>
+  </wsdl:message>
+  <wsdl:message name="GetServiceEndpointsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceEndpointsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetWSDLsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWSDLs"/>
+  </wsdl:message>
+  <wsdl:message name="GetWSDLsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWSDLsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetWsdlsForServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWsdlsForService"/>
+  </wsdl:message>
+  <wsdl:message name="GetWsdlsForServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWsdlsForServiceResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetWSDLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWSDL"/>
+  </wsdl:message>
+  <wsdl:message name="GetWSDLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWSDLResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ServerSoap">
+    <wsdl:operation name="GetFarms">
+      <wsdl:input message="tns:GetFarmsSoapIn"/>
+      <wsdl:output message="tns:GetFarmsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetEnvironments">
+      <wsdl:input message="tns:GetEnvironmentsSoapIn"/>
+      <wsdl:output message="tns:GetEnvironmentsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVersionedElements">
+      <wsdl:input message="tns:GetVersionedElementsSoapIn"/>
+      <wsdl:output message="tns:GetVersionedElementsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="CheckServerHealth">
+      <wsdl:input message="tns:CheckServerHealthSoapIn"/>
+      <wsdl:output message="tns:CheckServerHealthSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHealthCheck">
+      <wsdl:input message="tns:GetHealthCheckSoapIn"/>
+      <wsdl:output message="tns:GetHealthCheckSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultHealthCheck">
+      <wsdl:input message="tns:GetDefaultHealthCheckSoapIn"/>
+      <wsdl:output message="tns:GetDefaultHealthCheckSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFarmHealthChecks">
+      <wsdl:input message="tns:GetFarmHealthChecksSoapIn"/>
+      <wsdl:output message="tns:GetFarmHealthChecksSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHealthChecks">
+      <wsdl:input message="tns:GetHealthChecksSoapIn"/>
+      <wsdl:output message="tns:GetHealthChecksSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="PopulateServerCache">
+      <wsdl:input message="tns:PopulateServerCacheSoapIn"/>
+      <wsdl:output message="tns:PopulateServerCacheSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPopulateCacheUrl">
+      <wsdl:input message="tns:GetPopulateCacheUrlSoapIn"/>
+      <wsdl:output message="tns:GetPopulateCacheUrlSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPopulateCacheUrls">
+      <wsdl:input message="tns:GetPopulateCacheUrlsSoapIn"/>
+      <wsdl:output message="tns:GetPopulateCacheUrlsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BounceServerFarm">
+      <wsdl:input message="tns:BounceServerFarmSoapIn"/>
+      <wsdl:output message="tns:BounceServerFarmSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceEndpoint">
+      <wsdl:input message="tns:GetServiceEndpointSoapIn"/>
+      <wsdl:output message="tns:GetServiceEndpointSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceEndpointVersions">
+      <wsdl:input message="tns:GetServiceEndpointVersionsSoapIn"/>
+      <wsdl:output message="tns:GetServiceEndpointVersionsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFarmServiceEndpoints">
+      <wsdl:input message="tns:GetFarmServiceEndpointsSoapIn"/>
+      <wsdl:output message="tns:GetFarmServiceEndpointsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceEndpoints">
+      <wsdl:input message="tns:GetServiceEndpointsSoapIn"/>
+      <wsdl:output message="tns:GetServiceEndpointsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetWSDLs">
+      <wsdl:input message="tns:GetWSDLsSoapIn"/>
+      <wsdl:output message="tns:GetWSDLsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetWsdlsForService">
+      <wsdl:input message="tns:GetWsdlsForServiceSoapIn"/>
+      <wsdl:output message="tns:GetWsdlsForServiceSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetWSDL">
+      <wsdl:input message="tns:GetWSDLSoapIn"/>
+      <wsdl:output message="tns:GetWSDLSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServerSoap" type="tns:ServerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetFarms">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetFarms" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEnvironments">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetEnvironments" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVersionedElements">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetVersionedElements" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckServerHealth">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/CheckServerHealth" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHealthCheck">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetHealthCheck" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultHealthCheck">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetDefaultHealthCheck" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFarmHealthChecks">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetFarmHealthChecks" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHealthChecks">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetHealthChecks" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopulateServerCache">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/PopulateServerCache" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPopulateCacheUrl">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetPopulateCacheUrl" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPopulateCacheUrls">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetPopulateCacheUrls" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BounceServerFarm">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/BounceServerFarm" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceEndpoint">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetServiceEndpoint" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceEndpointVersions">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetServiceEndpointVersions" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFarmServiceEndpoints">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetFarmServiceEndpoints" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceEndpoints">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetServiceEndpoints" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWSDLs">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetWSDLs" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWsdlsForService">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetWsdlsForService" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWSDL">
+      <soap:operation soapAction="http://qa-automate01-v/tws/server/GetWSDL" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServerSoap12" type="tns:ServerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetFarms">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetFarms" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEnvironments">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetEnvironments" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVersionedElements">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetVersionedElements" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckServerHealth">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/CheckServerHealth" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHealthCheck">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetHealthCheck" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultHealthCheck">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetDefaultHealthCheck" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFarmHealthChecks">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetFarmHealthChecks" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHealthChecks">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetHealthChecks" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopulateServerCache">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/PopulateServerCache" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPopulateCacheUrl">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetPopulateCacheUrl" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPopulateCacheUrls">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetPopulateCacheUrls" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BounceServerFarm">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/BounceServerFarm" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceEndpoint">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetServiceEndpoint" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceEndpointVersions">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetServiceEndpointVersions" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFarmServiceEndpoints">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetFarmServiceEndpoints" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceEndpoints">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetServiceEndpoints" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWSDLs">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetWSDLs" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWsdlsForService">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetWsdlsForService" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWSDL">
+      <soap12:operation soapAction="http://qa-automate01-v/tws/server/GetWSDL" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Server">
+    <wsdl:documentation>Toolkit Web Services by Joshua Beck</wsdl:documentation>
+    <wsdl:port name="ServerSoap" binding="tns:ServerSoap">
+      <soap:address location="http://qa-automate01-v.corp.stamps.com/tws/server.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ServerSoap12" binding="tns:ServerSoap12">
+      <soap12:address location="http://qa-automate01-v.corp.stamps.com/tws/server.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content>
+      <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>http://qa-automate01-v.corp.stamps.com/tws/server.asmx</con:endpoint>
+  </con:endpoints>
+</con:interface>

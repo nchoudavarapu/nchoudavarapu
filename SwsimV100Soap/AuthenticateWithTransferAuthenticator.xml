@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b5d0bf5e-0a81-4888-962c-e3f713a6440a" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/AuthenticateWithTransferAuthenticator" name="AuthenticateWithTransferAuthenticator" bindingOperationName="AuthenticateWithTransferAuthenticator" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d5da18bc-4cc5-4e70-810b-13521db43472fileName">AuthenticateWithTransferAuthenticator</con:setting>
+    <con:setting id="ab523a63-8e88-4301-bdbe-280f07360a76fileName">AuthenticateWithTransferAuthenticator</con:setting>
+    <con:setting id="b5d0bf5e-0a81-4888-962c-e3f713a6440afileName">AuthenticateWithTransferAuthenticator</con:setting>
+  </con:settings>
+</con:operation>

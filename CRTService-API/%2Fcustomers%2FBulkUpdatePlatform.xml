@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/BulkUpdatePlatform" path="/customers/BulkUpdatePlatform" id="64e0826e-381f-47e6-b5e7-a45eabfe0ce7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3459ad79-aa57-4632-b123-bee1ea01b0c5fileName">%2Fcustomers%2FBulkUpdatePlatform</con:setting>
+    <con:setting id="64e0826e-381f-47e6-b5e7-a45eabfe0ce7fileName">%2Fcustomers%2FBulkUpdatePlatform</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="BulkUpdatePlatform" id="f00c3020-64bc-496e-a52a-ed7d2e39c8ae" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="6780a2e1-624c-4b35-b1a0-e3a8861fa610" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/LinkEpsAccount" path="/customers/LinkEpsAccount" id="55432587-aa7a-4213-8775-19a3944f8a1e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e5778921-ce3e-4999-9af8-fee1919ad9d5fileName">%2Fcustomers%2FLinkEpsAccount</con:setting>
+    <con:setting id="b5743291-8a40-4167-8b3a-54873da27357fileName">%2Fcustomers%2FLinkEpsAccount</con:setting>
+    <con:setting id="55432587-aa7a-4213-8775-19a3944f8a1efileName">%2Fcustomers%2FLinkEpsAccount</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="LinkEpsAccount" id="b327d06e-2390-4c91-af2c-fe531a51ba34" method="POST">
+    <con:description>Link EPS Account</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>meterNumber</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>epsAuthorizationCode</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>merchantName</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>"string"</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="6a101345-5be4-4a9c-8268-29850bc1cfea" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="meterNumber" value=""/>
+        <con:entry key="epsAuthorizationCode" value=""/>
+        <con:entry key="merchantName" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

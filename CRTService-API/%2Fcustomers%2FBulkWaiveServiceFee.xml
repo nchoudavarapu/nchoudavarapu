@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/BulkWaiveServiceFee" path="/customers/BulkWaiveServiceFee" id="074a3265-24ac-42a2-a223-2867fda17642" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="822c0f8f-91a1-411d-a300-e878f914691ffileName">%2Fcustomers%2FBulkWaiveServiceFee</con:setting>
+    <con:setting id="71648e8b-9b53-427f-8e08-ca7ee74ccb4bfileName">%2Fcustomers%2FBulkWaiveServiceFee</con:setting>
+    <con:setting id="074a3265-24ac-42a2-a223-2867fda17642fileName">%2Fcustomers%2FBulkWaiveServiceFee</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="BulkWaiveServiceFee" id="abecd660-3f59-4b37-91d5-6816ba424ff9" method="POST">
+    <con:description>Waive service fee for customer(Bulk Actions)</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="d15a1cc3-06f5-415f-a6e6-d903d68e6b3a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

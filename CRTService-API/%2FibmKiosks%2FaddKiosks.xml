@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/ibmKiosks/addKiosks" path="/ibmKiosks/addKiosks" id="7651c89c-5251-469e-a77a-fddfb54da3cd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7c75a8b1-04df-4f25-8ea0-a84d86561653fileName">%2FibmKiosks%2FaddKiosks</con:setting>
+    <con:setting id="15d2df43-c075-4f96-836d-15a0d4b72133fileName">%2FibmKiosks%2FaddKiosks</con:setting>
+    <con:setting id="7651c89c-5251-469e-a77a-fddfb54da3cdfileName">%2FibmKiosks%2FaddKiosks</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="AddKiosks" id="e040518d-f0ea-403a-acf4-974538f62eb4" method="POST">
+    <con:description>Add Kiosks</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "SuccessCases" : [ {
+    "Name" : "string",
+    "MeterNumber" : 0
+  } ],
+  "ErrorCases" : [ {
+    "Name" : "string",
+    "ErrorDescription" : "string"
+  } ],
+  "IsErrorReturned" : true,
+  "ErrorDescription" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="f0ce25c7-1a6c-4573-9b56-0972cbe7725f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

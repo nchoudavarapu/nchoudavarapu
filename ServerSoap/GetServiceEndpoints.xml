@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="315aa1da-f58d-4e4a-a8a9-c1f44c7afedd" isOneWay="false" action="http://qa-automate01-v/tws/server/GetServiceEndpoints" name="GetServiceEndpoints" bindingOperationName="GetServiceEndpoints" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a9699c14-b496-4f8f-bd03-c42b73e1726afileName">GetServiceEndpoints</con:setting>
+    <con:setting id="fd180907-c817-4136-ac1d-2cd64682fec9fileName">GetServiceEndpoints</con:setting>
+    <con:setting id="315aa1da-f58d-4e4a-a8a9-c1f44c7afeddfileName">GetServiceEndpoints</con:setting>
+  </con:settings>
+</con:operation>

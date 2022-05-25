@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/meters/BalanceAndPurchaseLimit" path="/meters/BalanceAndPurchaseLimit" id="ff0ee061-ff4e-4910-b864-d8d678dbcc2a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="36838ce4-49fb-4a18-9eb5-50a21646794efileName">%2Fmeters%2FBalanceAndPurchaseLimit</con:setting>
+    <con:setting id="5c4b61f1-be51-4808-8639-26bef9ab8e74fileName">%2Fmeters%2FBalanceAndPurchaseLimit</con:setting>
+    <con:setting id="ff0ee061-ff4e-4910-b864-d8d678dbcc2afileName">%2Fmeters%2FBalanceAndPurchaseLimit</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetBalanceAndPurchaseLimitInfo" id="3f41ed9c-1dd2-42f7-aeac-8ff489a64ec3" method="GET">
+    <con:description>Get Balance And Purchase Limit Information</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>isSasDmc</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>boolean</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>meterNumber</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>resellerAccountId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "CurrentBalanceLimit" : 1.5,
+  "CurrentPurchaseLimit" : 1.5,
+  "MaxBalanceLimit" : 1.5,
+  "MinBalanceLimit" : 1.5,
+  "LpoZip" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="f3113290-d9d1-4760-b3e7-43a95a597c85" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="resellerAccountId" value=""/>
+        <con:entry key="meterNumber" value=""/>
+        <con:entry key="isSasDmc" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="SetBalanceAndPurchaseLimitInfo" id="2c0a1c11-d12c-43c8-b21d-7d0c6a894a26" method="POST">
+    <con:description>Set Balance And Purchase Limit</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="66a8f552-041d-447b-b26e-84c980b3ddaf" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

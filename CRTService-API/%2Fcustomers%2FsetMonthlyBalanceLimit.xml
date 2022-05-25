@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/setMonthlyBalanceLimit" path="/customers/setMonthlyBalanceLimit" id="48e3aad4-72df-455d-b4e1-6a66e5a7a064" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9f8cfab3-2c77-44a4-9711-7b0899e86ccbfileName">%2Fcustomers%2FsetMonthlyBalanceLimit</con:setting>
+    <con:setting id="745ef8fe-17a9-4211-8e06-286c3f93b43bfileName">%2Fcustomers%2FsetMonthlyBalanceLimit</con:setting>
+    <con:setting id="48e3aad4-72df-455d-b4e1-6a66e5a7a064fileName">%2Fcustomers%2FsetMonthlyBalanceLimit</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="SetMonthlyBalanceLimit" id="30e8391b-a7de-412d-968f-09a335ec867a" method="POST">
+    <con:description>Set monthly balance limit for a customer</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>monthlyLimit</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="2655272f-fe27-4985-9c40-534f9e5cbf69" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+        <con:entry key="monthlyLimit" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

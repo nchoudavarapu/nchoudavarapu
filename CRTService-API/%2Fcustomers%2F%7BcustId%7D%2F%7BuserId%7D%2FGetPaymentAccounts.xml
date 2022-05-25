@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/{userId}/GetPaymentAccounts" path="/customers/{custId}/{userId}/GetPaymentAccounts" id="b4bd196d-072d-40a2-8629-8eca142375a6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="012aec4c-a89f-48e9-a246-e6a34725811dfileName">%2Fcustomers%2F%7BcustId%7D%2F%7BuserId%7D%2FGetPaymentAccounts</con:setting>
+    <con:setting id="344547f8-e576-4bcc-9d01-7e560183c5c6fileName">%2Fcustomers%2F%7BcustId%7D%2F%7BuserId%7D%2FGetPaymentAccounts</con:setting>
+    <con:setting id="b4bd196d-072d-40a2-8629-8eca142375a6fileName">%2Fcustomers%2F%7BcustId%7D%2F%7BuserId%7D%2FGetPaymentAccounts</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>userId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetPaymentAccounts" id="9700913c-2690-413d-a224-7c3f347a9b1d" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "CustId" : 0,
+  "PaymentAccounts" : [ {
+    "PaymentAccountId" : 1.5,
+    "PaymentAccountType" : "None",
+    "NickName" : "string",
+    "AccountHolderName" : "string",
+    "AccountNumber" : "string",
+    "AccountType" : "string",
+    "ExpiryDate" : "string",
+    "BillingAddress" : {
+      "Address1" : "string",
+      "Address2" : "string",
+      "City" : "string",
+      "State" : "string",
+      "Zip" : "string",
+      "Country" : "string"
+    },
+    "CVN" : "string",
+    "BankName" : "string",
+    "RoutingNumber" : "string",
+    "AccountNumberDisplayDigits" : "string"
+  } ],
+  "PaymentAccountForChargeCategory" : { }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="923371ad-d8a9-4671-b339-92e3806c6bbc" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+        <con:entry key="userId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

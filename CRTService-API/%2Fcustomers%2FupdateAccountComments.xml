@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/updateAccountComments" path="/customers/updateAccountComments" id="56cfe650-e984-49f6-96ac-29c0ed98eda9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="710a7006-d858-4775-9000-26c2cbcfca72fileName">%2Fcustomers%2FupdateAccountComments</con:setting>
+    <con:setting id="ec1fa4f6-9281-4ac4-b7da-27510ca9a2ebfileName">%2Fcustomers%2FupdateAccountComments</con:setting>
+    <con:setting id="56cfe650-e984-49f6-96ac-29c0ed98eda9fileName">%2Fcustomers%2FupdateAccountComments</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="UpdateAccountComments" id="ed81a38c-df02-41f4-9844-13060f031b69" method="POST">
+    <con:description>Update comments by CSR user to customer account</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custID</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>comments</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="254dd882-3d3b-452d-a6b7-372d726427af" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="comments" value=""/>
+        <con:entry key="custID" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b07026d8-1001-4c44-beef-077e9241ee38" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetAccountInfo" name="GetAccountInfo" bindingOperationName="GetAccountInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5a2a99cf-0455-4512-b22b-92f1e30ec7a1fileName">GetAccountInfo</con:setting>
+    <con:setting id="cd7f2bf0-bca4-4289-a6d4-2752d0737161fileName">GetAccountInfo</con:setting>
+    <con:setting id="b07026d8-1001-4c44-beef-077e9241ee38fileName">GetAccountInfo</con:setting>
+  </con:settings>
+  <con:call id="641b8ff4-8a6c-45c9-a1d3-43081b7d585f" name="CAD">
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+    </con:settings>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://devserver011.dev02.aws.local/swsim/swsimv100.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetAccountInfo>\r
+         <sws:Credentials>
+            <sws:IntegrationID>${SS_IID}</sws:IntegrationID>
+            <sws:Username>dev_cad001</sws:Username>
+            <sws:Password>mylittlepony!1</sws:Password>
+         </sws:Credentials>
+      </sws:GetAccountInfo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetAccountInfo"/>
+    <con:wsrmConfig version="1.2"/>
+  </con:call>
+  <con:call id="819497ce-009f-4309-bcf7-f2ef14b69279" name="USD">
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+    </con:settings>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://devserver011.dev02.aws.local/swsim/swsimv100.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:GetAccountInfo>
+         <sws:Credentials>
+            <sws:IntegrationID>${SS_IID}</sws:IntegrationID>
+            <sws:Username>ab200922141226</sws:Username>
+            <sws:Password>n0t@rland</sws:Password>
+         </sws:Credentials>
+      </sws:GetAccountInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetAccountInfo"/>
+    <con:wsrmConfig version="1.2"/>
+  </con:call>
+</con:operation>

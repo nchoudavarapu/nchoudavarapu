@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="436300b8-c815-4ef2-81b7-417e837f8b64" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetSupportedCountries" name="GetSupportedCountries" bindingOperationName="GetSupportedCountries" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="99402e47-c3d9-44eb-8469-e37ea204e460fileName">GetSupportedCountries</con:setting>
+    <con:setting id="15ea1529-e99b-4cbf-ab2a-24d1c647d834fileName">GetSupportedCountries</con:setting>
+    <con:setting id="436300b8-c815-4ef2-81b7-417e837f8b64fileName">GetSupportedCountries</con:setting>
+  </con:settings>
+</con:operation>

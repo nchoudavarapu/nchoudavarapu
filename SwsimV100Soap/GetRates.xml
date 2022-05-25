@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ecb0a0ef-99a3-4f4b-b33d-4004365b34d4" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetRates" name="GetRates" bindingOperationName="GetRates" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a946f2b0-ec54-4fdc-a4f1-06313e094cd4fileName">GetRates</con:setting>
+    <con:setting id="4ce7d46f-47a7-46c4-9928-9a2e6a356ab3fileName">GetRates</con:setting>
+    <con:setting id="ecb0a0ef-99a3-4f4b-b33d-4004365b34d4fileName">GetRates</con:setting>
+  </con:settings>
+</con:operation>

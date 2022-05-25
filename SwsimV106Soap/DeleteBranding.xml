@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="bf54b9ad-cb19-435b-94a3-70c316ce062f" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/DeleteBranding" name="DeleteBranding" bindingOperationName="DeleteBranding" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="dee0bb7f-d25b-463b-b6b5-1851bbf50e95fileName">DeleteBranding</con:setting>
+    <con:setting id="aa00036a-566d-467f-bbd2-0ddb0dd5ea03fileName">DeleteBranding</con:setting>
+    <con:setting id="bf54b9ad-cb19-435b-94a3-70c316ce062ffileName">DeleteBranding</con:setting>
+  </con:settings>
+  <con:call id="3b6d11f7-c1e1-4369-b0e3-fa19c779cddf" name="DeleteBranding Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:DeleteBranding>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:BrandingId>?</sws:BrandingId>\r
+      </sws:DeleteBranding>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/DeleteBranding"/>
+  </con:call>
+</con:operation>

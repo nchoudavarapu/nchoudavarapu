@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="8ff12c08-baaf-480a-883f-8620565d92ed" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/ScheduleCarrierPickup" name="ScheduleCarrierPickup" bindingOperationName="ScheduleCarrierPickup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3b115522-7f62-4474-8251-78210390564afileName">ScheduleCarrierPickup</con:setting>
+    <con:setting id="c261abd5-8d99-4eb1-9e65-ec494fcec2c3fileName">ScheduleCarrierPickup</con:setting>
+    <con:setting id="8ff12c08-baaf-480a-883f-8620565d92edfileName">ScheduleCarrierPickup</con:setting>
+  </con:settings>
+</con:operation>

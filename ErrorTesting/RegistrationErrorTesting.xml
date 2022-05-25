@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e2d6ed9a-c693-4689-9706-da87d5f4d3c0" discardOkResults="true" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="RegistrationErrorTesting" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="312da8a6-7d67-40e3-85f2-a5c9fc706a60fileName">RegistrationErrorTesting</con:setting>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="GeneratableJUnitReport@Style">Multiple Pages</con:setting>
+    <con:setting id="GeneratableJUnitReport@Folder">C:\Users\abaskett\Desktop</con:setting>
+    <con:setting id="1a348241-1428-4cac-9d18-84e44e39b64dfileName">RegistrationErrorTesting</con:setting>
+    <con:setting id="e2d6ed9a-c693-4689-9706-da87d5f4d3c0fileName">RegistrationErrorTesting</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="groovy" name="Enter Script" id="b3fe9b4a-3bd2-45fc-8054-c4eae6dd218b">
+    <con:settings/>
+    <con:config>
+      <script>def start = new soapUIScripts.startExec(context,"Project");
+//start.testCaseSelector.selectTestCase(start.util.readProjectProperty("Regression"))</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasource" name="DataSource" id="39606f23-bb1a-47e2-8ad5-02a087360e43">
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
+    </con:settings>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Grid">
+        <con:configuration>
+          <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_ErrorTesting_1_MXN_US_US_US_741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1_MXN_US_US_US_741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Low</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">88F8BA27-2FBC-4601-A055-E4BAA7BBDBFB</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ab${=java.time.LocalDateTime.now().format(java.time.format.DateTimeFormatter.ofPattern('yyMMddHHmmss'))}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">n0t@rland</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">MXN</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">107</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">The currency specified is not supported.</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_ErrorTesting_2_CAD_CA_CA_CA_741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">2_CAD_CA_CA_CA_741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Low</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">C27D7CDC-076E-4D62-98AA-AE45BF9B4B96</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ab${=java.time.LocalDateTime.now().format(java.time.format.DateTimeFormatter.ofPattern('yyMMddHHmmss'))}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">n0t@rland</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CAD</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">107</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">The currency specified is not supported.</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">18643 52 Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Surrey</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">BC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">V3S 8E5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">18643 52 Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Surrey</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">BC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">V3S 8E5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">18643 52 Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Surrey</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">BC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">V3S 8E5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_ErrorTesting_4_CAD_CA_CA_CA_741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">4_CAD_CA_CA_CA_741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Low</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">a9f2cae8-87d2-4569-88d3-c10e7ccb19ea</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ab${=java.time.LocalDateTime.now().format(java.time.format.DateTimeFormatter.ofPattern('yyMMddHHmmss'))}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">n0t@rland</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CAD</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">107</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">The postal code provided is invalid.</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">18643 52 Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Surrey</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">BC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Cheese</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">18643 52 Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Surrey</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">BC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Cheese</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">18643 52 Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Surrey</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">BC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Cheese</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_ErrorTesting_9__US_US_US_741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">5__US_US_US_741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Low</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">a9f2cae8-87d2-4569-88d3-c10e7ccb19ea</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ab${=java.time.LocalDateTime.now().format(java.time.format.DateTimeFormatter.ofPattern('yyMMddHHmmss'))}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">n0t@rland</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">95</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_ErrorTesting_10__US_US_US_741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">6__US_US_US_741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Low</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">88F8BA27-2FBC-4601-A055-E4BAA7BBDBFB</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ab${=java.time.LocalDateTime.now().format(java.time.format.DateTimeFormatter.ofPattern('yyMMddHHmmss'))}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">n0t@rland</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">95</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <recognizeAsPlainText>true</recognizeAsPlainText>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>AutomationKey</con:property>
+      <con:property>TestCaseName</con:property>
+      <con:property>Priority</con:property>
+      <con:property>IntegrationID</con:property>
+      <con:property>Username</con:property>
+      <con:property>Password</con:property>
+      <con:property>AccountType</con:property>
+      <con:property>Currency</con:property>
+      <con:property>Interface</con:property>
+      <con:property>FaultString</con:property>
+      <con:property>mAddress1</con:property>
+      <con:property>mCity</con:property>
+      <con:property>mState</con:property>
+      <con:property>mZip</con:property>
+      <con:property>mProvince</con:property>
+      <con:property>mPostalCode</con:property>
+      <con:property>mCountry</con:property>
+      <con:property>pAddress1</con:property>
+      <con:property>pCity</con:property>
+      <con:property>pState</con:property>
+      <con:property>pZip</con:property>
+      <con:property>pProvince</con:property>
+      <con:property>pPostalCode</con:property>
+      <con:property>pCountry</con:property>
+      <con:property>bAddress1</con:property>
+      <con:property>bCity</con:property>
+      <con:property>bState</con:property>
+      <con:property>bZip</con:property>
+      <con:property>bProvince</con:property>
+      <con:property>bPostalCode</con:property>
+      <con:property>bCountry</con:property>
+      <con:property>PromoCode</con:property>
+      <con:property>Regression</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="AddTestCaseToProject" id="0e823cac-8232-4fb0-8739-96c0b458d2dc" disabled="true">
+    <con:settings/>
+    <con:config service="TestrailWrappers" resourcePath="/ApiWrappers/tr/add_case_for_project/{ProjectName}" methodName="add_case_for_project_Post" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="AddTestCaseToProject" id="166e30c4-dd80-4a20-8ce4-a2b2b54f4d6f" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Username" value="${TestRails_Username}"/>
+  &lt;con:entry key="ApiKey" value="${TestRails_APIKey}"/>
+&lt;/xml-fragment></con:setting>
+        </con:settings>
+        <con:endpoint>http://qa-automate01-v</con:endpoint>
+        <con:request>{\r
+  "test_suite" : "Others-Complete-BAAS",\r
+  "section" : "ErrorTesting",\r
+  "title" : "${DataSource#TestCaseName}",\r
+  "priority" : "${DataSource#Priority}",\r
+  "automation_key" : "${DataSource#AutomationKey}",\r
+  "automation_type" : "SoapUI",\r
+  "regression_test" : ${DataSource#regression},\r
+  "custom_steps_separated" : [ {
+    "content" : "RegisterUser",
+    "expected" : "RegisterAccount failed."
+  }]
+}</con:request>
+        <con:originalUri>http://qa-automate01-v/ApiWrappers/tr/add_case_for_project/z_QA%20Server%20Sandbox</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="cac9a257-c45a-4816-8b3e-cc2b28d39ac3" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="ProjectName" value="${#Project#TestRailProjectName}"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop 2" id="68083a8a-0644-4c0b-b1e5-072484e4528d" disabled="true">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>AddTestCaseToProject</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Control" id="9609ed11-03cb-4eec-bdbf-d1df64a77291">
+    <con:settings/>
+    <con:config>
+      <script><![CDATA[def start = new soapUIScripts.startExec(context,"Project");
+def integrationID = context.expand( '${DataSource#IntegrationID}' )
+def username = context.expand( '${DataSource#Username}' )
+def password = context.expand( '${DataSource#Password}' )
+int swsimInterface = context.expand( '${DataSource#Interface}' ) as Integer;
+
+start.util.writeTestCaseProperty("Username", username)
+start.util.writeProjectProperty("Interface", swsimInterface.toString())
+new soapUIProperties.setProperties(context.testCase.testSuite.project);
+
+//Set Addresses
+Address physicalAddress;
+Address mailingAddress;
+Address billingAddress;
+Address lpoAddress;
+
+//Ingest CurrencyType
+if (context.expand( '${DataSource#Currency}' ) !="")
+	currency = context.expand( '${DataSource#Currency}' ) as CurrencyType;
+else
+	currency = "";
+	
+if (swsimInterface >= 106)
+	start.util.writeTestCaseProperty("currency",String.format("<sws:UserCurrency>%s</sws:UserCurrency>", currency.toString()));
+else
+	start.util.writeTestCaseProperty("currency","");
+
+//set addresses
+if (context.expand( '${DataSource#pCountry}' ) == "US")
+	physicalAddress = new SwsimAddress(
+		AddressType.Physical,
+		context.expand( '${DataSource#pAddress1}' ), 
+		context.expand( '${DataSource#pCity}' ), 
+		context.expand( '${DataSource#pState}' ), 
+		context.expand( '${DataSource#pZip}' ), 
+		context.expand( '${DataSource#pCountry}' ) 
+	);
+else
+	physicalAddress = new SwsimAddress(
+		AddressType.Physical, 
+		context.expand( '${DataSource#pAddress1}' ),
+		context.expand( '${DataSource#pCity}' ),
+		context.expand( '${DataSource#pProvince}' ),
+		context.expand( '${DataSource#pPostalCode}' ),
+		context.expand( '${DataSource#pCountry}' ) 
+	);
+if (context.expand( '${DataSource#mCountry}' ) == "US")
+	mailingAddress = new SwsimAddress(
+		AddressType.Mailing, 
+		context.expand( '${DataSource#mAddress1}' ), 
+		context.expand( '${DataSource#mCity}' ), 
+		context.expand( '${DataSource#mState}' ), 
+		context.expand( '${DataSource#mZip}' ), 
+		context.expand( '${DataSource#mCountry}' )
+	);
+else 
+	mailingAddress = new SwsimAddress(
+		AddressType.Mailing, context.expand( '${DataSource#mAddress1}' ),
+		context.expand( '${DataSource#mCity}' ), 
+		context.expand( '${DataSource#mProvince}' ), 
+		context.expand( '${DataSource#mPostalCode}' ), 
+		context.expand( '${DataSource#mCountry}' )
+	);
+if (context.expand( '${DataSource#bCountry}' ) == "US")
+	billingAddress = new SwsimAddress(
+		AddressType.Billing, 
+		context.expand( '${DataSource#bAddress1}' ), 
+		context.expand( '${DataSource#bCity}' ), 
+		context.expand( '${DataSource#bState}' ), 
+		context.expand( '${DataSource#bZip}' ), 
+		context.expand( '${DataSource#bCountry}' )
+	);
+else
+	billingAddress = new SwsimAddress(
+		AddressType.Billing, context.expand( '${DataSource#bAddress1}' ), 
+		context.expand( '${DataSource#bCity}' ), 
+		context.expand( '${DataSource#bProvince}' ), 
+		context.expand( '${DataSource#bPostalCode}' ), 
+		context.expand( '${DataSource#bCountry}' )
+	);	
+
+start.util.writeTestCaseProperty("physicalAddress", physicalAddress.getAddressObject());
+start.util.writeTestCaseProperty("mailingAddress", mailingAddress.getAddressObject());
+start.util.writeTestCaseProperty("billingAddress", billingAddress.getAddressObject());
+
+/*--This is the curtain, don't look behind it, its where the magic happens!!!--*/
+enum CurrencyType {
+	USD,
+	CAD,
+	AUD,
+	NZD,
+	GBP,
+	EUR,
+	MXN
+}
+enum AddressType{
+	Billing,
+	Physical,
+	Mailing
+}
+//needs bridge implementation
+abstract class Address{
+	AddressType addressType;
+	String address1;
+	String city;
+	String state;
+	String zip;
+	String province;
+	String postalCode;
+	String country;
+
+	public Address(AddressType addressType, String address1, String city, String state, String zip, String country){
+		this.addressType = addressType;
+		this.address1 = address1;
+		this.city = city;
+		this.state = state;
+		this.zip = zip;
+		this.country = country;
+	}
+	public abstract getAddressObject();
+
+}
+class SwsimAddress extends Address {
+	public SwsimAddress(AddressType addressType, String address1, String city, String state, String zip, String country){
+		super(addressType, address1, city, state, zip, country);
+	}
+
+	@Override
+	public String getAddressObject(){
+        def headerFooter = getSwsimHeaderFooter(this.addressType);
+        def genericAddress =getGenericSwsimAddressObject();
+        return String.format(headerFooter,genericAddress);
+		}
+		
+	private String getSwsimHeaderFooter(AddressType addressType){
+		String headerFooter;
+		switch(addressType){
+			case AddressType.Physical:
+				headerFooter = '''
+				<sws:PhysicalAddress>
+				%s
+				</sws:PhysicalAddress>
+				''';
+				break;
+			case AddressType.Mailing:
+				headerFooter = '''
+				<sws:MailingAddress>
+				%s
+				</sws:MailingAddress>
+				''';
+				break;
+			case AddressType.Billing:
+				headerFooter = '''
+				<sws:BillingAddress>
+				%s
+				</sws:BillingAddress>
+				''';
+				break;
+		}
+	}
+	private String getGenericSwsimAddressObject(){
+			String localInfo;
+			String domestic = '''
+               <sws:State>%s</sws:State>
+               <sws:ZIPCode>%s</sws:ZIPCode>
+               ''';
+               String international = '''
+               <sws:Province>%s</sws:Province>
+               <sws:PostalCode>%s</sws:PostalCode>
+               ''';
+			String genericAddress ='''
+               <sws:FirstName>Bruce</sws:FirstName>
+               <sws:LastName>Wayne</sws:LastName>
+               <sws:Address1>%s</sws:Address1>
+               <sws:City>%s</sws:City>
+               %s
+               <sws:Country>%s</sws:Country>
+               <sws:PhoneNumber>3104825875</sws:PhoneNumber>
+               <sws:EmailAddress>abaskett@stamps.com</sws:EmailAddress>
+			''';
+			if (this.country == "US")
+				localInfo = String.format(domestic, this.state, this.zip);
+			else
+				localInfo =String.format(international, this.state, this.zip);
+
+			return String.format(genericAddress, this.address1, this.city, localInfo, this.country);
+	}
+}]]></script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="2f2bd3ab-bec2-4fe2-a480-e063249f61f6" name="RegisterAccount">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV100Soap</con:interface>
+      <con:operation>RegisterAccount</con:operation>
+      <con:request name="RegisterAccount" id="71a89169-9928-4062-a8ba-3ba358475c54">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SOAPAction" value="${#Project#Namespace}/RegisterAccount" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:RegisterAccount>
+         <sws:IntegrationID>${DataSource#IntegrationID}</sws:IntegrationID>
+         <sws:UserName>${DataSource#Username}</sws:UserName>
+         <sws:Password>${DataSource#Password}</sws:Password>
+         <sws:Codeword1Type>Last4SocialSecurityNumber</sws:Codeword1Type>
+         <sws:Codeword1>1234</sws:Codeword1>
+         <sws:Codeword2Type>Last4DriversLicense</sws:Codeword2Type>
+         <sws:Codeword2>1234</sws:Codeword2>
+         ${#TestCase#physicalAddress}
+         ${#TestCase#mailingAddress}
+         <sws:MachineInfo>
+            <sws:IPAddress>10.10.10.10</sws:IPAddress>
+         </sws:MachineInfo>
+         <sws:Email>abaskett@stamps.com</sws:Email>
+         <sws:AccountType>OfficeBasedBusiness</sws:AccountType>
+         <sws:PromoCode>${DataSource#Promocode}</sws:PromoCode>
+         <sws:CreditCard>
+            <sws:CreditCardType>Visa</sws:CreditCardType>
+            <sws:AccountNumber>4111111111111111</sws:AccountNumber>
+            <sws:CVN>321</sws:CVN>
+            <sws:ExpirationDate>2025-08-18T00:00:00.000-07:00</sws:ExpirationDate>
+            ${#TestCase#billingAddress}
+         </sws:CreditCard>
+          ${#TestCase#currency}
+      </sws:RegisterAccount>
+	<sws1:RegisterAccount xmlns:sws1="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100"><sws1:IntegrationID/><sws1:UserName/><sws1:Password/><sws1:PhysicalAddress/><sws1:MachineInfo><sws1:IPAddress/></sws1:MachineInfo><sws1:Email/><sws1:AccountType/></sws1:RegisterAccount></soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/RegisterAccount" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Assert" id="e6c73f17-3d12-435f-a2c7-63dbab327cf4">
+    <con:settings/>
+    <con:config>
+      <script>def start = new soapUIScripts.startExec(context,"Project");
+def faultString =context.expand( '${DataSource#FaultString}' )
+
+String response = start.util.readTestStepProperty("RegisterAccount","Response");
+
+//Ahhh ffff assert it
+//Assert it real good
+//Oooh, baby, baby
+//FS Assertions here and its in effect
+//Want you to assert it babe
+//Executing by day then at night asserting up a sweat
+
+def fsAssertion = start.fsassertor.assertFaultString(response, faultString)
+//log.info(fsAssertion.match)
+//log.info(fsAssertion.faultStringResponse)
+//log.info(fsAssertion.faultStringMessage)
+
+if (!fsAssertion.match)
+{
+	def responseFaultString = start.util.readXMLNodeValue(response,"//faultstring[1]")
+	start.narc.addError(String.format("%s Datasource:%s Response: %s",fsAssertion.faultStringMessage, faultString, responseFaultString))
+}
+
+start.narc.report()</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="DataSink" id="50187d7b-d8b6-42be-b691-aa62ee454115">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="SubReport">
+        <con:configuration/>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>TestCaseName</con:name>
+          <con:value>${DataSource#TestCaseName}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Status</con:name>
+          <con:value>Pass</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Error Message</con:name>
+          <con:value/>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="AddResult" id="68ab1cfc-2a87-4b25-8579-2e516c1ba54d">
+    <con:settings/>
+    <con:config service="TestrailWrappers" resourcePath="/ApiWrappers/tr/add_result_for_automationkey/{RunId}/{AutomationKey}" methodName="add_result_for_automationkey_Post" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="AddResult" id="5fec41d3-9875-4fce-a579-e69ff171d922" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Username" value="${TestRails_Username}"/>
+  &lt;con:entry key="ApiKey" value="${TestRails_APIKey}"/>
+&lt;/xml-fragment></con:setting>
+        </con:settings>
+        <con:endpoint>http://qa-automate01-v</con:endpoint>
+        <con:request>{"status_id":"Pass","comment":"","version":""}</con:request>
+        <con:originalUri>http://qa-automate01-v/ApiWrappers/tr/add_result_for_automationkey/Infrastructure-Wallet-as-a-Service_Registration_2_CAD_CA_CA_CA_Pluto8936</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="66205c9e-1ed7-40c6-bb10-94c4e041cd74" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="AutomationKey" value="${DataSource#AutomationKey}"/>
+          <con:entry key="RunId" value="${#Project#RunId}"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="1b48d545-1523-4bb8-861f-46f965e96640">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>Control</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Exit Script" id="642d31ab-bb8d-41ca-ac25-47daf866437b">
+    <con:settings/>
+    <con:config>
+      <script>def start = new soapUIScripts.startExec(context, "Project")
+def slackChannel = context.expand( '${#Project#SlackChannel}' )
+start.common.slackreport("DataSink", slackChannel)</script>
+    </con:config>
+  </con:testStep>
+  <con:properties>
+    <con:property>
+      <con:name>LogFileLocation</con:name>
+      <con:value>C:\temp\Registration_Registration_12_08_2020_15_06_08/</con:value>
+    </con:property>
+    <con:property>
+      <con:name>physicalAddress</con:name>
+      <con:value><![CDATA[<sws:PhysicalAddress>
+				
+               <sws:FirstName>Bruce</sws:FirstName>
+               <sws:LastName>Wayne</sws:LastName>
+               <sws:Address1>1990 E Grand Ave</sws:Address1>
+               <sws:City>El Segundo</sws:City>
+               
+               <sws:State>CA</sws:State>
+               <sws:ZIPCode>90245</sws:ZIPCode>
+               
+               <sws:Country>US</sws:Country>
+               <sws:PhoneNumber>3104825875</sws:PhoneNumber>
+               <sws:EmailAddress>abaskett@stamps.com</sws:EmailAddress>
+			
+				</sws:PhysicalAddress>]]></con:value>
+    </con:property>
+    <con:property>
+      <con:name>mailingAddress</con:name>
+      <con:value><![CDATA[<sws:MailingAddress>
+				
+               <sws:FirstName>Bruce</sws:FirstName>
+               <sws:LastName>Wayne</sws:LastName>
+               <sws:Address1>1990 E Grand Ave</sws:Address1>
+               <sws:City>El Segundo</sws:City>
+               
+               <sws:State>CA</sws:State>
+               <sws:ZIPCode>90245</sws:ZIPCode>
+               
+               <sws:Country>US</sws:Country>
+               <sws:PhoneNumber>3104825875</sws:PhoneNumber>
+               <sws:EmailAddress>abaskett@stamps.com</sws:EmailAddress>
+			
+				</sws:MailingAddress>]]></con:value>
+    </con:property>
+    <con:property>
+      <con:name>billingAddress</con:name>
+      <con:value><![CDATA[<sws:BillingAddress>
+				
+               <sws:FirstName>Bruce</sws:FirstName>
+               <sws:LastName>Wayne</sws:LastName>
+               <sws:Address1>1990 E Grand Ave</sws:Address1>
+               <sws:City>El Segundo</sws:City>
+               
+               <sws:State>CA</sws:State>
+               <sws:ZIPCode>90245</sws:ZIPCode>
+               
+               <sws:Country>US</sws:Country>
+               <sws:PhoneNumber>3104825875</sws:PhoneNumber>
+               <sws:EmailAddress>abaskett@stamps.com</sws:EmailAddress>
+			
+				</sws:BillingAddress>]]></con:value>
+    </con:property>
+    <con:property>
+      <con:name>lpoAddress</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>Username</con:name>
+      <con:value>ab210712092201</con:value>
+    </con:property>
+    <con:property>
+      <con:name>currency</con:name>
+      <con:value/>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>8fdd5734-a018-4ba6-9092-be0d5b85082f</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>f0cadf6c-d353-48c3-a122-3731583548ed</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>1071a8c0-2f1c-486c-b58e-f81d570aa9f7</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>6c544b18-4082-45b0-9c54-19f9ed181934</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>1d47ab5c-cd18-496d-8199-8ee450168a42</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>ea08ccd7-5c33-4767-8450-781d8b566d04</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>e58c152a-4f8b-4b02-aa20-1c29bb21b93d</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>732c1632-5864-4e2d-b89f-680f0da689ad</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>0c2a58ac-b1a0-4ace-9fcd-38748e23c113</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>528db191-0171-4679-b237-152be53b5553</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>65082f86-2da6-4e0b-a1d6-21856c6e3d5d</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>f522dd53-1852-41f1-8347-c41bcb9db7ee</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>b299f669-96a5-49a3-89cb-aee396173d85</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>72873327-3f65-4a69-91f3-9aa016ddc28e</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>9efd032f-f5c9-4327-af91-a97f1d673372</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/throttle/{username}/GetThrottlingRate" path="/throttle/{username}/GetThrottlingRate" id="843a3ee6-14ba-48da-b68f-c532b3af54a8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c79eb525-4ba0-4e49-ac32-a67c6d23dc2cfileName">%2Fthrottle%2F%7Busername%7D%2FGetThrottlingRate</con:setting>
+    <con:setting id="843a3ee6-14ba-48da-b68f-c532b3af54a8fileName">%2Fthrottle%2F%7Busername%7D%2FGetThrottlingRate</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>username</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Throttle_GetThrottlingRate" id="e7971a5e-f967-40af-94f4-73b97316a43b" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>throttleID</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="f5acd716-5b46-4960-8e2e-3192ce2f6fb9" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="throttleID" value=""/>
+        <con:entry key="username" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

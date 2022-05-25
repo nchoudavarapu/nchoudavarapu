@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/CreatePaymentAccount" path="/customers/CreatePaymentAccount" id="85eabbde-8d3a-4e2b-81a4-f5939b0bbf4a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="762169d0-1d6d-4602-a249-a6c832c8ac53fileName">%2Fcustomers%2FCreatePaymentAccount</con:setting>
+    <con:setting id="4383c2aa-fe0b-4842-b20d-51cbc0d68352fileName">%2Fcustomers%2FCreatePaymentAccount</con:setting>
+    <con:setting id="85eabbde-8d3a-4e2b-81a4-f5939b0bbf4afileName">%2Fcustomers%2FCreatePaymentAccount</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="CreatePaymentAccount" id="9af1cfe9-02a4-4b15-9341-4834e92d4b46" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="aecf0b47-d212-4a8c-997e-543811efdfc7" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

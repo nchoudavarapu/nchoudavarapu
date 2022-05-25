@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/platform-defaults" path="/platform-management/platform-defaults" id="6ad45398-4d01-4d9e-b014-2105dfe73043" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e886492b-fd5b-4f39-8f5b-b63afd64646ffileName">%2Fplatform-management%2Fplatform-defaults</con:setting>
+    <con:setting id="6ad45398-4d01-4d9e-b014-2105dfe73043fileName">%2Fplatform-management%2Fplatform-defaults</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetPlatformDefaults" id="2f53261b-f08e-4c4e-a3ff-012f55f1b24f" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="28be51eb-d552-40d6-a440-1c09f3a8984c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

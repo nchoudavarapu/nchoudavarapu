@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="1f0eec61-66fb-4180-a47d-344e3fe7e1a9" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/EnumCostCodes" name="EnumCostCodes" bindingOperationName="EnumCostCodes" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="304df85c-6a74-4992-b02d-ad0fbc91bcbbfileName">EnumCostCodes</con:setting>
+    <con:setting id="bcad3c69-fc63-477c-8802-e3e37569d56efileName">EnumCostCodes</con:setting>
+    <con:setting id="1f0eec61-66fb-4180-a47d-344e3fe7e1a9fileName">EnumCostCodes</con:setting>
+  </con:settings>
+  <con:call id="66ffdee0-8882-4544-b045-01fbddb10e18" name="EnumCostCodes Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:EnumCostCodes>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+      </sws:EnumCostCodes>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/EnumCostCodes"/>
+  </con:call>
+</con:operation>

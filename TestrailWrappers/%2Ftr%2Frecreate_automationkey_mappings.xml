@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/tr/recreate_automationkey_mappings" path="/tr/recreate_automationkey_mappings" id="5e7cc5d6-334c-47fd-b4fa-d6b680497e72" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="23880f97-4911-4b4a-a95f-82ae140f46eafileName">%2Ftr%2Frecreate_automationkey_mappings</con:setting>
+    <con:setting id="5e7cc5d6-334c-47fd-b4fa-d6b680497e72fileName">%2Ftr%2Frecreate_automationkey_mappings</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="recreate_automationkey_mappings_Get" id="2faf397f-dcae-4b7c-a278-de9d2721e724" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{ }</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="ecaff57a-2b67-44a5-8e51-3b5d262eafe9" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Username" value="${TestRails_UserName}"/>
+  &lt;con:entry key="Apikey" value="${TestRails_APIKey}"/>
+&lt;/xml-fragment></con:setting>
+      </con:settings>
+      <con:endpoint>http://qa-automate01-v</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://qa-automate01-v/ApiWrappers/tr/recreate_automationkey_mappings</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

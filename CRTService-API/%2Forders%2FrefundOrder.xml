@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/orders/refundOrder" path="/orders/refundOrder" id="51b01158-18e1-4173-b037-1a6b82b7e067" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="dc98c029-f9a1-4549-a994-ee7ec7f58b13fileName">%2Forders%2FrefundOrder</con:setting>
+    <con:setting id="6b399453-cce0-4ed8-92da-8a54f4dc1bf4fileName">%2Forders%2FrefundOrder</con:setting>
+    <con:setting id="51b01158-18e1-4173-b037-1a6b82b7e067fileName">%2Forders%2FrefundOrder</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="RefundOrder" id="ae906301-f2a8-4074-a0f8-6939ec68f1ea" method="POST">
+    <con:description>Refund an order</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>"string"</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="d3de6282-e7ab-4857-aa91-8585a96848ec" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

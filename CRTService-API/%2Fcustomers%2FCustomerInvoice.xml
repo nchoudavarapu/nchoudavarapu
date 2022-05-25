@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/CustomerInvoice" path="/customers/CustomerInvoice" id="16c029a4-8534-4b07-baec-605db1fc862f" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0d4332f0-9041-4b05-845b-4dbae8c118cffileName">%2Fcustomers%2FCustomerInvoice</con:setting>
+    <con:setting id="06aab39d-ceb0-4ec5-b502-c5ed70df227afileName">%2Fcustomers%2FCustomerInvoice</con:setting>
+    <con:setting id="16c029a4-8534-4b07-baec-605db1fc862ffileName">%2Fcustomers%2FCustomerInvoice</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="SetCustomerInvoice" id="fd7599e2-4500-40cb-a362-89593cf40cdf" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="eed6712e-33b8-4d03-9bee-e07894d6f23f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

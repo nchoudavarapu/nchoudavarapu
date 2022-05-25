@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="bcc7a293-0e00-4740-bf7d-01e9b27b5e6f" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/StartAccountVerification" name="StartAccountVerification" bindingOperationName="StartAccountVerification" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9307808d-c20f-492f-8826-9312bf196f8bfileName">StartAccountVerification</con:setting>
+    <con:setting id="8e488024-6ace-4b87-865b-40f872ce985bfileName">StartAccountVerification</con:setting>
+    <con:setting id="bcc7a293-0e00-4740-bf7d-01e9b27b5e6ffileName">StartAccountVerification</con:setting>
+  </con:settings>
+  <con:call id="20b5e690-8edd-4142-abf4-3c8411aad743" name="StartAccountVerification Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:StartAccountVerification>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:PhoneNumber>?</sws:PhoneNumber>\r
+         <!--Optional:-->\r
+         <sws:Extension>?</sws:Extension>\r
+         <sws:PhoneVerificationOption>?</sws:PhoneVerificationOption>\r
+      </sws:StartAccountVerification>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/StartAccountVerification"/>
+    <con:wsrmConfig version="1.2"/>
+  </con:call>
+</con:operation>

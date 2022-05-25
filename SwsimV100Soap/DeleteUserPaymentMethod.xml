@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="254026cc-bd8a-444b-8cc8-cde1940e7b6b" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/DeleteUserPaymentMethod" name="DeleteUserPaymentMethod" bindingOperationName="DeleteUserPaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="77289399-ab91-42e0-a2d3-901b4f870539fileName">DeleteUserPaymentMethod</con:setting>
+    <con:setting id="808523b0-e09e-4cca-953a-21d1954b5d68fileName">DeleteUserPaymentMethod</con:setting>
+    <con:setting id="254026cc-bd8a-444b-8cc8-cde1940e7b6bfileName">DeleteUserPaymentMethod</con:setting>
+  </con:settings>
+</con:operation>

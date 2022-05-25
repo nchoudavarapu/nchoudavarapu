@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="2c994133-8864-4a8d-b141-f8c90a13fc4a" discardOkResults="true" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Validate Registration" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0472e211-76b8-4474-a992-2026fb50e61ffileName">Validate-Registration</con:setting>
+    <con:setting id="6ae36098-93c6-48d6-8e63-2b5f28720606fileName">Validate-Registration</con:setting>
+    <con:setting id="2c994133-8864-4a8d-b141-f8c90a13fc4afileName">Validate-Registration</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="request" id="1312af37-9ebb-4ff5-bb56-ed14b80cbd40" name="GetSWSIMHealthcheck" disabled="true">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>ServerSoap</con:interface>
+      <con:operation>CheckServerHealth</con:operation>
+      <con:request name="GetSWSIMHealthcheck" id="679423fc-bd85-4cc8-badd-18d951809109">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://qa-automate01-v.corp.stamps.com/tws/server.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://qa-automate01-v/tws/server">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:CheckServerHealth>
+         <!--Optional:-->
+         <ser:Environment>${#Project#Environment}</ser:Environment>
+         <!--Optional:-->
+         <ser:Farm>SWSIM</ser:Farm>
+         <!--Optional:-->
+         <ser:Service>SWSIM</ser:Service>
+      </ser:CheckServerHealth>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="SOAP Fault Assertion" id="e05be2a3-aa35-445e-be3c-6db5db676e2f" name="Not SOAP Fault"/>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="http://qa-automate01-v/tws/server/CheckServerHealth" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasource" name="DataSource" id="dd036daa-6c9f-405f-ac29-c9870c234f71">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Grid">
+        <con:configuration>
+          <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry></xml-fragment>]]></check>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_Registration_1_USD_US_US_US_ShipStationFXWL</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1_USD_US_US_US_ShipStationFXWL</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">88F8BA27-2FBC-4601-A055-E4BAA7BBDBFB</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ab220525140805</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">n0t@rland</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">USD</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">107</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ShipStationFXWL</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">{"UserName":"ab220525140805","CompanyName":null,"UserFullName":{"FullName":null,"FirstName":"Bruce","Middlename":null,"LastName":"Wayne"},"Merchant":"ShipStation","MeterProvider":"Stamps.com","AccountType":1,"RateSetType":1,"Platform":95,"ResellerAccountId":"5000390043","IsSasDmc":false,"IsBackendMeter":false,"CorpId":null,"ProfileId":"10000034684","TermsVersion":9,"TermsDescription":"This version of the General Terms allows:\nGlobalPost\nAuto-Refund\nUSPS Shipping Labels\n","UserRole":"Meter Admin, Meter User","CurrentNoOfUsers":1,"HasUspsRep":false,"SingleSignOnEnabled":false,"ShipWorkLink":"","OmasAccountId":null,"EpsAccount":"","GppUsername":"2F1450AE-EBD6-46F3-8289-605577C538CF (SWSIM/ELS)","PlatformConfigurationType":null,"AccountStatus":0,"StatusReason":0,"UserStatus":1,"ResubmissionRequired":false,"LicenseStatus":0,"DateOpened":"2022-05-25T21:08:06.867","DateClosed":null,"TrialEndDate":"2022-06-23T14:08:06.867","LastPrintDate":null,"CustFullName":{"FullName":null,"FirstName":"Bruce","Middlename":" ","LastName":"Wayne"},"MailingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"},"PhysicalAddress":{"Street":"1990 E GRAND AVE","City":"EL SEGUNDO","State":"CA","Zip":"90245-5013"},"UserEmailAddress":"abaskett@stamps.com","CompanyEmailAddress":"abaskett@stamps.com","PhoneNumber":"3104825875","StoreBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"ServiceBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"PostageBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"PostageDefaultedAsServiceBilling":false,"CurrentPricingPlan":{"Sku":1020294.0,"Name":"Stamps.com Pro Plan - ShipStation FedEx 0294","MonthlyFee":0.0000,"AnnualFee":0.0000},"MultiUserPlan":true,"PendingPricingPlan":null,"NextStatementDate":"2022-05-25T00:00:00","IsLabelFeeRateEnabled":false,"IsZeroPostageBalanceEnabled":false,"PromoCode":"ShipStationFXWL","OfferName":"Pro_50_50_Nowk_ShipStation_Plat48_FedEx_StandardRate_SSBrand","OfferDescription":"","RegistrationCookie":"","DuplicatePromoCheck":1,"CurrentBalance":0.0000,"TotalLabelsPrinted":0,"PurchasedAndCredited":0.0,"TotalPostagePurchased":0.0,"InitialFreePostage":0.0000,"Comment":"","ActiveUsers":[{"UserId":3218756,"UserName":"ab220525140805","UserRoles":"Meter Admin, Meter User","PerPrintLimit":null,"PurchasePostageEnabled":true,"FedExEnabled":null,"StoreEnabled":true,"CostCodeRequired":false}],"InactiveUsers":null,"CanUsePPL":false,"OwnerDivisionId":1,"AccountProtectionLevel":"Un-Shielded","AccountProtectionType":"Standard","BalanceId":null,"Currency":"USD"}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_7_USD_US_US_US_ShipStationFXWL</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">7_USD_US_US_US_ShipStationFXWL</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A9F2CAE8-87D2-4569-88D3-C10E7CCB19EA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ab220525140811</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">n0t@rland</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">USD</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">107</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">741-omKLwa</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">{"UserName":"ab220525140811","CompanyName":null,"UserFullName":{"FullName":null,"FirstName":"Bruce","Middlename":null,"LastName":"Wayne"},"Merchant":"ShipStation","MeterProvider":"Stamps.com","AccountType":1,"RateSetType":1,"Platform":95,"ResellerAccountId":"5000390044","IsSasDmc":false,"IsBackendMeter":false,"CorpId":null,"ProfileId":"10000034685","TermsVersion":9,"TermsDescription":"This version of the General Terms allows:\nGlobalPost\nAuto-Refund\nUSPS Shipping Labels\n","UserRole":"Meter Admin, Meter User","CurrentNoOfUsers":1,"HasUspsRep":false,"SingleSignOnEnabled":false,"ShipWorkLink":"","OmasAccountId":null,"EpsAccount":"","GppUsername":"A3CB88A1-CC21-427F-A974-1318C7CB2276 (SWSIM/ELS)","PlatformConfigurationType":null,"AccountStatus":0,"StatusReason":0,"UserStatus":1,"ResubmissionRequired":false,"LicenseStatus":0,"DateOpened":"2022-05-25T21:08:12.8","DateClosed":null,"TrialEndDate":"2022-06-23T14:08:12.8","LastPrintDate":null,"CustFullName":{"FullName":null,"FirstName":"Bruce","Middlename":" ","LastName":"Wayne"},"MailingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"},"PhysicalAddress":{"Street":"1990 E GRAND AVE","City":"EL SEGUNDO","State":"CA","Zip":"90245-5013"},"UserEmailAddress":"abaskett@stamps.com","CompanyEmailAddress":"abaskett@stamps.com","PhoneNumber":"3104825875","StoreBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"ServiceBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"PostageBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"PostageDefaultedAsServiceBilling":false,"CurrentPricingPlan":{"Sku":1020294.0,"Name":"Stamps.com Pro Plan - ShipStation FedEx 0294","MonthlyFee":0.0000,"AnnualFee":0.0000},"MultiUserPlan":true,"PendingPricingPlan":null,"NextStatementDate":"2022-05-25T00:00:00","IsLabelFeeRateEnabled":false,"IsZeroPostageBalanceEnabled":false,"PromoCode":"741-omKLwa","OfferName":"Pro_50_50_Nowk_ShipStation_MCW_SSBrand","OfferDescription":"","RegistrationCookie":"","DuplicatePromoCheck":1,"CurrentBalance":0.0000,"TotalLabelsPrinted":0,"PurchasedAndCredited":0.0,"TotalPostagePurchased":0.0,"InitialFreePostage":0.0000,"Comment":"","ActiveUsers":[{"UserId":3218757,"UserName":"ab220525140811","UserRoles":"Meter Admin, Meter User","PerPrintLimit":null,"PurchasePostageEnabled":true,"FedExEnabled":null,"StoreEnabled":true,"CostCodeRequired":false}],"InactiveUsers":null,"CanUsePPL":false,"OwnerDivisionId":1,"AccountProtectionLevel":"Un-Shielded","AccountProtectionType":"Standard","BalanceId":null,"Currency":"USD"}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_13__US_US_US_ShipStationFXWL</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">13__US_US_US_ShipStationFXWL</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Low</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A9F2CAE8-87D2-4569-88D3-C10E7CCB19EA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ab220525140817</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">n0t@rland</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">107</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">{"UserName":"ab220525140817","CompanyName":null,"UserFullName":{"FullName":null,"FirstName":"Bruce","Middlename":null,"LastName":"Wayne"},"Merchant":"Stamps.com","MeterProvider":"Stamps.com","AccountType":0,"RateSetType":1,"Platform":null,"ResellerAccountId":null,"IsSasDmc":false,"IsBackendMeter":false,"CorpId":null,"ProfileId":"10000034686","TermsVersion":9,"TermsDescription":"This version of the General Terms allows:\nAuto-Refund\nUSPS Shipping Labels\n","UserRole":"Meter Admin, Meter User","CurrentNoOfUsers":1,"HasUspsRep":false,"SingleSignOnEnabled":false,"ShipWorkLink":"","OmasAccountId":null,"EpsAccount":"","GppUsername":"","PlatformConfigurationType":null,"AccountStatus":0,"StatusReason":0,"UserStatus":1,"ResubmissionRequired":false,"LicenseStatus":0,"DateOpened":"2022-05-25T21:08:18.747","DateClosed":null,"TrialEndDate":"2022-06-23T14:08:18.747","LastPrintDate":null,"CustFullName":{"FullName":null,"FirstName":"Bruce","Middlename":" ","LastName":"Wayne"},"MailingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"},"PhysicalAddress":{"Street":"1990 E GRAND AVE","City":"EL SEGUNDO","State":"CA","Zip":"90245-5013"},"UserEmailAddress":"abaskett@stamps.com","CompanyEmailAddress":"abaskett@stamps.com","PhoneNumber":"3104825875","StoreBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"ServiceBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"PostageBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"PostageDefaultedAsServiceBilling":false,"CurrentPricingPlan":{"Sku":1020225.0,"Name":"Stamps.com Pro Plan - SWS ONLY 0225","MonthlyFee":0.0000,"AnnualFee":0.0000},"MultiUserPlan":false,"PendingPricingPlan":null,"NextStatementDate":"2022-05-25T00:00:00","IsLabelFeeRateEnabled":false,"IsZeroPostageBalanceEnabled":false,"PromoCode":"","OfferName":"Pro_50offscale_50offprinter_Nowk_0month_1","OfferDescription":"Stamps.com Pro\r\n$0 monthly /4-week Trial / $0 free postage / $0 postage / \r\n$50 Off Scale / $50 Off Printer / Shipper letter\r\n","RegistrationCookie":"","DuplicatePromoCheck":1,"CurrentBalance":0.0000,"TotalLabelsPrinted":0,"PurchasedAndCredited":0.0000,"TotalPostagePurchased":0.0,"InitialFreePostage":0.0000,"Comment":"","ActiveUsers":[{"UserId":3218758,"UserName":"ab220525140817","UserRoles":"Meter Admin, Meter User","PerPrintLimit":null,"PurchasePostageEnabled":true,"FedExEnabled":null,"StoreEnabled":true,"CostCodeRequired":false}],"InactiveUsers":null,"CanUsePPL":false,"OwnerDivisionId":1,"AccountProtectionLevel":"Un-Shielded","AccountProtectionType":"Standard","BalanceId":null,"Currency":"USD"}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_21_USD_US_US_US_ShipStationFXWL</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">21_USD_US_US_US_ShipStationFXWL</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">88F8BA27-2FBC-4601-A055-E4BAA7BBDBFB</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ab220525140825</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">n0t@rland</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">USD</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">107</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">2863 W 235th St</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Torrance</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90505</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">2863 W 235th St</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Torrance</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90505</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">2863 W 235th St</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Torrance</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90505</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ShipStationFXWL</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">{"UserName":"ab220525140825","CompanyName":null,"UserFullName":{"FullName":null,"FirstName":"Bruce","Middlename":null,"LastName":"Wayne"},"Merchant":"ShipStation","MeterProvider":"Stamps.com","AccountType":1,"RateSetType":1,"Platform":95,"ResellerAccountId":"5000390045","IsSasDmc":false,"IsBackendMeter":false,"CorpId":null,"ProfileId":"10000034688","TermsVersion":9,"TermsDescription":"This version of the General Terms allows:\nGlobalPost\nAuto-Refund\nUSPS Shipping Labels\n","UserRole":"Meter Admin, Meter User","CurrentNoOfUsers":1,"HasUspsRep":false,"SingleSignOnEnabled":false,"ShipWorkLink":"","OmasAccountId":null,"EpsAccount":"","GppUsername":"ED619B69-FE48-46C2-AD8B-4D6128E3C5D1 (SWSIM/ELS)","PlatformConfigurationType":null,"AccountStatus":0,"StatusReason":0,"UserStatus":1,"ResubmissionRequired":false,"LicenseStatus":0,"DateOpened":"2022-05-25T21:08:27.213","DateClosed":null,"TrialEndDate":"2022-06-23T14:08:27.213","LastPrintDate":null,"CustFullName":{"FullName":null,"FirstName":"Bruce","Middlename":" ","LastName":"Wayne"},"MailingAddress":{"Street":"2863 W 235th St","City":"Torrance","State":"CA","Zip":"90505"},"PhysicalAddress":{"Street":"2863 W 235TH ST","City":"TORRANCE","State":"CA","Zip":"90505-4136"},"UserEmailAddress":"abaskett@stamps.com","CompanyEmailAddress":"abaskett@stamps.com","PhoneNumber":"3104825875","StoreBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"2863 W 235th St","City":"Torrance","State":"CA","Zip":"90505"}},"ServiceBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"2863 W 235th St","City":"Torrance","State":"CA","Zip":"90505"}},"PostageBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"2863 W 235th St","City":"Torrance","State":"CA","Zip":"90505"}},"PostageDefaultedAsServiceBilling":false,"CurrentPricingPlan":{"Sku":1020294.0,"Name":"Stamps.com Pro Plan - ShipStation FedEx 0294","MonthlyFee":0.0000,"AnnualFee":0.0000},"MultiUserPlan":true,"PendingPricingPlan":null,"NextStatementDate":"2022-05-25T00:00:00","IsLabelFeeRateEnabled":false,"IsZeroPostageBalanceEnabled":false,"PromoCode":"ShipStationFXWL","OfferName":"Pro_50_50_Nowk_ShipStation_Plat48_FedEx_StandardRate_SSBrand","OfferDescription":"","RegistrationCookie":"","DuplicatePromoCheck":1,"CurrentBalance":0.0000,"TotalLabelsPrinted":0,"PurchasedAndCredited":0.0,"TotalPostagePurchased":0.0,"InitialFreePostage":0.0000,"Comment":"","ActiveUsers":[{"UserId":3218759,"UserName":"ab220525140825","UserRoles":"Meter Admin, Meter User","PerPrintLimit":null,"PurchasePostageEnabled":true,"FedExEnabled":null,"StoreEnabled":true,"CostCodeRequired":false}],"InactiveUsers":null,"CanUsePPL":false,"OwnerDivisionId":1,"AccountProtectionLevel":"Un-Shielded","AccountProtectionType":"Standard","BalanceId":null,"Currency":"USD"}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_22_USD_US_US_US_ShipStationFXWL_Core</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">22_USD_US_US_US_ShipStationFXWL_Core</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">88F8BA27-2FBC-4601-A055-E4BAA7BBDBFB</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ni220525140827</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Welc0me!</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CORE</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">USD</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">107</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">2863 W 235th St</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Torrance</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90505</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">2863 W 235th St</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Torrance</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90505</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">2863 W 235th St</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Torrance</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90505</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">{"UserName":"ni220525140827","CompanyName":null,"UserFullName":{"FullName":null,"FirstName":"Bruce","Middlename":null,"LastName":"Wayne"},"Merchant":"Stamps.com","MeterProvider":"Stamps.com","AccountType":0,"RateSetType":1,"Platform":null,"ResellerAccountId":null,"IsSasDmc":false,"IsBackendMeter":false,"CorpId":null,"ProfileId":"10000034690","TermsVersion":9,"TermsDescription":"This version of the General Terms allows:\nAuto-Refund\nUSPS Shipping Labels\n","UserRole":"Meter Admin, Meter User","CurrentNoOfUsers":1,"HasUspsRep":false,"SingleSignOnEnabled":false,"ShipWorkLink":"","OmasAccountId":null,"EpsAccount":"","GppUsername":"","PlatformConfigurationType":null,"AccountStatus":0,"StatusReason":0,"UserStatus":1,"ResubmissionRequired":false,"LicenseStatus":0,"DateOpened":"2022-05-25T21:08:28.94","DateClosed":null,"TrialEndDate":"2022-06-23T14:08:28.94","LastPrintDate":null,"CustFullName":{"FullName":null,"FirstName":"Bruce","Middlename":" ","LastName":"Wayne"},"MailingAddress":{"Street":"2863 W 235th St","City":"Torrance","State":"CA","Zip":"90505"},"PhysicalAddress":{"Street":"2863 W 235TH ST","City":"TORRANCE","State":"CA","Zip":"90505-4136"},"UserEmailAddress":"abaskett@stamps.com","CompanyEmailAddress":"abaskett@stamps.com","PhoneNumber":"3104825875","StoreBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"2863 W 235th St","City":"Torrance","State":"CA","Zip":"90505"}},"ServiceBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"2863 W 235th St","City":"Torrance","State":"CA","Zip":"90505"}},"PostageBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"2863 W 235th St","City":"Torrance","State":"CA","Zip":"90505"}},"PostageDefaultedAsServiceBilling":false,"CurrentPricingPlan":{"Sku":1020225.0,"Name":"Stamps.com Pro Plan - SWS ONLY 0225","MonthlyFee":0.0000,"AnnualFee":0.0000},"MultiUserPlan":false,"PendingPricingPlan":null,"NextStatementDate":"2022-05-25T00:00:00","IsLabelFeeRateEnabled":false,"IsZeroPostageBalanceEnabled":false,"PromoCode":"","OfferName":"Pro_50offscale_50offprinter_Nowk_0month_1","OfferDescription":"Stamps.com Pro\r\n$0 monthly /4-week Trial / $0 free postage / $0 postage / \r\n$50 Off Scale / $50 Off Printer / Shipper letter\r\n","RegistrationCookie":"","DuplicatePromoCheck":1,"CurrentBalance":0.0000,"TotalLabelsPrinted":0,"PurchasedAndCredited":0.0000,"TotalPostagePurchased":0.0,"InitialFreePostage":0.0000,"Comment":"","ActiveUsers":[{"UserId":3218760,"UserName":"ni220525140827","UserRoles":"Meter Admin, Meter User","PerPrintLimit":null,"PurchasePostageEnabled":true,"FedExEnabled":null,"StoreEnabled":true,"CostCodeRequired":false}],"InactiveUsers":null,"CanUsePPL":false,"OwnerDivisionId":1,"AccountProtectionLevel":"Un-Shielded","AccountProtectionType":"Standard","BalanceId":null,"Currency":"USD"}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_23_USD_US_US_US_Stamps_SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">23_USD_US_US_US_Stamps_SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">F870E07C-569C-43C8-AD77-FCE3D33D5CDB</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ni220525140829</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Welc0me!</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">USD</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">107</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">2863 W 235th St</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Torrance</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90505</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">2863 W 235th St</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Torrance</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90505</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">2863 W 235th St</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Torrance</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90505</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Pluto8936</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">{"UserName":"ni220525140829","CompanyName":null,"UserFullName":{"FullName":null,"FirstName":"Bruce","Middlename":null,"LastName":"Wayne"},"Merchant":"Stamps.com","MeterProvider":"Stamps.com","AccountType":1,"RateSetType":1,"Platform":6,"ResellerAccountId":"5000390046","IsSasDmc":false,"IsBackendMeter":false,"CorpId":null,"ProfileId":"10000034687","TermsVersion":9,"TermsDescription":"This version of the General Terms allows:\nGlobalPost\nAuto-Refund\nUSPS Shipping Labels\n","UserRole":"Meter Admin, Meter User","CurrentNoOfUsers":1,"HasUspsRep":false,"SingleSignOnEnabled":false,"ShipWorkLink":"","OmasAccountId":null,"EpsAccount":"","GppUsername":"85EEF6E6-F365-4569-A672-0B559056C851 (SWSIM/ELS)","PlatformConfigurationType":null,"AccountStatus":0,"StatusReason":0,"UserStatus":1,"ResubmissionRequired":false,"LicenseStatus":0,"DateOpened":"2022-05-25T21:08:30.82","DateClosed":null,"TrialEndDate":"2022-06-23T14:08:30.82","LastPrintDate":null,"CustFullName":{"FullName":null,"FirstName":"Bruce","Middlename":" ","LastName":"Wayne"},"MailingAddress":{"Street":"2863 W 235th St","City":"Torrance","State":"CA","Zip":"90505"},"PhysicalAddress":{"Street":"2863 W 235TH ST","City":"TORRANCE","State":"CA","Zip":"90505-4136"},"UserEmailAddress":"abaskett@stamps.com","CompanyEmailAddress":"abaskett@stamps.com","PhoneNumber":"3104825875","StoreBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"2863 W 235th St","City":"Torrance","State":"CA","Zip":"90505"}},"ServiceBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"2863 W 235th St","City":"Torrance","State":"CA","Zip":"90505"}},"PostageBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"2863 W 235th St","City":"Torrance","State":"CA","Zip":"90505"}},"PostageDefaultedAsServiceBilling":false,"CurrentPricingPlan":{"Sku":1020215.0,"Name":"Stamps.com Gold Shipper Plan","MonthlyFee":0.0000,"AnnualFee":0.0000},"MultiUserPlan":true,"PendingPricingPlan":null,"NextStatementDate":"2022-05-25T00:00:00","IsLabelFeeRateEnabled":false,"IsZeroPostageBalanceEnabled":false,"PromoCode":"Pluto8936","OfferName":"Pro_FreeShipper_NOwk","OfferDescription":"Stamps.com Gold Shipper\r\n$0 monthly / No Trial / $0 free postage /\r\n No Scale / No Welcome Kit","RegistrationCookie":"","DuplicatePromoCheck":1,"CurrentBalance":0.0000,"TotalLabelsPrinted":0,"PurchasedAndCredited":0.0,"TotalPostagePurchased":0.0,"InitialFreePostage":0.0000,"Comment":"","ActiveUsers":[{"UserId":3218761,"UserName":"ni220525140829","UserRoles":"Meter Admin, Meter User","PerPrintLimit":null,"PurchasePostageEnabled":true,"FedExEnabled":null,"StoreEnabled":true,"CostCodeRequired":null}],"InactiveUsers":null,"CanUsePPL":false,"OwnerDivisionId":1,"AccountProtectionLevel":"Un-Shielded","AccountProtectionType":"Standard","BalanceId":null,"Currency":"USD"}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_25_USD_US_US_US_Stamps_Core</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">25_USD_US_US_US_Stamps_Core</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">F870E07C-569C-43C8-AD77-FCE3D33D5CDB</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ni220525140832</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Welc0me!</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CORE</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">USD</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">107</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1990 E Grand Ave</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">El Segundo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90245</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">US</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">{"UserName":"ni220525140832","CompanyName":null,"UserFullName":{"FullName":null,"FirstName":"Bruce","Middlename":null,"LastName":"Wayne"},"Merchant":"Stamps.com","MeterProvider":"Stamps.com","AccountType":0,"RateSetType":1,"Platform":null,"ResellerAccountId":null,"IsSasDmc":false,"IsBackendMeter":false,"CorpId":null,"ProfileId":"10000034691","TermsVersion":9,"TermsDescription":"This version of the General Terms allows:\nAuto-Refund\nUSPS Shipping Labels\n","UserRole":"Meter Admin, Meter User","CurrentNoOfUsers":1,"HasUspsRep":false,"SingleSignOnEnabled":false,"ShipWorkLink":"","OmasAccountId":null,"EpsAccount":"","GppUsername":"","PlatformConfigurationType":null,"AccountStatus":0,"StatusReason":0,"UserStatus":1,"ResubmissionRequired":false,"LicenseStatus":0,"DateOpened":"2022-05-25T21:08:33.367","DateClosed":null,"TrialEndDate":"2022-06-23T14:08:33.367","LastPrintDate":null,"CustFullName":{"FullName":null,"FirstName":"Bruce","Middlename":" ","LastName":"Wayne"},"MailingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"},"PhysicalAddress":{"Street":"1990 E GRAND AVE","City":"EL SEGUNDO","State":"CA","Zip":"90245-5013"},"UserEmailAddress":"abaskett@stamps.com","CompanyEmailAddress":"abaskett@stamps.com","PhoneNumber":"3104825875","StoreBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"ServiceBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"PostageBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"PostageDefaultedAsServiceBilling":false,"CurrentPricingPlan":{"Sku":1020316.0,"Name":"Pro Plan 0316","MonthlyFee":17.9900,"AnnualFee":0.0000},"MultiUserPlan":true,"PendingPricingPlan":null,"NextStatementDate":"2022-05-25T00:00:00","IsLabelFeeRateEnabled":false,"IsZeroPostageBalanceEnabled":false,"PromoCode":"","OfferName":"Pro_5pa_1030wc_1060wc_scfree_wk35","OfferDescription":"Stamps.com Pro / $15.99 monthly / 4-week Trial / $5 free postage / $20 postage / Free Scale / 3.5 Welcome Kit","RegistrationCookie":"","DuplicatePromoCheck":1,"CurrentBalance":0.0000,"TotalLabelsPrinted":0,"PurchasedAndCredited":0.0000,"TotalPostagePurchased":0.0,"InitialFreePostage":0.0000,"Comment":"","ActiveUsers":[{"UserId":3218762,"UserName":"ni220525140832","UserRoles":"Meter Admin, Meter User","PerPrintLimit":null,"PurchasePostageEnabled":true,"FedExEnabled":null,"StoreEnabled":true,"CostCodeRequired":false}],"InactiveUsers":null,"CanUsePPL":false,"OwnerDivisionId":1,"AccountProtectionLevel":"Un-Shielded","AccountProtectionType":"Standard","BalanceId":null,"Currency":"USD"}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_26_EUR_IE_IE_IE_Stamps_SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">26_EUR_IE_IE_IE_Stamps_SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">F870E07C-569C-43C8-AD77-FCE3D33D5CDB</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ni220525140833</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Welc0me!</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">EUR </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">107</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">Dooradoyle Rd</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Dooradoyle</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">Limerick</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">2000</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">IE</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Dooradoyle Rd</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Dooradoyle</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">Limerick</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">2000</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">IE</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Dooradoyle Rd</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Dooradoyle</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">90505</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Limerick</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">2000</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">IE</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Pluto8936</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">{"UserName":"ni220525140833","CompanyName":null,"UserFullName":{"FullName":null,"FirstName":"Bruce","Middlename":null,"LastName":"Wayne"},"Merchant":"Stamps.com","MeterProvider":"Stamps.com","AccountType":1,"RateSetType":1,"Platform":6,"ResellerAccountId":"5000390047","IsSasDmc":false,"IsBackendMeter":false,"CorpId":null,"ProfileId":"10000034689","TermsVersion":9,"TermsDescription":"This version of the General Terms allows:\nGlobalPost\nAuto-Refund\nUSPS Shipping Labels\n","UserRole":"Meter Admin, Meter User","CurrentNoOfUsers":1,"HasUspsRep":false,"SingleSignOnEnabled":false,"ShipWorkLink":"","OmasAccountId":null,"EpsAccount":"","GppUsername":"94A9479A-7890-418D-8A8C-B3AB78EFB8A1 (SWSIM/ELS)","PlatformConfigurationType":null,"AccountStatus":0,"StatusReason":0,"UserStatus":1,"ResubmissionRequired":false,"LicenseStatus":0,"DateOpened":"2022-05-25T21:08:35.343","DateClosed":null,"TrialEndDate":"2022-06-23T14:08:35.343","LastPrintDate":null,"CustFullName":{"FullName":null,"FirstName":"Bruce","Middlename":" ","LastName":"Wayne"},"MailingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"},"PhysicalAddress":{"Street":"1990 E GRAND AVE","City":"EL SEGUNDO","State":"CA","Zip":"90245-5013"},"UserEmailAddress":"abaskett@stamps.com","CompanyEmailAddress":"abaskett@stamps.com","PhoneNumber":"3104825875","StoreBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"ServiceBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"PostageBillingInfo":{"PaymentType":1,"DefaultPayment":"Visa (Ends in 1111, Exp 8/2025)","BillingName":"Bruce Wayne","BillingAddress":{"Street":"1990 E Grand Ave","City":"El Segundo","State":"CA","Zip":"90245"}},"PostageDefaultedAsServiceBilling":false,"CurrentPricingPlan":{"Sku":1020215.0,"Name":"Stamps.com Gold Shipper Plan","MonthlyFee":0.0000,"AnnualFee":0.0000},"MultiUserPlan":true,"PendingPricingPlan":null,"NextStatementDate":"2022-05-25T00:00:00","IsLabelFeeRateEnabled":false,"IsZeroPostageBalanceEnabled":false,"PromoCode":"Pluto8936","OfferName":"Pro_FreeShipper_NOwk","OfferDescription":"Stamps.com Gold Shipper\r\n$0 monthly / No Trial / $0 free postage /\r\n No Scale / No Welcome Kit","RegistrationCookie":"","DuplicatePromoCheck":1,"CurrentBalance":0.0000,"TotalLabelsPrinted":0,"PurchasedAndCredited":0.0,"TotalPostagePurchased":0.0,"InitialFreePostage":0.0000,"Comment":"","ActiveUsers":[{"UserId":3218763,"UserName":"ni220525140833","UserRoles":"Meter Admin, Meter User","PerPrintLimit":null,"PurchasePostageEnabled":true,"FedExEnabled":null,"StoreEnabled":true,"CostCodeRequired":null}],"InactiveUsers":null,"CanUsePPL":false,"OwnerDivisionId":1,"AccountProtectionLevel":"Un-Shielded","AccountProtectionType":"Standard","BalanceId":null,"Currency":"USD"}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <recognizeAsPlainText>true</recognizeAsPlainText>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>AutomationKey</con:property>
+      <con:property>TestCaseName</con:property>
+      <con:property>Priority</con:property>
+      <con:property>IntegrationID</con:property>
+      <con:property>Username</con:property>
+      <con:property>Password</con:property>
+      <con:property>AccountType</con:property>
+      <con:property>Currency</con:property>
+      <con:property>Interface</con:property>
+      <con:property>FaultString</con:property>
+      <con:property>mAddress1</con:property>
+      <con:property>mCity</con:property>
+      <con:property>mState</con:property>
+      <con:property>mZip</con:property>
+      <con:property>mProvince</con:property>
+      <con:property>mPostalCode</con:property>
+      <con:property>mCountry</con:property>
+      <con:property>pAddress1</con:property>
+      <con:property>pCity</con:property>
+      <con:property>pState</con:property>
+      <con:property>pZip</con:property>
+      <con:property>pProvince</con:property>
+      <con:property>pPostalCode</con:property>
+      <con:property>pCountry</con:property>
+      <con:property>bAddress1</con:property>
+      <con:property>bCity</con:property>
+      <con:property>bState</con:property>
+      <con:property>bZip</con:property>
+      <con:property>bProvince</con:property>
+      <con:property>bPostalCode</con:property>
+      <con:property>bCountry</con:property>
+      <con:property>PromoCode</con:property>
+      <con:property>Regression</con:property>
+      <con:property>UserProfile</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="0a769200-e1ae-4db8-8fe0-7d9c7e8d14db" name="GetAccountInfo">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV100Soap</con:interface>
+      <con:operation>GetAccountInfo</con:operation>
+      <con:request name="GetAccountInfo" id="baa561aa-1a2b-493c-8a26-d302a20313e8">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SOAPAction" value="${#Project#Namespace}/GetAccountInfo" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:GetAccountInfo>
+         <sws:Credentials>
+            <sws:IntegrationID>${DataSource#IntegrationID}</sws:IntegrationID>
+            <sws:Username>${DataSource#Username}</sws:Username>
+            <sws:Password>${DataSource#Password}</sws:Password>
+         </sws:Credentials>
+      </sws:GetAccountInfo>
+   <sws1:GetAccountInfo xmlns:sws1="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100"/></soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetAccountInfo" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="PhoneVerificationControl" id="767a090e-a94d-4972-8485-4c44e68e486a">
+    <con:settings/>
+    <con:config>
+      <script><![CDATA[def start = new soapUIScripts.startExec(context,"Project");
+def currency = context.expand( '${DataSource#Currency}' )
+def username = context.expand( '${DataSource#Username}' )
+
+def otherTestSteps = ["AuthenticateUser", "PurchasePostage", "Assert"]
+def phoneVerificationTestSteps = ["StartAccountVerification", "GetVerificationCode", "FinishAccountVerification"];
+def getAccountInfo = start.util.readTestStepProperty("GetAccountInfo", "Response");
+def controlTotal= start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:PostageBalance[1]/ns1:ControlTotal[1]");
+def accountStatus = start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountStatus[1]");
+start.util.writeTestCaseProperty("ControlTotal",controlTotal);
+
+//Needed to reset
+otherTestSteps.each{ ts ->
+		log.info("Enabling test step: "+ ts);
+		start.util.enableTestStep(ts);
+	}
+
+//If USD or null, then we need phone verification
+if (accountStatus != "Active" && (currency == "USD" || currency == "")){
+	log.info(String.format("1 - Account Status: %s. Currency: %s.", accountStatus, currency))
+	phoneVerificationTestSteps.each{ ts ->
+		log.info("Enabling test step: "+ ts);
+		start.util.enableTestStep(ts);
+	}
+}
+//if not USD or null, we do not require phone verification
+else if (accountStatus != "Active" && currency != "USD" && currency != ""){
+	log.info(String.format("2 - Account Status: %s. Currency: %s.", accountStatus, currency))
+	def testSteps = phoneVerificationTestSteps + otherTestSteps
+	testSteps.each{ ts ->
+		log.info("Disabling test step: "+ ts);
+		start.util.disableTestStep(ts);
+	}
+	start.narc.setVersion(context.expand( '${GetSWSIMHealthcheck#Response#declare namespace ns1=\'http://qa-automate01-v/tws/server\'; //ns1:CheckServerHealthResponse[1]/ns1:CheckServerHealthResult[1]/ns1:Version[1]}' ))
+	start.narc.addError(String.format("PhoneVerification was required for an international balance user: %s", username))
+	start.narc.report()
+	}
+else {
+	log.info(String.format("3 - Account Status: %s. Currency: %s.", accountStatus, currency))
+	phoneVerificationTestSteps.each{ ts ->
+		log.info("Disabling test step: "+ ts);
+		start.util.disableTestStep(ts);
+	}
+}]]></script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="2809bbd6-a0ab-46cf-bcf9-0215c2557f1f" name="StartAccountVerification">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV100Soap</con:interface>
+      <con:operation>StartAccountVerification</con:operation>
+      <con:request name="StartAccountVerification" id="1494a457-786a-46c0-b3e3-e8b8303a1e52">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SOAPAction" value="${#Project#Namespace}/StartAccountVerification" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:StartAccountVerification>
+         <sws:Credentials>
+            <sws:IntegrationID>${DataSource#IntegrationID}</sws:IntegrationID>
+            <sws:Username>${DataSource#Username}</sws:Username>
+            <sws:Password>${DataSource#Password}</sws:Password>
+         </sws:Credentials>
+         <sws:PhoneNumber>3104825875</sws:PhoneNumber>
+         <sws:PhoneVerificationOption>SMS</sws:PhoneVerificationOption>
+      </sws:StartAccountVerification>
+   <sws1:StartAccountVerification xmlns:sws1="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100"><sws1:PhoneVerificationOption/></sws1:StartAccountVerification></soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="f4885efe-64c5-4169-8e97-ce39cb56024a" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="SOAP Fault Assertion" id="99b976aa-192f-4a3d-ad88-0f489a9604e9" name="Not SOAP Fault"/>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/StartAccountVerification" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="GetVerificationCode" id="2f17cc3e-e01a-451d-9279-8f0ac1071725">
+    <con:settings/>
+    <con:config>
+      <script>def start = new soapUIScripts.startExec(context,"Project");
+
+def getAccountInfoReponse = start.util.readTestStepProperty("GetAccountInfo", "Response") 
+def custId = start.util.readXMLNodeValue(getAccountInfoReponse, '//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:CustomerID[1]')
+
+String bridgeDBServer = context.expand( '${#Project#BRIDGEDBServer}' )
+log.info bridgeDBServer
+String verificationCodeQuery = '''
+Use Bridge
+SELECT TOP (1)  VerifyCode
+FROM   [Bridge].[dbo].[sdct_fraud_phoneverificationaudit] pva 
+WHERE pva.CustID = %s 
+ORDER BY DateCreated DESC
+'''
+String verificationCodeComplete = String.format(verificationCodeQuery, custId);
+log.info verificationCodeComplete
+def verificationCode = start.util.executeDBQuery(start.util.connectToDB(bridgeDBServer, "bridge"), verificationCodeComplete, false);
+log.info verificationCode
+log.info verificationCode.VerifyCode.toString()
+start.util.writeTestCaseProperty('verificationCode', verificationCode.VerifyCode.toString())</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="3cc17b2a-c158-42a1-9c72-0e4d0fabc7b0" name="FinishAccountVerification">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV100Soap</con:interface>
+      <con:operation>FinishAccountVerification</con:operation>
+      <con:request name="FinishAccountVerification" id="9a555aa4-d2fd-4562-a44e-4c8b8bb6c64d">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SOAPAction" value="${#Project#Namespace}/FinishAccountVerification" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:FinishAccountVerification>
+         <sws:Credentials>
+            <sws:IntegrationID>${DataSource#IntegrationID}</sws:IntegrationID>
+            <sws:Username>${DataSource#Username}</sws:Username>
+            <sws:Password>${DataSource#Password}</sws:Password>
+         </sws:Credentials>
+         <sws:PhoneVerificationCode>${#TestCase#verificationCode}</sws:PhoneVerificationCode>
+      </sws:FinishAccountVerification>
+   <sws1:FinishAccountVerification xmlns:sws1="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100"><sws1:PhoneVerificationCode/></sws1:FinishAccountVerification></soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="57e17ad9-6bb2-4ebd-a5d8-576006378d61" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="SOAP Fault Assertion" id="69c4fa31-0b34-4df7-8ee5-06d31c091024" name="Not SOAP Fault"/>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/FinishAccountVerification" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="7d379fc5-91b4-4136-afb8-b3cff27a7b09" name="AuthenticateUser">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV100Soap</con:interface>
+      <con:operation>AuthenticateUser</con:operation>
+      <con:request name="AuthenticateUser" id="fa03abb4-a771-4497-9141-c822637e37e5">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SOAPAction" value="${#Project#Namespace}/AuthenticateUser" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:AuthenticateUser>
+         <sws:Credentials>
+            <sws:IntegrationID>${DataSource#IntegrationID}</sws:IntegrationID>
+            <sws:Username>${DataSource#Username}</sws:Username>
+            <sws:Password>${DataSource#Password}</sws:Password>
+         </sws:Credentials>
+      </sws:AuthenticateUser>
+   <sws1:AuthenticateUser xmlns:sws1="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100"><sws1:Credentials><sws1:IntegrationID/><sws1:Username/><sws1:Password/></sws1:Credentials></sws1:AuthenticateUser></soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/AuthenticateUser" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="4e6ba211-a491-4558-97bd-111480d5794b" name="PurchasePostage">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV100Soap</con:interface>
+      <con:operation>PurchasePostage</con:operation>
+      <con:request name="PurchasePostage" id="7999c527-ab3e-4151-b0d0-08307bfd0d19">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SOAPAction" value="${#Project#Namespace}/PurchasePostage" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:PurchasePostage>
+         <sws:Credentials>
+            <sws:IntegrationID>88F8BA27-2FBC-4601-A055-E4BAA7BBDBFB</sws:IntegrationID>
+            <sws:Username>${DataSource#Username}</sws:Username>
+            <sws:Password>${DataSource#Password}</sws:Password>
+         </sws:Credentials>
+         <sws:PurchaseAmount>10.00</sws:PurchaseAmount>
+         <sws:ControlTotal>${#TestCase#ControlTotal}</sws:ControlTotal>
+         <sws:IntegratorTxID>${#Project#IntegratorTxID}</sws:IntegratorTxID>
+      </sws:PurchasePostage>
+   <sws1:PurchasePostage xmlns:sws1="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100"><sws1:PurchaseAmount/><sws1:ControlTotal/></sws1:PurchasePostage></soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/PurchasePostage" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Assert" id="6a603e19-a9ba-4c19-8688-97511c521947">
+    <con:settings/>
+    <con:config>
+      <script>def start = new soapUIScripts.startExec(context,"Project");
+def username = context.expand( '${DataSource#Username}' )
+def currency = context.expand( '${DataSource#Currency}' )
+def resellerAccountId = context.expand( '${DataSource#UserProfile#$[\'ResellerAccountId\']}' )
+def getAccountInfo = start.util.readTestStepProperty("GetAccountInfo", "Response");
+def authenticateUser = start.util.readTestStepProperty("AuthenticateUser", "Response");
+def purchasePostage = start.util.readTestStepProperty("PurchasePostage", "Response");
+def bridgeDBServer = context.expand( '${#Project#BRIDGEDBServer}' )
+def stampmartDB = context.expand( '${#Project#STAMPMARTDBServer}' )
+Address mailingAddress;
+Address physicalAddress;
+Address billingAddress;
+Address gaiMeterPhysicalAddress;
+Address gaiAddress;
+Address mailingAddressDB;
+Address physicalAddressDB;
+
+def query = String.format('''
+Use Bridge
+SELECT ra.BalanceID
+FROM [Bridge].[dbo].[sdct_Reseller_Account] ra
+WHERE ra.ResellerAccountId = %s
+''', resellerAccountId)
+def balanceIdResults = start.util.executeDBQuery(start.util.connectToDB(bridgeDBServer, "Bridge"), query, false);
+
+def mailingAddressQuery = String.format('''
+Use Stampmart
+SELECT 
+ cai.MAddress1
+,cai.MAddress2
+,cai.MAddress3
+,cai.MCity
+,cai.MState
+,cai.MPostal_code
+,cai.MCountryCode
+FROM sdc_Core_AccountInfo cai
+WHERE cai.UserName = '%s'
+''', username)
+def mailingAddressDBResults = start.util.executeDBQuery(start.util.connectToDB(stampmartDB, "Stampmart"), mailingAddressQuery, false);
+log.info("mailingAddressDBResults: " + mailingAddressDBResults)
+
+def physicalAddressQuery = String.format('''
+Use Stampmart
+SELECT 
+ cai.PAddress1
+,cai.PAddress2
+,cai.PAddress3
+,cai.PCity
+,cai.PState
+,cai.PPostal_code
+,cai.PCountryCode
+FROM sdc_Core_AccountInfo cai
+WHERE cai.UserName = '%s'
+''', username)
+def physicalAddressDBResults = start.util.executeDBQuery(start.util.connectToDB(stampmartDB, "Stampmart"), physicalAddressQuery, false);
+log.info("physicalAddressDBResults: " + physicalAddressDBResults)
+
+def currencyCodeQuery = String.format('''
+Use Stampmart
+SELECT cai.CurrencyCode
+FROM sdc_Core_AccountInfo cai
+WHERE cai.UserName = '%s'
+''', username)
+def currencyCodeDBResults = start.util.executeDBQuery(start.util.connectToDB(stampmartDB, "Stampmart"), currencyCodeQuery, false);
+
+if (context.expand( '${DataSource#bCountry}' ) == "US" )
+{
+	//DataSource 
+	//Mailing Address
+	mailingAddress = new DomesticAddress(context.expand( '${DataSource#mAddress1}' ), context.expand( '${DataSource#mCity}' ), context.expand( '${DataSource#mState}' ), context.expand( '${DataSource#mZip}' ));
+	
+	//Physical Address
+	physicalAddress = new DomesticAddress(context.expand( '${DataSource#pAddress1}' ), context.expand( '${DataSource#pCity}' ), context.expand( '${DataSource#pState}' ), context.expand( '${DataSource#pZip}' ));
+
+	//Billing Address
+	billingAddress = new DomesticAddress(context.expand( '${DataSource#bAddress1}' ), context.expand( '${DataSource#bCity}' ), context.expand( '${DataSource#bState}' ), context.expand( '${DataSource#bZip}' ));
+
+	//Database
+	//m
+	if (mailingAddressDBResults.MAddress2 == null){
+		mailingAddressDB = new DomesticAddress(
+			 mailingAddressDBResults.MAddress1
+			,mailingAddressDBResults.MCity
+			,mailingAddressDBResults.MState
+			,mailingAddressDBResults.MPostal_code
+			)
+	}
+	else if(mailingAddressDBResults.MAddress3 == null){
+		mailingAddressDB = new DomesticAddress(
+			 mailingAddressDBResults.MAddress1
+			,mailingAddressDBResults.MAddress2
+			,mailingAddressDBResults.MCity
+			,mailingAddressDBResults.MState
+			,mailingAddressDBResults.MPostal_code
+			)
+	}
+	else {
+		mailingAddressDB = new DomesticAddress(
+			 mailingAddressDBResults.MAddress1
+			,mailingAddressDBResults.MAddress2
+			,mailingAddressDBResults.MAddress3
+			,mailingAddressDBResults.MCity
+			,mailingAddressDBResults.MState
+			,mailingAddressDBResults.MPostal_code
+		)
+	}
+	//p
+	if (physicalAddressDBResults.PAddress2 == null){
+		physicalAddressDB = new DomesticAddress(
+			 physicalAddressDBResults.PAddress1
+			,physicalAddressDBResults.PCity
+			,physicalAddressDBResults.PState
+			,physicalAddressDBResults.PPostal_code
+			)
+	}
+	else if(physicalAddressDBResults.PAddress3 == null){
+		physicalAddressDB = new DomesticAddress(
+			 physicalAddressDBResults.PAddress1
+			,physicalAddressDBResults.PAddress2
+			,physicalAddressDBResults.PCity
+			,physicalAddressDBResults.PState
+			,physicalAddressDBResults.PPostal_code
+			)
+	}
+	else {
+		physicalAddressDB = new DomesticAddress(
+			 physicalAddressDBResults.PAddress1
+			,physicalAddressDBResults.PAddress2
+			,physicalAddressDBResults.PAddress3
+			,physicalAddressDBResults.PCity
+			,physicalAddressDBResults.PState
+			,physicalAddressDBResults.PPostal_code
+		)
+	}
+	//GetAccountInfo
+	//MeterPhysicalAddress
+	gaiMeterPhysicalAddress = new DomesticAddress(
+		 start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:MeterPhysicalAddress[1]/ns1:Address1[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:MeterPhysicalAddress[1]/ns1:City[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:MeterPhysicalAddress[1]/ns1:State[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:MeterPhysicalAddress[1]/ns1:ZIPCode[1]")
+	);
+	//Address
+	gaiAddress=new DomesticAddress(
+		 start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:Address[1]/ns1:Address1[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:Address[1]/ns1:City[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:Address[1]/ns1:State[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:Address[1]/ns1:ZIPCode[1]")
+	);
+}
+else
+{
+	//DataSource 
+	//Mailing Address
+	mailingAddress = new InternationalAddress(
+		 context.expand( '${DataSource#mAddress1}' )
+		,context.expand( '${DataSource#mCity}' )
+		,context.expand( '${DataSource#mProvince}' )
+		,context.expand( '${DataSource#mPostalCode}' )
+		,context.expand( '${DataSource#mCountry}' )
+	);
+	
+	//Physical Address
+	physicalAddress = new InternationalAddress(
+		 context.expand( '${DataSource#pAddress1}' )
+		,context.expand( '${DataSource#pCity}' )
+		,context.expand( '${DataSource#pProvince}' )
+		,context.expand( '${DataSource#pPostalCode}' )
+		,context.expand( '${DataSource#pCountry}' )
+	);
+
+	//Billing Address
+	billingAddress = new InternationalAddress(
+		 context.expand( '${DataSource#bAddress1}' )
+		,context.expand( '${DataSource#bCity}' )
+		,context.expand( '${DataSource#bProvince}' )
+		,context.expand( '${DataSource#bPostalCode}' )
+		,context.expand( '${DataSource#bCountry}' )
+	);
+	//Database
+	//m
+	if (mailingAddressDBResults.MAddress2 == null){
+		mailingAddressDB = new InternationalAddress(
+			 mailingAddressDBResults.MAddress1
+			,mailingAddressDBResults.MCity
+			,mailingAddressDBResults.MState
+			,mailingAddressDBResults.MPostal_code
+			,mailingAddressDBResults.MCountryCode
+			)
+	}
+	else if(mailingAddressDBResults.MAddress3 == null){
+		mailingAddressDB = new InternationalAddress(
+			 mailingAddressDBResults.MAddress1
+			,mailingAddressDBResults.MAddress2
+			,mailingAddressDBResults.MCity
+			,mailingAddressDBResults.MState
+			,mailingAddressDBResults.MPostal_code
+			,mailingAddressDBResults.MCountryCode
+			)
+	}
+	else {
+		mailingAddressDB = new InternationalAddress(
+			 mailingAddressDBResults.MAddress1
+			,mailingAddressDBResults.MAddress2
+			,mailingAddressDBResults.MAddress3
+			,mailingAddressDBResults.MCity
+			,mailingAddressDBResults.MState
+			,mailingAddressDBResults.MPostal_code
+			,mailingAddressDBResults.MCountryCode
+		)
+	}
+	//p
+	if (physicalAddressDBResults.PAddress2 == null){
+		physicalAddressDB = new InternationalAddress(
+			 physicalAddressDBResults.PAddress1
+			,physicalAddressDBResults.PCity
+			,physicalAddressDBResults.PState
+			,physicalAddressDBResults.PPostal_code
+			,physicalAddressDBResults.PCountryCode
+			)
+	}
+	else if(physicalAddressDBResults.PAddress3 == null){
+		physicalAddressDB = new InternationalAddress(
+			 physicalAddressDBResults.PAddress1
+			,physicalAddressDBResults.PAddress2
+			,physicalAddressDBResults.PCity
+			,physicalAddressDBResults.PState
+			,physicalAddressDBResults.PCountryCode
+			)
+	}
+	else {
+		physicalAddressDB= new InternationalAddress(
+			 physicalAddressDBResults.PAddress1
+			,physicalAddressDBResults.PAddress2
+			,physicalAddressDBResults.PAddress3
+			,physicalAddressDBResults.PCity
+			,physicalAddressDBResults.PState
+			,physicalAddressDBResults.PCountryCode
+		)
+	}
+	//GetAccountInfo
+	//MeterPhysicalAddress
+	gaiMeterPhysicalAddress = new InternationalAddress(
+		 start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:MeterPhysicalAddress[1]/ns1:Address1[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:MeterPhysicalAddress[1]/ns1:City[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:MeterPhysicalAddress[1]/ns1:Province[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:MeterPhysicalAddress[1]/ns1:PostalCode[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:MeterPhysicalAddress[1]/ns1:Country[1]")
+	);
+	//Address
+	gaiAddress=new InternationalAddress(
+		 start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:Address[1]/ns1:Address1[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:Address[1]/ns1:City[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:Address[1]/ns1:Province[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:Address[1]/ns1:PostalCode[1]")
+		,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:Address[1]/ns1:Country[1]")		
+	);
+}
+//SDC Address
+Address sdcAddress = new DomesticAddress("", "El Segundo", "CA", "90245");
+
+//GetAccountInfo LPO Address
+Address gaiLPOAddress = new DomesticAddress(
+	 ""
+	,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:LPOCity[1]")
+	,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:LPOState[1]")
+	,start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:LPOZip[1]")
+);
+//Balance and Reseller
+def gaiBalanceId = start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:BalanceID[1]")
+def resellerAccountID = start.util.readXMLNodeValue(getAccountInfo, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:AccountId[1]")
+
+//Assertion
+def mampa = mailingAddress.assertAddress(gaiMeterPhysicalAddress)
+if (!mampa.matches){
+    start.narc.addError("mailingAddress and gaiMeterPhysicalAddress do not match  "+mampa.message)
+}
+def maa = mailingAddress.assertAddress(gaiAddress)
+if (!maa.matches){
+    start.narc.addError("mailingAddress and gaiAddress do not match  "+maa.message)
+}
+
+if (context.expand( '${DataSource#bCountry}' ) != "US" )
+{
+    def sdalpo =sdcAddress.assertAddress(gaiLPOAddress)
+    if (!sdalpo.matches)
+    {
+        start.narc.addError("sdcAddress and gaiLPOAddress do not match  "+sdalpo.message)
+    } 
+    def mamad = mailingAddress.assertAddress(mailingAddressDB)
+	if (!mamad.matches)
+	{
+	    start.narc.addError("mailingAddress and mailingAddressDB do not match  "+mamad.message)
+	}
+	def bapad = billingAddress.assertAddress(physicalAddressDB)
+	if (!bapad.matches)
+	{
+	    start.narc.addError("billingAddress and physicalAddressDB do not match  "+bapad.message)
+	}
+	if (balanceIdResults.BalanceID.toString() != gaiBalanceId)
+	{
+		start.narc.addError(String.format("GetAccountInfo BalanceID does not match database. GAIBalanceId: %s, DB BalanceID: %s", gaiBalanceId, balanceIdResults.BalanceID));
+	}
+}
+else if(context.expand( '${DataSource#bCountry}' ) == "US" )
+{
+	//verify if the balance id matches in Bridge DB &amp; Balance DB
+	if ((balanceIdResults?.BalanceID != null) &amp;&amp; (gaiBalanceId == balanceIdResults.BalanceID.toString()))
+	{
+		log.info(gaiBalanceId)
+		log.info(balanceIdResults)
+	}
+}
+else{
+	//? is a safe null operator
+	if (balanceIdResults?.BalanceID != null)
+	{
+		start.narc.addError(String.format("GetAccountInfo BalanceID does not match database. GAIBalanceId: %s, DB BalanceID: %s", gaiBalanceId, balanceIdResults.BalanceID));
+	}
+}
+def authenticateUserResponse = start.util.readTestStepProperty("AuthenticateUser", "Response") 
+def purchasePostageResponse = start.util.readTestStepProperty("PurchasePostage", "Response") 
+
+if (start.util.isFaultString(authenticateUserResponse))
+	start.narc.addError(String.format("AuthenticateUser Failed. %s", start.util.readXMLNodeValue(authenticateUserResponse, "//faultstring[1]").toString()))
+if (start.util.isFaultString(purchasePostageResponse))
+	start.narc.addError(String.format("PurchasePostage Failed. %s", start.util.readXMLNodeValue(purchasePostageResponse, "//faultstring[1]").toString()))
+	
+start.narc.report()
+
+abstract class Address {
+	String address1;
+	String address2;
+	String address3;
+	String city;
+	String country;
+
+	Address (String Address1, String Address2, String Address3, String City, String Country){
+		this(Address1, Address2, City, Country)
+		this.address3 = Address3.toLowerCase().capitalize()
+	}
+	Address (String Address1, String Address2,  String City, String Country){
+		this(Address1, City, Country)
+		this.address2 = Address2.toLowerCase().capitalize()
+	}
+	Address (String Address1, String City, String Country){
+		this.address1 = Address1?.toLowerCase()?.capitalize()
+		this.city = City?.toLowerCase()?.capitalize()
+		this.country = Country?.toUpperCase()
+	}
+	abstract AddressAssertion assertAddress(Address AddressB);
+}
+public class DomesticAddress extends Address {
+	String state;
+	String zip;
+
+	DomesticAddress (String Address1, String City, String State, String Zip){
+		super(Address1, City, "US")
+		this.state = State?.toUpperCase()
+		this.zip = Zip
+	}
+	DomesticAddress (String Address1, String Address2, String City, String State, String Zip){
+		super(Address1, Address2, City, "US")
+		this.state = State?.toUpperCase()
+		this.zip = Zip
+	}
+	DomesticAddress (String Address1, String Address2, String Address3, String City, String State, String Zip){
+		super(Address1, Address2, Address3, City, "US")
+		this.state = State?.toUpperCase()
+		this.zip = Zip
+	}
+	@Override
+	AddressAssertion assertAddress(Address AddressB){
+		AddressAssertion returnvalue = new AddressAssertion(true,"") ;
+		
+		if (this.address1 != AddressB.address1){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("Address1 does not match. %s. %s. ", this.address1, AddressB.address1);
+		}
+		if (this.address2 != AddressB.address2){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("Address2 does not match. %s. %s. ", this.address2, AddressB.address2);
+		}
+		if (this.address3 != AddressB.address3){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("Address3 does not match. %s. %s. ", this.address3, AddressB.address3);
+		}
+		if (this.city != AddressB.city){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("City does not match. %s. %s. ", this.city, AddressB.city);
+		}
+		if (this.state != AddressB.state){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("State does not match. %s. %s. ", this.state, AddressB.state);
+		}
+		if (this.zip != AddressB.zip){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("Zip does not match. %s. %s. ", this.zip, AddressB.zip);
+		}
+		
+		return returnvalue;
+	}
+}
+public class InternationalAddress extends Address {
+	String province;
+	String postalCode;
+
+	InternationalAddress (String Address1, String City, String Province, String PostalCode, String Country){	
+		super(Address1, City, "US")
+		this.province = Province?.toLowerCase()?.capitalize()
+		this.postalCode = PostalCode?.toUpperCase()
+	}
+	InternationalAddress (String Address1, String Address2, String City, String Province, String PostalCode, String Country){
+		super(Address1, Address2, City, "US")
+		this.province = Province?.toLowerCase()?.capitalize()
+		this.postalCode = PostalCode?.toUpperCase()
+	}
+	InternationalAddress (String Address1, String Address2, String Address3, String City, String Province, String PostalCode, String Country){
+		super(Address1, Address2, Address3, City, Country)
+		this.province = Province?.toLowerCase()?.capitalize()
+		this.postalCode = PostalCode?.toUpperCase()
+	}
+	@Override
+	AddressAssertion assertAddress(Address AddressB){
+		AddressAssertion returnvalue = new AddressAssertion(true,"") ;
+		
+		if (this.address1 != AddressB.address1){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("Address1 does not match. %s. %s. ", this.address1, AddressB.address1);
+		}
+		if (this.address2 != AddressB.address2){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("Address2 does not match. %s. %s. ", this.address2, AddressB.address2);
+		}
+		if (this.address3 != AddressB.address3){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("Address3 does not match. %s. %s. ", this.address3, AddressB.address3);
+		}
+		if (this.city != AddressB.city){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("City does not match. %s. %s. ", this.city, AddressB.city);
+		}
+		if (this.province != AddressB.province){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("PostalCode does not match. %s. %s. ", this.province, AddressB.province);
+		}
+		if (this.postalCode != AddressB.postalCode){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("PostalCode does not match. %s. %s. ", this.postalCode, AddressB.postalCode);
+		}
+		if (this.country != AddressB.country){
+			returnvalue.matches = false
+			returnvalue.message = returnvalue.message + String.format("Country does not match. %s. %s. ", this.country, AddressB.country);
+		}
+		return returnvalue;
+	}
+}
+public class AddressAssertion {
+	public Boolean matches;	
+	public String message;
+
+	AddressAssertion(Boolean doesItMatch){
+		this.matches = doesItMatch;
+	}
+	AddressAssertion(Boolean doesItMatch, String message){
+		this(doesItMatch);
+		this.message = message
+	}
+}</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="DataSink" id="054a4b93-2487-4a1a-80ba-b2be8be82c8d">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="SubReport">
+        <con:configuration/>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>Error Message</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>Status</con:name>
+          <con:value>Pass</con:value>
+        </con:property>
+        <con:property>
+          <con:name>TestCaseName</con:name>
+          <con:value>${DataSource#TestCaseName}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>RunId</con:name>
+          <con:value>${#Project#RunId}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="AddResult" id="2c87a5a4-2281-4d99-8ab2-f420f668bbd1">
+    <con:settings/>
+    <con:config service="TestrailWrappers" resourcePath="/ApiWrappers/tr/add_result_for_automationkey/{RunId}/{AutomationKey}" methodName="add_result_for_automationkey_Post" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="AddResult" id="5fec41d3-9875-4fce-a579-e69ff171d922" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Username" value="${TestRails_Username}"/>
+  &lt;con:entry key="ApiKey" value="${TestRails_APIKey}"/>
+&lt;/xml-fragment></con:setting>
+        </con:settings>
+        <con:endpoint>http://qa-automate01-v</con:endpoint>
+        <con:request>{"status_id":"Pass","comment":"","version":""}</con:request>
+        <con:originalUri>http://qa-automate01-v/ApiWrappers/tr/add_result_for_automationkey/Infrastructure-Wallet-as-a-Service_Registration_2_CAD_CA_CA_CA_Pluto8936</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="66205c9e-1ed7-40c6-bb10-94c4e041cd74" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="AutomationKey" value="${DataSource#AutomationKey}"/>
+          <con:entry key="RunId" value="${#Project#RunId}"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="3179218d-1da9-4cf2-bf1e-ed2c4efe4f30">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>GetAccountInfo</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Exit Script" id="7f60bbea-4fac-46a6-aaf2-f47a8b1e7c83">
+    <con:settings/>
+    <con:config>
+      <script>def start = new soapUIScripts.startExec(context, "Project")
+def slackChannel = context.expand( '${#Project#SlackChannel}' )
+start.common.slackreport("DataSink", slackChannel)</script>
+    </con:config>
+  </con:testStep>
+  <con:properties>
+    <con:property>
+      <con:name>LogFileLocation</con:name>
+      <con:value>C:\temp\Registration_Validate Registration_20_08_2020_11_24_29/</con:value>
+    </con:property>
+    <con:property>
+      <con:name>verificationCode</con:name>
+      <con:value>null</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ControlTotal</con:name>
+      <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10.0000</con:value>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>32c83fe5-add4-4c26-a1ed-b30957ae871d</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>12c3dddd-b777-401e-abd3-4f0208e17ef3</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>dc29f508-6ed1-4dba-bd7c-3d75233b7ea5</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>d1ba2059-36f9-440b-b088-2726656aa125</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>54539743-a6c6-4145-99da-b0677c90373d</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>1112c89a-4446-4a2f-b965-d9e1dc7dc54f</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>9b77c1ef-c3d3-4092-8ddf-e6a6ccecddbd</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

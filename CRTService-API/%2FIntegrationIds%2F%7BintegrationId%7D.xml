@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/IntegrationIds/{integrationId}" path="/IntegrationIds/{integrationId}" id="d0b45803-a8f8-43cf-988a-e8e600399026" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="67d428e9-9201-47af-a6b5-98f895461371fileName">%2FIntegrationIds%2F%7BintegrationId%7D</con:setting>
+    <con:setting id="c9fa8de9-35d9-4153-9d30-2dac34aba3b1fileName">%2FIntegrationIds%2F%7BintegrationId%7D</con:setting>
+    <con:setting id="d0b45803-a8f8-43cf-988a-e8e600399026fileName">%2FIntegrationIds%2F%7BintegrationId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>integrationId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetIntegrationId" id="48737514-2fe4-4d7a-b246-414fc6bf8f41" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "IntegrationId" : "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "Description" : "string",
+  "IntegrationCaps" : 0,
+  "AppCapMask" : 0,
+  "AppCap2Mask" : 0,
+  "AppCap3Mask" : 0,
+  "AppCap4Mask" : 0,
+  "OemCode" : "string",
+  "SourceId" : "string",
+  "ResellerId" : 0,
+  "IsAuthenticationOptional" : true
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="5cb6a8f2-562c-4a7a-810e-f08d6877ece3" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="integrationId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="UpdateIntegrationId" id="2d5aa76d-8eee-4e80-9d65-61f132b2c666" method="PUT">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="c04e62be-e3f7-40c8-a574-62a9ebc85852" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="integrationId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

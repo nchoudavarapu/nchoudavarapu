@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/tr/get_cases_for_section/{ProjectName}" path="/tr/get_cases_for_section/{ProjectName}" id="97d7f8e4-76d5-47e3-b42c-190162390f33" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9482cd74-23bb-44aa-8521-d28a40de80a8fileName">%2Ftr%2Fget_cases_for_section%2F%7BProjectName%7D</con:setting>
+    <con:setting id="97d7f8e4-76d5-47e3-b42c-190162390f33fileName">%2Ftr%2Fget_cases_for_section%2F%7BProjectName%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>ProjectName</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="get_cases_for_section_Post" id="9a0af647-d7ab-465e-87ac-1f1c5dde196c" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "SuiteName" : "string",
+  "SectionName" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{ }</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="8336b032-ebe0-4ce6-ae5a-04314688de2e" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://qa-automate01-v</con:endpoint>
+      <con:request>{\r
+  "SuiteName" : "string",\r
+  "SectionName" : "string"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

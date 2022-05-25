@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/miniStores/CustomerShipments" path="/miniStores/CustomerShipments" id="b4cedbc0-bd02-4bc5-a2cf-13fe8528c40a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bc0e3c69-219c-4db4-92f5-b6ee0c367d01fileName">%2FminiStores%2FCustomerShipments</con:setting>
+    <con:setting id="6d85d705-e1a5-4bf6-8439-b3c69607073cfileName">%2FminiStores%2FCustomerShipments</con:setting>
+    <con:setting id="b4cedbc0-bd02-4bc5-a2cf-13fe8528c40afileName">%2FminiStores%2FCustomerShipments</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetCustomerShipments" id="575959ea-b527-4423-82ab-8e4c46b512a2" method="GET">
+    <con:description>Get Customer Shipments</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>orderId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Shipments" : [ {
+    "ShipmentId" : 1.5,
+    "Poid" : 1.5,
+    "DateShipped" : "2015-07-20T15:49:04-07:00",
+    "TrackingNo" : "string",
+    "ShippingMethodId" : 0,
+    "ShipmentItems" : [ {
+      "ShipmentId" : 1.5,
+      "Sku" : 0,
+      "Quantity" : 0
+    } ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e0c00b39-cd97-42e4-96e0-2fc0f646dbdd" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="orderId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

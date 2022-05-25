@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/DutiesAndTaxesAdjustmentSettings" path="/customers/DutiesAndTaxesAdjustmentSettings" id="834585f8-96d7-426b-8a0b-c122e1c80a91" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cfd8a1d3-c3ec-4549-a57e-ba2d644de279fileName">%2Fcustomers%2FDutiesAndTaxesAdjustmentSettings</con:setting>
+    <con:setting id="06d003bb-0e20-45de-8f1d-ecfe5a049ce0fileName">%2Fcustomers%2FDutiesAndTaxesAdjustmentSettings</con:setting>
+    <con:setting id="834585f8-96d7-426b-8a0b-c122e1c80a91fileName">%2Fcustomers%2FDutiesAndTaxesAdjustmentSettings</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetDutiesAndTaxesAdjustmentSettings" id="d5f89d67-587e-4566-8817-1b207747649f" method="GET">
+    <con:description>Get customer duties and taxes adjustment settings</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "PaymentType" : 0,
+  "ProcessingFee" : 1.5
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="a4558eea-2d2e-4944-b956-e3108d1b25f1" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

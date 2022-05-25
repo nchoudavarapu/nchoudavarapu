@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="0960ad6b-37f7-47d4-9bb3-9df522bec5a3" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/TrackShipment" name="TrackShipment" bindingOperationName="TrackShipment" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ea77b7ea-7271-46cc-89c7-2fc511e74775fileName">TrackShipment</con:setting>
+    <con:setting id="fe15244f-01ac-44f4-93e5-9a9426924852fileName">TrackShipment</con:setting>
+    <con:setting id="0960ad6b-37f7-47d4-9bb3-9df522bec5a3fileName">TrackShipment</con:setting>
+  </con:settings>
+</con:operation>

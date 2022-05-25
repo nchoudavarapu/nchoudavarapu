@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/meters/{meterNumber}/OmasPaymentSettings" path="/meters/{meterNumber}/OmasPaymentSettings" id="91806149-dd7c-45bf-9ecd-839519bbb27b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="12c6c7f1-d7a0-409d-a36c-d9c83f196267fileName">%2Fmeters%2F%7BmeterNumber%7D%2FOmasPaymentSettings</con:setting>
+    <con:setting id="11989e9d-40ea-4a3c-aa82-22df2871a2c6fileName">%2Fmeters%2F%7BmeterNumber%7D%2FOmasPaymentSettings</con:setting>
+    <con:setting id="91806149-dd7c-45bf-9ecd-839519bbb27bfileName">%2Fmeters%2F%7BmeterNumber%7D%2FOmasPaymentSettings</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>meterNumber</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>number</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetOmasPaymentSettings" id="3b1f61fe-7602-4ec8-8296-e1e04cb9e382" method="GET">
+    <con:description>Get Omas Payment Settings</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "UseCode" : 0,
+  "FedCode" : "string",
+  "FedSubCode" : "string",
+  "OmasAccount" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="29ffcba1-b7e2-49c9-a837-5c87f92bef68" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="meterNumber" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="UpdateOmasPaymentSettings" id="eb1ca616-8ccc-4d07-a2f9-d417b6e69ecd" method="POST">
+    <con:description>Update Omas Payment Settings</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="08398f62-f840-4544-b35d-aebf7e9f710d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="meterNumber" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

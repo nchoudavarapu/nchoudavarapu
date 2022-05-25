@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="0bbe59e0-17cc-4cc8-82e4-2215ff6c0ef1" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/ResubmitPurchase" name="ResubmitPurchase" bindingOperationName="ResubmitPurchase" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b64f1a15-2f82-4ef3-bf33-8e6ef65cc6b0fileName">ResubmitPurchase</con:setting>
+    <con:setting id="18da43f7-476d-4003-b461-bbe341abd5befileName">ResubmitPurchase</con:setting>
+    <con:setting id="0bbe59e0-17cc-4cc8-82e4-2215ff6c0ef1fileName">ResubmitPurchase</con:setting>
+  </con:settings>
+</con:operation>

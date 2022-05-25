@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="66c3cc3d-eb06-456d-8867-3568bd986e70" name="Registration" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c64b56a8-758b-4832-9977-826d6142109dfileName">Registration</con:setting>
+    <con:setting id="f9138de9-eae6-43e7-985d-47c468b6ed8dfileName">Registration</con:setting>
+    <con:setting id="66c3cc3d-eb06-456d-8867-3568bd986e70fileName">Registration</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:setupScript>new soapUIProperties.setProperties(testSuite.project)</con:setupScript>
+  <con:reportParameters/>
+</con:testSuite>

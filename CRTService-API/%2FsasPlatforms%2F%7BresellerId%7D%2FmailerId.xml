@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/sasPlatforms/{resellerId}/mailerId" path="/sasPlatforms/{resellerId}/mailerId" id="bef8d806-1444-4aef-9a0a-72773452118c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="330f87c7-1fe0-4b25-be0c-cf1d2e12648ffileName">%2FsasPlatforms%2F%7BresellerId%7D%2FmailerId</con:setting>
+    <con:setting id="bef8d806-1444-4aef-9a0a-72773452118cfileName">%2FsasPlatforms%2F%7BresellerId%7D%2FmailerId</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>resellerId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="AddMailerIdForSasPlatform" id="55ee2cb3-e43a-40b7-9d25-69892e9edb34" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="ee26c91a-93c6-4f60-b1fe-f0043b1fc6a5" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="resellerId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

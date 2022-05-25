@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="3079d630-9dd1-4ada-b077-38a41c6d5861" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetURL" name="GetURL" bindingOperationName="GetURL" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="235b4d51-d912-4d07-88fb-c9c97bc142eafileName">GetURL</con:setting>
+    <con:setting id="99dbc896-0e29-42e4-9cb1-7328d5554624fileName">GetURL</con:setting>
+    <con:setting id="3079d630-9dd1-4ada-b077-38a41c6d5861fileName">GetURL</con:setting>
+  </con:settings>
+</con:operation>

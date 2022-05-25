@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/EmailHistoryDetail/{messageId}/{isSilverPop}" path="/customers/EmailHistoryDetail/{messageId}/{isSilverPop}" id="cd53da2f-7f41-46f1-978c-67bda44867fa" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="93c787de-07e4-4f4e-83e9-d100a944387cfileName">%2Fcustomers%2FEmailHistoryDetail%2F%7BmessageId%7D%2F%7BisSilverPop%7D</con:setting>
+    <con:setting id="030534e7-c0df-4006-819c-d67c4a31d71cfileName">%2Fcustomers%2FEmailHistoryDetail%2F%7BmessageId%7D%2F%7BisSilverPop%7D</con:setting>
+    <con:setting id="cd53da2f-7f41-46f1-978c-67bda44867fafileName">%2Fcustomers%2FEmailHistoryDetail%2F%7BmessageId%7D%2F%7BisSilverPop%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>messageId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>isSilverPop</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>boolean</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetEmailHistoryDetail" id="a7761d8a-e01d-4a62-8987-54f4bf2de0ea" method="GET">
+    <con:description>Get Email History Detail</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>IsLegacyEmail</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "CustID" : 0,
+  "TemplateName" : "string",
+  "SentNvPairs" : "string",
+  "MessageStatusDesc" : "string",
+  "DateSent" : "2015-07-20T15:49:04-07:00",
+  "ResendStatusDesc" : "string",
+  "MsgFrom" : "string",
+  "MsgFromName" : "string",
+  "MsgTo" : "string",
+  "MsgToName" : "string",
+  "MsgSubject" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="6d247fd0-0700-45ba-97a5-668969e65190" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="messageId" value=""/>
+        <con:entry key="isSilverPop" value=""/>
+        <con:entry key="IsLegacyEmail" value=""/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>messageId</con:entry>
+        <con:entry>isSilverPop</con:entry>
+        <con:entry>IsLegacyEmail</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

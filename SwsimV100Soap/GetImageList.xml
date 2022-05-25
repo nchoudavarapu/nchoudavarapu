@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="de879aa0-f37d-48ca-9b1b-48fc8281c557" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetImageList" name="GetImageList" bindingOperationName="GetImageList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="574205a6-97c5-42da-9449-89666ebfa070fileName">GetImageList</con:setting>
+    <con:setting id="f6532ab8-094c-480b-9ec1-0ca29964920ffileName">GetImageList</con:setting>
+    <con:setting id="de879aa0-f37d-48ca-9b1b-48fc8281c557fileName">GetImageList</con:setting>
+  </con:settings>
+</con:operation>

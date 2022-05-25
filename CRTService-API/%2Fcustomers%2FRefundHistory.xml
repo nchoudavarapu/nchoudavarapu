@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/RefundHistory" path="/customers/RefundHistory" id="ab215a81-eb4c-4af8-a618-048ccef8bf1d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8bf45d04-cdd5-49f0-ab92-b68b984177d5fileName">%2Fcustomers%2FRefundHistory</con:setting>
+    <con:setting id="4bf51be3-111c-4467-80d5-93967ebcbad4fileName">%2Fcustomers%2FRefundHistory</con:setting>
+    <con:setting id="ab215a81-eb4c-4af8-a618-048ccef8bf1dfileName">%2Fcustomers%2FRefundHistory</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetRefundHistory" id="d1a97559-f1f0-45a9-8fac-f128b1af5b10" method="GET">
+    <con:description>Get refund history</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>startDate</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>endDate</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "Status" : "Requested",
+  "RefundRequestDate" : "2015-07-20T15:49:04-07:00",
+  "RefundDate" : "2015-07-20T15:49:04-07:00",
+  "RefundType" : 0,
+  "ClaimNumber" : 0,
+  "AmountRequested" : 1.5,
+  "AmountApproved" : 1.5,
+  "AmountCredited" : 1.5,
+  "DenialReason" : "string",
+  "PrintDate" : "2015-07-20T15:49:04-07:00",
+  "ShipDate" : "2015-07-20T15:49:04-07:00",
+  "TrackingType" : 0,
+  "TrackingNumber" : "string",
+  "Submitter" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="82736810-421d-49bb-bd57-5755f1916c94" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="endDate" value=""/>
+        <con:entry key="custId" value=""/>
+        <con:entry key="startDate" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

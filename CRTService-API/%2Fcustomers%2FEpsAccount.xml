@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/EpsAccount" path="/customers/EpsAccount" id="787304cb-b5b8-4129-9461-8244a1188db1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="58904340-546d-4f98-ac85-366455af8733fileName">%2Fcustomers%2FEpsAccount</con:setting>
+    <con:setting id="1d8f4a2b-49ad-4da8-a6fb-25bfa241d736fileName">%2Fcustomers%2FEpsAccount</con:setting>
+    <con:setting id="787304cb-b5b8-4129-9461-8244a1188db1fileName">%2Fcustomers%2FEpsAccount</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetEpsAccount" id="cabce47b-0109-41cb-86d2-30ecbd497c8d" method="GET">
+    <con:description>Get EPS Account</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>meterNumber</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>"string"</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="47ecf9cf-10f6-473f-b705-309bc57494f2" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="meterNumber" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="SetEpsAccount" id="667a7f4b-1fcd-4020-8c6b-24df165e3a9d" method="POST">
+    <con:description>Set EPS Account</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>meterNumber</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>epsAccountNumber</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>"string"</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="563549c0-9743-488b-b046-9f51a269885a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="meterNumber" value=""/>
+        <con:entry key="epsAccountNumber" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

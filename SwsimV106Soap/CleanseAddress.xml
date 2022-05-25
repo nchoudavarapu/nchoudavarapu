@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="18fd87bc-5ddd-4488-adde-bf4618277cc1" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/CleanseAddress" name="CleanseAddress" bindingOperationName="CleanseAddress" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3bae310a-be3c-439b-b457-478705fb659efileName">CleanseAddress</con:setting>
+    <con:setting id="77f13474-8a2b-4bed-be4a-14dfadda6eacfileName">CleanseAddress</con:setting>
+    <con:setting id="18fd87bc-5ddd-4488-adde-bf4618277cc1fileName">CleanseAddress</con:setting>
+  </con:settings>
+  <con:call id="a9dc6107-04b5-4ac3-a2f4-359601285137" name="CleanseAddress Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:CleanseAddress>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:Address>\r
+            <!--Optional:-->\r
+            <sws:FullName>?</sws:FullName>\r
+            <!--Optional:-->\r
+            <sws:NamePrefix>?</sws:NamePrefix>\r
+            <!--Optional:-->\r
+            <sws:FirstName>?</sws:FirstName>\r
+            <!--Optional:-->\r
+            <sws:MiddleName>?</sws:MiddleName>\r
+            <!--Optional:-->\r
+            <sws:LastName>?</sws:LastName>\r
+            <!--Optional:-->\r
+            <sws:NameSuffix>?</sws:NameSuffix>\r
+            <!--Optional:-->\r
+            <sws:Title>?</sws:Title>\r
+            <!--Optional:-->\r
+            <sws:Department>?</sws:Department>\r
+            <!--Optional:-->\r
+            <sws:Company>?</sws:Company>\r
+            <!--Optional:-->\r
+            <sws:Address1>?</sws:Address1>\r
+            <!--Optional:-->\r
+            <sws:Address2>?</sws:Address2>\r
+            <!--Optional:-->\r
+            <sws:Address3>?</sws:Address3>\r
+            <!--Optional:-->\r
+            <sws:City>?</sws:City>\r
+            <!--Optional:-->\r
+            <sws:State>?</sws:State>\r
+            <!--Optional:-->\r
+            <sws:ZIPCode>?</sws:ZIPCode>\r
+            <!--Optional:-->\r
+            <sws:ZIPCodeAddOn>?</sws:ZIPCodeAddOn>\r
+            <!--Optional:-->\r
+            <sws:DPB>?</sws:DPB>\r
+            <!--Optional:-->\r
+            <sws:CheckDigit>?</sws:CheckDigit>\r
+            <!--Optional:-->\r
+            <sws:Province>?</sws:Province>\r
+            <!--Optional:-->\r
+            <sws:PostalCode>?</sws:PostalCode>\r
+            <!--Optional:-->\r
+            <sws:Country>US</sws:Country>\r
+            <!--Optional:-->\r
+            <sws:Urbanization>?</sws:Urbanization>\r
+            <!--Optional:-->\r
+            <sws:PhoneNumber>?</sws:PhoneNumber>\r
+            <!--Optional:-->\r
+            <sws:Extension>?</sws:Extension>\r
+            <!--Optional:-->\r
+            <sws:CleanseHash>?</sws:CleanseHash>\r
+            <!--Optional:-->\r
+            <sws:OverrideHash>?</sws:OverrideHash>\r
+            <!--Optional:-->\r
+            <sws:EmailAddress>?</sws:EmailAddress>\r
+            <!--Optional:-->\r
+            <sws:FullAddress>?</sws:FullAddress>\r
+         </sws:Address>\r
+         <!--Optional:-->\r
+         <sws:FromZIPCode/>\r
+      </sws:CleanseAddress>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/CleanseAddress"/>
+  </con:call>
+</con:operation>

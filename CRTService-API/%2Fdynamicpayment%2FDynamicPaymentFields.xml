@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/dynamicpayment/DynamicPaymentFields" path="/dynamicpayment/DynamicPaymentFields" id="82adcf7b-2449-4811-b61a-0f515f41a225" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="acd097d8-494b-4e79-9f52-86a71ddd1747fileName">%2Fdynamicpayment%2FDynamicPaymentFields</con:setting>
+    <con:setting id="82adcf7b-2449-4811-b61a-0f515f41a225fileName">%2Fdynamicpayment%2FDynamicPaymentFields</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetDynamicPaymentFields" id="ebc0803c-1168-4bb9-b121-254e6d926980" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="55afcaaf-b14d-40b5-aac0-c009abe9d713" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

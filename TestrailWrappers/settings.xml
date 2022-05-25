@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="b2d148d3-d043-4480-bc4f-43cdd8d33eba" name="TestrailWrappers" type="rest_ex" wadlVersion="https://swagger.io/swagger2/specification" definitionUrl="http://qa-automate01-v/apiwrappers/swagger/docs/v1" basePath="/ApiWrappers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:description xsi:nil="true"/>
+  <con:settings>
+    <con:setting id="6b3e9224-9593-421c-933e-13b00acc2688fileName">TestrailWrappers</con:setting>
+    <con:setting id="b2d148d3-d043-4480-bc4f-43cdd8d33ebafileName">TestrailWrappers</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="http://qa-automate01-v/apiwrappers/swagger/docs/v1">
+    <con:part>
+      <con:url>http://qa-automate01-v/apiwrappers/swagger/docs/v1</con:url>
+      <con:content>{
+  "swagger": "2.0",
+  "info": {
+    "version": "v1",
+    "title": "TestrailWrappers"
+  },
+  "host": "qa-automate01-v",
+  "basePath": "/ApiWrappers",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/tr/add_case_for_project/{ProjectName}": {
+      "post": {
+        "tags": [
+          "tr/add_case_for_project/{ProjectName}"
+        ],
+        "operationId": "add_case_for_project_Post",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "ProjectName",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/add_case_for_project_request"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/tr/add_result_for_automationkey/{RunId}/{AutomationKey}": {
+      "post": {
+        "tags": [
+          "tr/add_result_for_automationkey/{RunId}/{AutomationKey}"
+        ],
+        "operationId": "add_result_for_automationkey_Post",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "RunId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "AutomationKey",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "sdcrequest",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/sdc_result"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/tr/add_results_for_automationkeys/{RunId}": {
+      "post": {
+        "tags": [
+          "tr/add_results_for_automationkeys/{RunId}"
+        ],
+        "operationId": "add_results_for_automationkeys_Post",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "RunId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/add_results_for_automationkeys_request"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/tr/create_test_plan_for_project/{ProjectName}": {
+      "post": {
+        "tags": [
+          "tr/create_test_plan_for_project/{ProjectName}"
+        ],
+        "operationId": "create_test_plan_for_project_Post",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "ProjectName",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/create_test_plan_for_project_request"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/tr/get_cases_by_filters/{ProjectId}": {
+      "post": {
+        "tags": [
+          "tr/get_cases_by_filters/{ProjectId}"
+        ],
+        "operationId": "get_cases_by_filters_Post",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "ProjectId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "CaseFilters",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/case_filters"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/get_cases_by_filters_response"
+            }
+          }
+        }
+      }
+    },
+    "/tr/get_cases_for_section/{ProjectName}": {
+      "post": {
+        "tags": [
+          "tr/get_cases_for_section/{ProjectName}"
+        ],
+        "operationId": "get_cases_for_section_Post",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "ProjectName",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "request",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/get_cases_for_section_request"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/tr/get_runinfo_by_name_config": {
+      "post": {
+        "tags": [
+          "tr/get_runinfo_by_name_config"
+        ],
+        "operationId": "get_runinfo_by_name_config_Post",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Json",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/name_config"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/tr/is_rebuild_in_progress": {
+      "get": {
+        "tags": [
+          "tr/is_rebuild_in_progress"
+        ],
+        "operationId": "is_rebuild_in_progress_Get",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/tr/recreate_automationkey_mappings": {
+      "get": {
+        "tags": [
+          "tr/recreate_automationkey_mappings"
+        ],
+        "operationId": "recreate_automationkey_mappings_Get",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "add_case_for_project_request": {
+      "type": "object",
+      "properties": {
+        "test_suite": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "priority": {
+          "type": "string"
+        },
+        "estimate": {
+          "type": "string"
+        },
+        "automation_key": {
+          "type": "string"
+        },
+        "automation_type": {
+          "type": "string"
+        },
+        "regression_test": {
+          "type": "boolean"
+        },
+        "custom_steps_separated": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/test_step"
+          }
+        }
+      }
+    },
+    "test_step": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string"
+        },
+        "expected": {
+          "type": "string"
+        }
+      }
+    },
+    "sdc_result": {
+      "type": "object",
+      "properties": {
+        "status_id": {
+          "type": "string"
+        },
+        "created_by": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "created_on": {
+          "type": "string"
+        },
+        "assignedto_id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "elapsed": {
+          "type": "string"
+        },
+        "defects": {
+          "type": "string"
+        },
+        "custom_step_results": {
+          "type": "string"
+        },
+        "custom_custom_tr_auto_key": {
+          "type": "string"
+        },
+        "attachment_ids": {
+          "type": "array",
+          "items": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "add_results_for_automationkeys_request": {
+      "type": "object",
+      "properties": {
+        "results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/sdc_results"
+          }
+        }
+      }
+    },
+    "sdc_results": {
+      "type": "object",
+      "properties": {
+        "automation_key": {
+          "type": "string"
+        },
+        "status_id": {
+          "type": "string"
+        },
+        "created_by": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "created_on": {
+          "type": "string"
+        },
+        "assignedto_id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "elapsed": {
+          "type": "string"
+        },
+        "defects": {
+          "type": "string"
+        },
+        "custom_step_results": {
+          "type": "string"
+        },
+        "custom_custom_tr_auto_key": {
+          "type": "string"
+        },
+        "attachment_ids": {
+          "type": "array",
+          "items": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "create_test_plan_for_project_request": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "milestone": {
+          "type": "string"
+        },
+        "test_suites": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/test_suite"
+          }
+        }
+      }
+    },
+    "test_suite": {
+      "type": "object",
+      "properties": {
+        "suite_name": {
+          "type": "string"
+        },
+        "include_all": {
+          "type": "boolean"
+        },
+        "automation_keys": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "config_groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/config_group"
+          }
+        }
+      }
+    },
+    "config_group": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "configs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "case_filters": {
+      "type": "object",
+      "properties": {
+        "Type": {
+          "type": "string"
+        },
+        "Priority": {
+          "type": "string"
+        },
+        "Estimate": {
+          "type": "string"
+        },
+        "Reference": {
+          "type": "string"
+        },
+        "TestCaseStatus": {
+          "type": "string"
+        },
+        "RegressionTest": {
+          "type": "string"
+        },
+        "AutomationType": {
+          "type": "string"
+        },
+        "AutomationStatus": {
+          "type": "string"
+        },
+        "AutomationKey": {
+          "type": "string"
+        },
+        "ArchiveTest": {
+          "type": "string"
+        }
+      }
+    },
+    "get_cases_by_filters_response": {
+      "type": "object",
+      "properties": {
+        "project_id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "suites": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/get_cases_by_filters_suite"
+          }
+        }
+      }
+    },
+    "get_cases_by_filters_suite": {
+      "type": "object",
+      "properties": {
+        "suite_name": {
+          "type": "string"
+        },
+        "suite_id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "cases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/get_cases_by_filters_case"
+          }
+        }
+      }
+    },
+    "get_cases_by_filters_case": {
+      "type": "object",
+      "properties": {
+        "case_name": {
+          "type": "string"
+        },
+        "case_id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "autokey": {
+          "type": "string"
+        }
+      }
+    },
+    "get_cases_for_section_request": {
+      "type": "object",
+      "properties": {
+        "SuiteName": {
+          "type": "string"
+        },
+        "SectionName": {
+          "type": "string"
+        }
+      }
+    },
+    "name_config": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "config": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}</con:content>
+      <con:type>https://swagger.io/swagger2/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>http://qa-automate01-v</con:endpoint>
+  </con:endpoints>
+</con:interface>

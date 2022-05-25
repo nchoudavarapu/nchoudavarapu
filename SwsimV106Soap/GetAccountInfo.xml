@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="a55de197-9b10-4c02-8569-5ed0d6ae39b0" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetAccountInfo" name="GetAccountInfo" bindingOperationName="GetAccountInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6c4637ea-73a4-4719-8738-df301c0456a3fileName">GetAccountInfo</con:setting>
+    <con:setting id="01e55c40-2b55-4dea-babd-fe9407497acafileName">GetAccountInfo</con:setting>
+    <con:setting id="a55de197-9b10-4c02-8569-5ed0d6ae39b0fileName">GetAccountInfo</con:setting>
+  </con:settings>
+  <con:call id="176f2830-e4cd-4609-9b67-09965c026bac" name="GetAccountInfo Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetAccountInfo>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+      </sws:GetAccountInfo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetAccountInfo"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="92bec94c-4e29-4362-95be-d21aca9e9f2b" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/ReprintIndicium" name="ReprintIndicium" bindingOperationName="ReprintIndicium" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d8e97e54-3945-4141-a28a-b7c941280ebcfileName">ReprintIndicium</con:setting>
+    <con:setting id="2409d5a7-917f-48e6-b1a3-9509a8b6d34ffileName">ReprintIndicium</con:setting>
+    <con:setting id="92bec94c-4e29-4362-95be-d21aca9e9f2bfileName">ReprintIndicium</con:setting>
+  </con:settings>
+</con:operation>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/ResubmitOrderForm" path="/customers/ResubmitOrderForm" id="e73667a9-d777-4bd6-ae27-2d45366ffa96" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bc2e4125-d48a-42be-8f3f-bcc95667940afileName">%2Fcustomers%2FResubmitOrderForm</con:setting>
+    <con:setting id="554078cb-acac-4dac-a52c-b9e0193dbc14fileName">%2Fcustomers%2FResubmitOrderForm</con:setting>
+    <con:setting id="e73667a9-d777-4bd6-ae27-2d45366ffa96fileName">%2Fcustomers%2FResubmitOrderForm</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="ResubmitOrderForm" id="a9cebde6-89e6-48de-b5e5-ba101b9332cd" method="POST">
+    <con:description>Resubmit order forms that are still in resubmit state for customer</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>true</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="a7570ad3-e1a0-4334-98b3-5d761da4e907" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

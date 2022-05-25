@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="f46cffb0-fb97-4117-95db-af011a587131" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/CreateManifest" name="CreateManifest" bindingOperationName="CreateManifest" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="09882a44-86ad-433d-9b3e-fc99fdb5e7cdfileName">CreateManifest</con:setting>
+    <con:setting id="819e6171-ee72-4ba0-b841-e0eb8f574820fileName">CreateManifest</con:setting>
+    <con:setting id="f46cffb0-fb97-4117-95db-af011a587131fileName">CreateManifest</con:setting>
+  </con:settings>
+</con:operation>

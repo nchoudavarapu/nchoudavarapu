@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="d71cd7a5-37f1-4e61-94d6-c27628e95a32" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/SetAutoBuy" name="SetAutoBuy" bindingOperationName="SetAutoBuy" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="dfbad84d-4aea-43f0-8438-56840725338efileName">SetAutoBuy</con:setting>
+    <con:setting id="f63a5ffe-e0ac-4769-9cd8-011e5dbf66d8fileName">SetAutoBuy</con:setting>
+    <con:setting id="d71cd7a5-37f1-4e61-94d6-c27628e95a32fileName">SetAutoBuy</con:setting>
+  </con:settings>
+  <con:call id="58f067ed-afd4-4d47-95c7-7dfb2c77e353" name="SetAutoBuy Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:SetAutoBuy>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:AutoBuySettings>\r
+            <sws:AutoBuyEnabled>?</sws:AutoBuyEnabled>\r
+            <!--Optional:-->\r
+            <sws:PurchaseAmount>0.0</sws:PurchaseAmount>\r
+            <!--Optional:-->\r
+            <sws:TriggerAmount>0.0</sws:TriggerAmount>\r
+         </sws:AutoBuySettings>\r
+      </sws:SetAutoBuy>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/SetAutoBuy"/>
+  </con:call>
+</con:operation>

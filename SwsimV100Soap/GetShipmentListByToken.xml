@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="98b34c42-4549-44eb-963c-a110e4ce4393" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetShipmentListByToken" name="GetShipmentListByToken" bindingOperationName="GetShipmentListByToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a7dc802c-b26d-4a76-b94f-054a8604e630fileName">GetShipmentListByToken</con:setting>
+    <con:setting id="77ee3d29-a5e3-4586-8d93-95f3c3f70f7bfileName">GetShipmentListByToken</con:setting>
+    <con:setting id="98b34c42-4549-44eb-963c-a110e4ce4393fileName">GetShipmentListByToken</con:setting>
+  </con:settings>
+</con:operation>

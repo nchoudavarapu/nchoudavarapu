@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e64c548a-f5a4-4fea-acfe-9d2b553dc69c" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/RegisterAccount" name="RegisterAccount" bindingOperationName="RegisterAccount" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e3ce644d-16e2-4bab-b82a-913dafbf2d9cfileName">RegisterAccount</con:setting>
+    <con:setting id="472a3bc5-1607-4702-a8fa-00a3a39da8a8fileName">RegisterAccount</con:setting>
+    <con:setting id="e64c548a-f5a4-4fea-acfe-9d2b553dc69cfileName">RegisterAccount</con:setting>
+  </con:settings>
+</con:operation>

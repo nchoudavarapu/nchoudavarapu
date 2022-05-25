@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/gpFacilityOverride/{consolidatorFacilityAddressId}" path="/customers/{custId}/gpFacilityOverride/{consolidatorFacilityAddressId}" id="9ce24159-d87d-4781-8515-82ad83128b6b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5d2adf2b-a1bd-4679-99e3-b5cca5dd1837fileName">%2Fcustomers%2F%7BcustId%7D%2FgpFacilityOverride%2F%7BconsolidatorFacilityAddressId%7D</con:setting>
+    <con:setting id="ba85f430-8cae-4924-b21c-caaf365995b8fileName">%2Fcustomers%2F%7BcustId%7D%2FgpFacilityOverride%2F%7BconsolidatorFacilityAddressId%7D</con:setting>
+    <con:setting id="9ce24159-d87d-4781-8515-82ad83128b6bfileName">%2Fcustomers%2F%7BcustId%7D%2FgpFacilityOverride%2F%7BconsolidatorFacilityAddressId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>consolidatorFacilityAddressId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="SetGpFacilityOverride" id="e1428ebf-7e1a-41bc-8529-b682c5c18fa3" method="POST">
+    <con:description>Set GP Facility Override</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="acc38733-3fca-49a1-9f1d-9c5e9b67e7d3" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+        <con:entry key="consolidatorFacilityAddressId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

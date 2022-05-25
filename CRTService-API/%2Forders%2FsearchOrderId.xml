@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/orders/searchOrderId" path="/orders/searchOrderId" id="1547c6c3-c99d-415b-8723-301caad43d44" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c1eb40f2-aa67-44d3-8d8a-0fb0b96f75c5fileName">%2Forders%2FsearchOrderId</con:setting>
+    <con:setting id="df650a4c-c1ba-418d-a100-502e89f55d0dfileName">%2Forders%2FsearchOrderId</con:setting>
+    <con:setting id="1547c6c3-c99d-415b-8723-301caad43d44fileName">%2Forders%2FsearchOrderId</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="SearchOrderId" id="180fc700-ecef-4dc3-b53b-022accb51b86" method="GET">
+    <con:description>Search account and its orders by OrderId</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>orderId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "UserInfo" : {
+    "UserName" : "string",
+    "CustId" : 0,
+    "UserId" : 0,
+    "ProfileId" : "string",
+    "MeterNo" : 1.5,
+    "CompanyName" : "string",
+    "UserFullName" : {
+      "FirstName" : "string",
+      "Middlename" : "string",
+      "LastName" : "string"
+    }
+  },
+  "OrderInfo" : {
+    "OrderId" : "string",
+    "OrderStatus" : "string",
+    "ProductTotal" : "string",
+    "ShippingTotal" : "string",
+    "TaxTotal" : "string",
+    "OrderTotal" : "string",
+    "OrderDate" : "string",
+    "ReorderStatus" : "string",
+    "PreviouslyAppliedCredit" : 1.5,
+    "MaxRefundAllowed" : 1.5,
+    "Refundability" : 0
+  },
+  "PaymentInfo" : {
+    "PaymentGroupId" : "string",
+    "PaymentMethod" : "string",
+    "State" : "string",
+    "AmountCredited" : "string",
+    "AmountDebited" : "string",
+    "BillToAddress" : {
+      "Name" : {
+        "FirstName" : "string",
+        "Middlename" : "string",
+        "LastName" : "string"
+      },
+      "Address" : {
+        "Street" : "string",
+        "City" : "string",
+        "State" : "string",
+        "Zip" : "string"
+      }
+    }
+  },
+  "ShippingInfo" : [ {
+    "ShippingGroupId" : "string",
+    "ShippingTrackingNumber" : "string",
+    "ShippingStatus" : "string",
+    "ShippingMethod" : "string",
+    "ShippingDate" : "string",
+    "InternalQaRequestId" : "string",
+    "DateSubmittedToQa" : "string",
+    "LineItems" : [ {
+      "LineId" : "string",
+      "SkuId" : "string",
+      "ProductId" : "string",
+      "Quantity" : "string",
+      "ProductTotal" : "string",
+      "TaxTotal" : "string",
+      "Description" : "string"
+    } ],
+    "ShipToAddress" : [ {
+      "Name" : {
+        "FirstName" : "string",
+        "Middlename" : "string",
+        "LastName" : "string"
+      },
+      "Address" : {
+        "Street" : "string",
+        "City" : "string",
+        "State" : "string",
+        "Zip" : "string"
+      }
+    } ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="5057a048-852f-4fd2-b141-cdc88490fd35" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="orderId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="6e68268e-3edb-4878-a7e1-6b18b60d23f6" isOneWay="false" action="http://qa-automate01-v/tws/server/CheckServerHealth" name="CheckServerHealth" bindingOperationName="CheckServerHealth" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cdd5a048-9d90-4d72-b789-c573b0900a86fileName">CheckServerHealth</con:setting>
+    <con:setting id="2b055c68-2320-457e-bbc6-468b25caa200fileName">CheckServerHealth</con:setting>
+    <con:setting id="6e68268e-3edb-4878-a7e1-6b18b60d23f6fileName">CheckServerHealth</con:setting>
+  </con:settings>
+</con:operation>

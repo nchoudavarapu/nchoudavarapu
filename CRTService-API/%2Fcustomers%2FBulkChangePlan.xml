@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/BulkChangePlan" path="/customers/BulkChangePlan" id="dc6ee81a-5e73-4075-ae15-db095f7ae7ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="778720b2-ab75-4ddd-9485-5929b8eb0010fileName">%2Fcustomers%2FBulkChangePlan</con:setting>
+    <con:setting id="6b6e2d3a-91a4-4b50-9024-6a12e035894ffileName">%2Fcustomers%2FBulkChangePlan</con:setting>
+    <con:setting id="dc6ee81a-5e73-4075-ae15-db095f7ae7eefileName">%2Fcustomers%2FBulkChangePlan</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="BulkChangePlan" id="cf9867c7-9350-4af3-8025-59f8478d9af3" method="POST">
+    <con:description>Change Pricing Plan(Bulk Actions)</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e7c619a5-4abe-4b00-915d-4dd4001bafd7" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

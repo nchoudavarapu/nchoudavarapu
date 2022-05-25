@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ee25c553-e781-4eae-a264-ae5e69856b2a" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/ChangePlan" name="ChangePlan" bindingOperationName="ChangePlan" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="498604dd-5660-4e28-8547-424674eaf68bfileName">ChangePlan</con:setting>
+    <con:setting id="f203e166-d144-4e6f-ad74-93ea2428b639fileName">ChangePlan</con:setting>
+    <con:setting id="ee25c553-e781-4eae-a264-ae5e69856b2afileName">ChangePlan</con:setting>
+  </con:settings>
+</con:operation>

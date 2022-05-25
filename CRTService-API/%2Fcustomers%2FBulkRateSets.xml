@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/BulkRateSets" path="/customers/BulkRateSets" id="b9418671-299e-4367-8180-0b3cb90fc289" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a035d8ac-183f-4f49-978e-e0a109da64bafileName">%2Fcustomers%2FBulkRateSets</con:setting>
+    <con:setting id="b9418671-299e-4367-8180-0b3cb90fc289fileName">%2Fcustomers%2FBulkRateSets</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="BulkRateSets" id="8a3a1c34-4c52-4284-9afe-bb8c549a05bd" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e298b9da-ea4a-42ee-a56b-7dd15d2d680c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

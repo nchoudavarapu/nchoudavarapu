@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="ef1bcd16-1080-4db8-ac42-b17de8709a08" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="SyncPurchasePostage" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5cdfcdde-c27b-48ea-acf9-c397a6d4519dfileName">SyncPurchasePostage</con:setting>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="b60f9f3a-eefe-4d65-a51d-b3430cea395dfileName">SyncPurchasePostage</con:setting>
+    <con:setting id="fbd6adb0-024c-448e-9caf-a705977292ecfileName">SyncPurchasePostage</con:setting>
+    <con:setting id="ef1bcd16-1080-4db8-ac42-b17de8709a08fileName">SyncPurchasePostage</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="Users" id="b8158c38-6df4-487e-89ba-e936004946e2">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Grid">
+        <con:configuration>
+          <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CC_MFO_Purchase</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">EXISTING</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">tninh_s_287</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">mylittlepony!1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SASMFO</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SASMFO</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">10</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:PromoCode>pluto8936&lt;/sws:PromoCode></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_SyncPurchasePostage_${Users#TestCaseName}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Low</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">2</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CC_SASONLY_Purchase</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">EXISTING</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">tninh_sas_2502</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">mylittlepony!1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SASONLY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">90</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:PromoCode>pluto8936&lt;/sws:PromoCode></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_SyncPurchasePostage_${Users#TestCaseName}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Low</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">3</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CC_IntlAcc_Purchase</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">EXISTING</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">tninhIntl02</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">mylittlepony!1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Intl</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Intl</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">10</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_SyncPurchasePostage_${Users#TestCaseName}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Low</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">4</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CC_Core_Purchase</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">EXISTING</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">tninh_c_102</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">mylittlepony!1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ACH</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CORE</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CORE</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">10</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_SyncPurchasePostage_${Users#TestCaseName}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Low</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CC_DMC_Purchase</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">EXISTING</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">tninh_dmc_700</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">mylittlepony!1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">CC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SASDMC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">SASDMC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">100</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config">Others-Complete-BAAS_SyncPurchasePostage_${Users#TestCaseName}</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Low</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry></xml-fragment>]]></row>
+          <recognizeAsPlainText>true</recognizeAsPlainText>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>SNO</con:property>
+      <con:property>TestCaseName</con:property>
+      <con:property>ACCOUNTAGE</con:property>
+      <con:property>UserName</con:property>
+      <con:property>PassPhrase</con:property>
+      <con:property>PaymentType</con:property>
+      <con:property>AccountType</con:property>
+      <con:property>Flow</con:property>
+      <con:property>PurchaseAmount</con:property>
+      <con:property>PromoCode</con:property>
+      <con:property>AutomationKey</con:property>
+      <con:property>Priority</con:property>
+      <con:property>Regression</con:property>
+      <con:property>CreditCard</con:property>
+      <con:startRow/>
+      <con:endRow/>
+      <con:recordsPerIteration>1</con:recordsPerIteration>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:trimValues>false</con:trimValues>
+      <con:entitizeValues>false</con:entitizeValues>
+      <con:restartOnRun>true</con:restartOnRun>
+      <con:expandProperties>false</con:expandProperties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="AddTestCaseToProject" id="0d8aa103-68e6-41a7-a899-d2dd1bcb5cd4" disabled="true">
+    <con:settings/>
+    <con:config service="TestrailWrappers" resourcePath="/ApiWrappers/tr/add_case_for_project/{ProjectName}" methodName="add_case_for_project_Post" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="AddTestCaseToProject" id="166e30c4-dd80-4a20-8ce4-a2b2b54f4d6f" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Username" value="${TestRails_Username}"/>
+  &lt;con:entry key="ApiKey" value="${TestRails_APIKey}"/>
+&lt;/xml-fragment></con:setting>
+        </con:settings>
+        <con:endpoint>http://qa-automate01-v</con:endpoint>
+        <con:request>{\r
+  "test_suite" : "Others-Complete-BAAS",\r
+  "section" : "PurchasePostage",\r
+  "title" : "${Users#TestCaseName}",
+  "priority" : "${Users#Priority}",\r
+  "automation_key" : "${Users#AutomationKey}",
+  "automation_type" : "SoapUI",\r
+  "regression_test" : ${Users#regression},\r
+  "custom_steps_separated" : [ {
+    "content" : "SyncPP",
+    "expected" : "SyncPP"
+  }]
+}</con:request>
+        <con:originalUri>http://qa-automate01-v/ApiWrappers/tr/add_case_for_project/z_QA%20Server%20Sandbox</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="cac9a257-c45a-4816-8b3e-cc2b28d39ac3" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="ProjectName" value="${#Project#TestRailProjectName}"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop 2" id="3ff410c0-845f-4b61-aa68-af896fd424b4" disabled="true">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Users</dataSourceStep>
+      <targetStep>AddTestCaseToProject</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="8d84e140-4e44-453c-a0a3-1ec72e09fad9" name="GetAccountInfoRequest">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV106Soap</con:interface>
+      <con:operation>GetAccountInfo</con:operation>
+      <con:request name="GetAccountInfoRequest" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="7e0992ce-5f45-4cbf-8178-1aa389bf8557">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SOAPAction" value="${#Project#Namespace}/GetAccountInfo" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:GetAccountInfo>
+         <sws:Credentials>
+            <sws:IntegrationID>88f8ba27-2fbc-4601-a055-e4baa7bbdbfb</sws:IntegrationID>
+            <sws:Username>${Users#UserName}</sws:Username>
+            <sws:Password>${Users#PassPhrase}</sws:Password>
+         </sws:Credentials>
+      </sws:GetAccountInfo>
+</soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="Schema Compliance" id="585aa108-7019-4c10-a715-0e511f03940d" name="Schema Compliance" disabled="true">
+          <con:configuration/>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetAccountInfo"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Assert_GetAccountInfo" id="51d7a729-bd77-4101-bd88-5ecf7f07e69d">
+    <con:settings/>
+    <con:config>
+      <script>/* Reading the response from "GetAccountInfo" "*/
+import groovy.sql.Sql
+def start = new soapUIScripts.startExec(context, "Project")
+def testCaseName = "GetAccountInfoRequest"
+def bALANCEDBServer = context.expand( '${#Project#BALANCEDBServer}' )
+def bRIDGEDBServer = context.expand( '${#Project#BRIDGEDBServer}' )
+def oRDBServer = context.expand( '${#Project#ORDBServer}' )
+def accountType = context.expand( '${Users#AccountType}' )
+def pOSTALDBServer = context.expand( '${#Project#POSTALDBServer}' )
+def userName = context.expand( '${Users#UserName}' )
+
+def response  = start.util.readTestStepProperty(testCaseName, "Response")
+ def controlTotal   = start.util.readXMLNodeValue(response, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:PostageBalance[1]/ns1:ControlTotal[1]")
+def custID   = start.util.readXMLNodeValue(response, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:CustomerID[1]")
+def userId   = start.util.readXMLNodeValue(response, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:UserID[1]")
+def ResellerAccountId   = start.util.readXMLNodeValue(response, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:AccountId[1]")
+def balanceID = start.util.readXMLNodeValue(response, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:BalanceID[1]")
+def meterNo = start.util.readXMLNodeValue(response, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:MeterNumber[1]")
+log.info response
+log.info custID
+log.info userId
+log.info ResellerAccountId
+start.util.writeTestCaseProperty("balanceID", balanceID)
+start.util.writeTestCaseProperty("meterNo", meterNo)
+start.util.writeTestCaseProperty("custID", custID)
+start.util.writeTestCaseProperty("UserID", userId)
+start.util.writeTestCaseProperty("ResellerAccountId", ResellerAccountId)
+start.util.writeTestCaseProperty("controlTotal", controlTotal)
+log.info("controltotal"+ controlTotal)
+def countRow
+if(accountType.equals("SAS") || accountType.equals("SASDMC")|| accountType.equals("SASMFO")){
+	String bridgeQuery = '''select count(*) as countRows
+						from sdct_Reseller_AccountBalanceLog 
+						where ResellerAccountId=''' + "\'$ResellerAccountId\'"	  
+	def countRowResults = start.util.executeDBQuery(start.util.connectToDB(bRIDGEDBServer, "Bridge"), bridgeQuery)
+	countRow=countRowResults.countRows.toString()
+	log.info countRow
+}
+else if(accountType.equals("Intl") || accountType.equals("IntlDMC")){
+	String balanceQuery = '''Select count(*) as countLog
+						From   [sdct_Balance_TransactionLog]		
+		    				Where BalanceId = ''' + "\'$balanceID\'"
+		    				   				
+	def countTransactionLog = start.util.executeDBQuery(start.util.connectToDB(bALANCEDBServer, "Balance"), balanceQuery)
+	countRow= countTransactionLog.countLog.toString()
+}
+else{
+		String ORQuery = '''Select count(*) as countLog
+						From   sdct_postal_meterbalancelog 
+						where MeterNumber= ''' + "\'$meterNo\'"
+		    				   				
+	def countTransactionLog = start.util.executeDBQuery(start.util.connectToDB(pOSTALDBServer, "postal"), ORQuery)
+	countRow= countTransactionLog.countLog.toString()
+	
+	
+}
+
+log.info countRow
+start.util.writeTestCaseProperty("countRow", countRow)
+// turn off PhoneVerification
+String PhoneVerificationQuery=''' UPDATE [Bridge].[dbo].[sdct_Bridge_MeterAccount] set [PhoneVerificationStatusID] = 1 where PostalAuthenticationID in ('''+ "\'$userName\')"
+def PhoneVerificationQueryResults = start.util.executeDBQuery(start.util.connectToDB(bRIDGEDBServer, "Bridge"), PhoneVerificationQuery)
+log.info(PhoneVerificationQuery)</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="25186a5c-f4d9-4ffb-b4c9-473db3b39141" name="PurchasePostageRequest">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV106Soap</con:interface>
+      <con:operation>PurchasePostage</con:operation>
+      <con:request name="PurchasePostageRequest" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="704708c3-c48b-44bb-8d94-c0aaaf6ab827">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SOAPAction" value="${#Project#Namespace}/PurchasePostage" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:PurchasePostage>
+         <!--You have a CHOICE of the next 2 items at this level-->
+         <sws:Credentials>
+            <sws:IntegrationID>${#Project#IntegrationID}</sws:IntegrationID>
+            <sws:Username>${Users#UserName}</sws:Username>
+            <sws:Password>${Users#Passphrase}</sws:Password>
+         </sws:Credentials>
+         <sws:PurchaseAmount>${Users#PurchaseAmount}</sws:PurchaseAmount>
+         <sws:ControlTotal>${#TestCase#controlTotal}</sws:ControlTotal>
+         <sws:MI>
+            <sws:IPAddress>111.111.111.111</sws:IPAddress>
+            <sws:MacAddress>001CC0518C66</sws:MacAddress>
+         </sws:MI>
+         <!--Optional:-->
+         <sws:IntegratorTxID>${=java.util.UUID.randomUUID()}</sws:IntegratorTxID>
+         <sws:SendEmail>true</sws:SendEmail>
+      </sws:PurchasePostage>
+</soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/PurchasePostage"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="ValidationPurchasePostage" id="fbf4be05-a017-4ce2-91d0-37cf0d330adf">
+    <con:settings/>
+    <con:config>
+      <script><![CDATA[import groovy.sql.Sql
+def start = new soapUIScripts.startExec(context, "Project")
+def bALANCEDBServer = context.expand( '${#Project#BALANCEDBServer}' )
+def bRIDGEDBServer = context.expand( '${#Project#BRIDGEDBServer}' )
+def oRDBServer = context.expand( '${#Project#ORDBServer}' )
+def userName = context.expand( '${Users#UserName}' )
+def accountType = context.expand( '${Users#AccountType}' )
+def resellerAccountID = context.expand( '${#TestCase#ResellerAccountID}' )
+log.info resellerAccountID
+def balanceID = context.expand( '${#TestCase#balanceID}' )
+def meterNo = context.expand( '${#TestCase#meterNo}' )
+def testCaseName = context.expand( '${Users#TestCaseName}' )
+def custID = context.expand( '${#TestCase#custID}' )
+def userId = context.expand( '${#TestCase#UserID}' )
+def pOSTALDBServer = context.expand( '${#Project#POSTALDBServer}' )
+double purchaseAmount = Double.parseDouble(context.expand( '${Users#PurchaseAmount}' ))
+log.info("purchaseAmount"+purchaseAmount)
+double  controlTotal = Double.parseDouble(context.expand( '${#TestCase#controlTotal}' ))
+log.info("controlTotal"+controlTotal)
+double countRow = Double.parseDouble(context.expand( '${#TestCase#countRow}' ))
+log.info("countRow"+countRow)
+//get status and TransactionID
+def StatusPurchasePostage = context.expand( '${PurchasePostageRequest#HarResponse#$[\'status\']}' )
+def testCaseName3 = "PurchasePostageRequest"
+def response1  = start.util.readTestStepProperty(testCaseName3, "Response")
+def TransactionID = start.util.readXMLNodeValue(response1, "//ns1:PurchasePostageResponse[1]/ns1:TransactionID[1]")
+log.info("TransactionID"+TransactionID)
+log.info(StatusPurchasePostage)
+log
+double newCount
+testRunner.runTestStepByName("GetAccountInfoRequest")
+sleep(10000);
+def testCaseName2 = "GetAccountInfoRequest"
+def dataSink = context.testCase.testSteps["Report"];
+
+def response  = start.util.readTestStepProperty(testCaseName2, "Response")
+ double newcontrolTotal   = Double.parseDouble(start.util.readXMLNodeValue(response, "//ns1:GetAccountInfoResponse[1]/ns1:AccountInfo[1]/ns1:PostageBalance[1]/ns1:ControlTotal[1]"))
+log.info("newcontrolTotal"+newcontrolTotal)
+def status=""
+if(StatusPurchasePostage.equals("200")){
+	if(accountType.equals("SAS") || accountType.equals("SASDMC")){
+	String bridgeQuery = '''select count(*) as countRows
+						from sdct_Reseller_AccountBalanceLog 
+						where ResellerAccountId=''' + "\'$resellerAccountID\'"	
+						log.info bridgeQuery 
+	def countRowResults = start.util.executeDBQuery(start.util.connectToDB(bRIDGEDBServer, "Bridge"), bridgeQuery)
+	newCount=Double.parseDouble(countRowResults.countRows.toString())
+	String getPurchase = '''select top(1)*
+						from sdct_Reseller_AccountBalanceLog 
+						where ResellerAccountId=''' + "\'$resellerAccountID\'"	+"order by AccountBalanceLogId desc" 
+	def getPurchases = start.util.executeDBQuery(start.util.connectToDB(bRIDGEDBServer, "Bridge"), getPurchase)
+	def transactionType=getPurchases.TransactionType.toString()
+	double transactionAmount=Double.parseDouble(getPurchases.TransactionAmount.toString())
+	log.info(newCount-countRow)
+	log.info("transactionAmount"+transactionAmount)
+	log.info("transactionType"+transactionType)
+	log.info("newCount"+newCount)
+	log.info(transactionAmount + controlTotal)
+	FetchBalanceAfterPurchaseForSASorSASDMC()
+		if(newCount-countRow==1.0 && transactionAmount==purchaseAmount && newcontrolTotal== (transactionAmount + controlTotal)&& transactionType.equals("3")){
+			comment = "Purchase SAS flow success"
+			status="Pass"
+			writeDataSink(testCaseName,userName,custID,userId,status,comment)
+			start.util.writeTestCaseProperty("TestRailCaseStatus", status);
+			start.util.writeTestCaseProperty("TestRailCaseComment", comment);
+			log.info(comment)
+		}
+		
+		else if (newCount-countRow==1.0 && transactionAmount==purchaseAmount && newcontrolTotal== (transactionAmount + controlTotal)&& transactionType.equals("13")){
+			comment = "Purchase SASDMC flow success"
+			status="Pass"
+			writeDataSink(testCaseName,userName,custID,userId,status,comment)
+			start.util.writeTestCaseProperty("TestRailCaseStatus", status);
+			start.util.writeTestCaseProperty("TestRailCaseComment", comment);
+			log.info(comment)
+		}
+		else{
+			comment = "Purchase "+accountType+" flow fail"+ "transactionAmount" + transactionAmount+"purchaseAmount"+purchaseAmount + "newcontrolTotal"+newcontrolTotal +"transactionType"+transactionType
+			status="Fail"
+			writeDataSink(testCaseName,userName,custID,userId,status,comment)
+			start.util.writeTestCaseProperty("TestRailCaseStatus", status);
+			start.util.writeTestCaseProperty("TestRailCaseComment", comment);
+			log.info(comment)
+		}
+	}
+	else if(accountType.equals("SASMFO")){
+	String bridgeQuery = '''select count(*) as countRows
+						from sdct_Reseller_AccountBalanceLog 
+						where ResellerAccountId=''' + "\'$resellerAccountID\'"	
+						log.info bridgeQuery 
+	def countRowResults = start.util.executeDBQuery(start.util.connectToDB(bRIDGEDBServer, "Bridge"), bridgeQuery)
+	
+	newCount=Double.parseDouble(countRowResults.countRows.toString())
+	String getPurchase = '''select top(1)*
+						from sdct_Reseller_AccountBalanceLog 
+						where ResellerAccountId=''' + "\'$resellerAccountID\'"	  +"order by AccountBalanceLogId desc"
+	def getPurchases = start.util.executeDBQuery(start.util.connectToDB(bRIDGEDBServer, "Bridge"), getPurchase)
+	def transactionType=getPurchases.TransactionType.toString()
+	log.info("getPurchase: "+getPurchase)
+	double transactionAmount=Double.parseDouble(getPurchases.TransactionAmount.toString())
+	log.info("transactionAmount"+transactionAmount)
+	log.info("transactionType"+transactionType)
+	log.info("newCount"+newCount)
+	FetchBalanceAfterPurchaseForSASorSASDMC()
+	if(newCount-countRow==1.0 && transactionAmount==purchaseAmount && newcontrolTotal== (transactionAmount + controlTotal)&& transactionType.equals("13")){
+		comment = "Purchase SASMFO flow success"
+		status="Pass"
+		writeDataSink(testCaseName,userName,custID,userId,status,comment)
+		start.util.writeTestCaseProperty("TestRailCaseStatus", status);
+		start.util.writeTestCaseProperty("TestRailCaseComment", comment);
+		log.info(comment)
+	}
+	else{
+		comment = "Purchase SASMFO flow fail"
+		status="Fail"
+		writeDataSink(testCaseName,userName,custID,userId,status,comment)
+		start.util.writeTestCaseProperty("TestRailCaseStatus", status);
+		start.util.writeTestCaseProperty("TestRailCaseComment", comment);
+		log.info(comment)
+	}
+	}
+	else if(accountType.equals("Intl")){
+	String balanceQuery = '''Select count(*) as countLog
+						From   [sdct_Balance_TransactionLog]		
+		    				Where BalanceId = ''' + "\'$balanceID\'"
+		    				   				
+	def countTransactionLog = start.util.executeDBQuery(start.util.connectToDB(bALANCEDBServer, "Balance"), balanceQuery)
+	newCount=Double.parseDouble(countTransactionLog.countLog.toString())
+	
+	FetchBalanceAfterPurchaseForSASorSASDMC()
+	FetchMeterPoolInformation()
+	String balanceQuery2 = '''Select top(1)*
+						From   [sdct_Balance_TransactionLog]		
+		    				Where BalanceId = ''' + "\'$balanceID\'" + "order by TransactionId desc"
+	log.info("balanceQuery2"+balanceQuery2)
+	log.info("bALANCEDBServer"+bALANCEDBServer)
+	log.info("balanceID"+balanceID)    				   				
+	def countTransactionLog2 = start.util.executeDBQuery(start.util.connectToDB(bALANCEDBServer, "Balance"), balanceQuery2)
+	def transactionType=countTransactionLog2.TransactionType.toString()
+	double transactionAmount=Double.parseDouble(countTransactionLog2.TransactionAmount.toString())
+	log.info("transactionAmount"+transactionAmount)
+	log.info("transactionType"+transactionType)
+	log.info("newCount"+newCount)
+	if(newCount-countRow==1.0 && transactionAmount==purchaseAmount && newcontrolTotal== (transactionAmount + controlTotal)&& transactionType.equals("3")){
+		comment = "Purchase BalanceID SAS flow success"
+		status="Pass"
+		writeDataSink(testCaseName,userName,custID,userId,status,comment)
+		start.util.writeTestCaseProperty("TestRailCaseStatus", status);
+		start.util.writeTestCaseProperty("TestRailCaseComment", comment);
+		log.info(comment)
+	}
+	else{
+		comment = "Purchase BalanceID SAS flow fail"
+		status="Fail"
+		writeDataSink(testCaseName,userName,custID,userId,status,comment)
+		start.util.writeTestCaseProperty("TestRailCaseStatus", status);
+		start.util.writeTestCaseProperty("TestRailCaseComment", comment);
+		log.info(comment)
+	}
+	
+	}
+	else{
+		String ORQuery = '''Select count(*) as countLog
+						From   sdct_postal_meterbalancelog 
+						where MeterNumber= ''' + "\'$meterNo\'"
+		    				   				
+	def countTransactionLog = start.util.executeDBQuery(start.util.connectToDB(pOSTALDBServer, "postal"), ORQuery)
+	newCount=Double.parseDouble(countTransactionLog.countLog.toString())
+	FetchBalanceForCoreAfterPurchase()
+	FetchMeterPoolInformation()
+	String ORQuery2 = '''Select *
+						From   sdct_postal_meterbalancelog 
+						where MeterNumber= ''' + "\'$meterNo\'"+ 'order by MeterBalanceLogID desc'
+		    				   				
+	def countTransactionLog2 = start.util.executeDBQuery(start.util.connectToDB(pOSTALDBServer, "postal"), ORQuery2)
+	def transactionType=countTransactionLog2.TransType.toString()
+	double transactionAmount=Double.parseDouble(countTransactionLog2.Amount.toString())
+	log.info(newCount-countRow)
+	log.info("transactionAmount"+transactionAmount)
+	log.info("transactionType"+transactionType)
+	log.info("newCount"+newCount)
+	log.info(transactionAmount + controlTotal)
+	if(newCount-countRow==1.0 && transactionAmount==purchaseAmount && newcontrolTotal== (transactionAmount + controlTotal)&& transactionType.equals("3")){
+		comment = "Purchase CORE flow success"
+		status="Pass"
+		writeDataSink(testCaseName,userName,custID,userId,status,comment)
+		start.util.writeTestCaseProperty("TestRailCaseStatus", status);
+		start.util.writeTestCaseProperty("TestRailCaseComment", comment);
+		log.info(comment)
+	}
+	else{
+		comment = "Purchase CORE flow fail" + "transactionAmount" + transactionAmount+"purchaseAmount"+purchaseAmount + "newcontrolTotal"+newcontrolTotal 
+		status="Fail"
+		writeDataSink(testCaseName,userName,custID,userId,status,comment)
+		start.util.writeTestCaseProperty("TestRailCaseStatus", status);
+		start.util.writeTestCaseProperty("TestRailCaseComment", comment);
+		log.info(comment)
+	}
+	}
+}
+else{
+	comment = "Purchase Postage fail because Purchase postage status="+ Status
+	writeDataSink(testCaseName,userName,custID,userId,"fail",comment)
+	start.util.writeTestCaseProperty("TestRailCaseStatus", "fail");
+	start.util.writeTestCaseProperty("TestRailCaseComment", comment);
+}
+start.util.writeTestCaseProperty("newCount", newCount.toString())
+void FetchBalanceAfterPurchaseForSASorSASDMC()
+{
+	def start = new soapUIScripts.startExec(context, "Project")
+	def userName = context.expand( '${Users#UserName}' )
+	def bRIDGEDBServer = context.expand( '${#Project#BRIDGEDBServer}' )
+	def dataSink = context.testCase.testSteps["Report"];
+	
+	String sql ='''SELECT 'AFTER Purchase' as TASK,a.userid, a.username, d.reselleraccountid, b.custid, c.meterno as MeterNumber,e.ActualPostageBalance as FrontEndBalance,c.descreg as BackendMeterBalance, isaccountautobuy,
+	accountautobuythreshold as FrontEndAccountAutoBuyThreshold,accountautobuyamount as FrontEndAccountAutoBuyAmount, autobuyresultchecktime as FrontEndAccountAutoBuyResultCheckTime,e.AgreedToTermsAndConditionsVersion,
+	e.IsSasDmc,e.OutstandingLabelBalance,e.MaxOutstandingLabelBalance,e.OverdraftRetryCount,e.MerchantType,a.emailaddress,e.LastFailedOverdraftPurchaseTime,c.inuse, c.inusebymachine
+	FROM   [Bridge].[dbo].[sdct_bridge_user] a, 
+	[Bridge].[dbo].[sdct_bridge_postallink] b, 
+	[Bridge].[dbo].[sdct_bridge_meteraccount] c, 
+	[Bridge].[dbo].[sdct_bridge_reselleraccountlink] d, 
+	[Bridge].[dbo].[sdct_reseller_account] e 
+	WHERE  b.userid = a.userid  AND a.userid = d.userid AND c.custid = b.custid AND d.ResellerAccountId = e.ResellerAccountId AND a.username = ''' + "\'$userName\'"
+	log.info(sql)
+	meterInformation_result =  start.util.executeDBQuery(start.util.connectToDB(bRIDGEDBServer, "Bridge"), sql)
+	dataSink.setPropertyValue("FrontEndBalanceAfterPurchase",meterInformation_result.FrontEndBalance);
+	dataSink.setPropertyValue("BackendMeterBalanceAfterPurchase", meterInformation_result.BackendMeterBalance);
+}
+void FetchBalanceForCoreAfterPurchase()
+{
+	def start = new soapUIScripts.startExec(context, "Project")
+	def userName = context.expand( '${Users#UserName}' )
+	def bRIDGEDBServer = context.expand( '${#Project#BRIDGEDBServer}' )
+	def dataSink = context.testCase.testSteps["Report"];
+	String sql=	''' Select 'After Purchase' as Task, bpl.CustID,bma.MeterNo as MeterNumber,bpl.UserID as userid,bma.DescReg as BackendMeterBalance,bma.LastPostagePurchaseTransactionId from sdct_Bridge_PostalLink bpl 
+	JOIN sdct_Bridge_User bu on bpl.UserID = bu.UserID 
+	JOIN sdct_Bridge_MeterAccount bma  on bma.CustID = bpl.CustID 
+	where bu.username ='''+ "\'$userName\'"
+	log.info(sql)
+	meterInformation_result =  start.util.executeDBQuery(start.util.connectToDB(bRIDGEDBServer, "Bridge"), sql)
+	dataSink.setPropertyValue("BackendMeterBalanceAfterPurchase", meterInformation_result.BackendMeterBalance);
+	dataSink.setPropertyValue("LastPostagePurchaseTransactionIdAfterPurchase",  meterInformation_result.LastPostagePurchaseTransactionId);
+}
+void FetchMeterPoolInformation()
+{
+	def start = new soapUIScripts.startExec(context, "Project")
+	def userName = context.expand( '${Users#UserName}' )
+	def bRIDGEDBServer = context.expand( '${#Project#BRIDGEDBServer}' )
+	def dataSink = context.testCase.testSteps["Report"];
+	String sql='''SELECT  'AFTER' as TASK, a.custid, c.meternumber, b.resellerid AS 'PlatformId', e.ratesetid, b.resellermeterpoolid AS 'PoolID', d.hmk, c.metername, d.uspsdistrictid, d.inusebymachine, d.inuse, 
+	d.descreg  AS 'Balance', d.postalauthenticationid, e.customerfundingthreshold, e.stampsfundingthreshold, e.stampsfundingamount, e.minimumtransactionvalue, 
+	e.resellermeterpooldescription, d.lastpostagepurchasetransactionid, d.autobuyresultchecktime 
+	FROM   [Bridge].[dbo].[sdct_bridge_reselleraccount] a, [Bridge].[dbo].[sdct_bridge_resellermeterpoollink] b, [Bridge].[dbo].[sdct_bridge_resellermeterpoolmeters] c, [Bridge].[dbo].[sdct_bridge_meteraccount] d, [Bridge].[dbo].[sdct_bridge_resellermeterpool] e
+	WHERE  b.resellerid = a.resellerid  AND c.resellermeterpoolid = b.resellermeterpoolid AND e.resellermeterpoolid = b.resellermeterpoolid AND d.meterno = c.meternumber
+	AND a.custid IN (SELECT custid FROM   [Bridge].[dbo].[sdct_bridge_meteraccount] WHERE  postalauthenticationid IN ('''+ "\'$userName\'))"
+	 log.info(sql)
+	def meterPoolInformation_result =  start.util.executeDBQuery(start.util.connectToDB(bRIDGEDBServer, "Bridge"), sql)
+}
+dataSink.setPropertyValue("AccountType", accountType);
+void writeDataSink(def TestCaseName, def UserName,def CustID,def UserId, def Status, def Comment ){
+	def start = new soapUIScripts.startExec(context, testRunner, "Project")
+	def DataSinkName ="Report"
+	start.util.writeTestStepProperty(DataSinkName, "TestCaseName", TestCaseName);
+	start.util.writeTestStepProperty(DataSinkName, "UserName", UserName);
+	start.util.writeTestStepProperty(DataSinkName, "CustID", CustID);
+	start.util.writeTestStepProperty(DataSinkName, "UserId", UserId);
+	start.util.writeTestStepProperty(DataSinkName, "Status", Status);
+	start.util.writeTestStepProperty(DataSinkName, "Comment", Comment);
+}]]></script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="Report" id="5e7a5295-2406-4de0-a4da-acce08c56197">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="SubReport">
+        <con:configuration/>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>SNO</con:name>
+          <con:value>6</con:value>
+        </con:property>
+        <con:property>
+          <con:name>TestCaseName</con:name>
+          <con:value>CC_DMC_Purchase</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Application</con:name>
+          <con:value>SWSIM</con:value>
+        </con:property>
+        <con:property>
+          <con:name>TestStepName</con:name>
+          <con:value>SWSIM_6_EXISTING_CORE_CC_DMC_Purchase</con:value>
+        </con:property>
+        <con:property>
+          <con:name>AccountType</con:name>
+          <con:value>SASDMC</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Userid</con:name>
+          <con:value>3231518</con:value>
+        </con:property>
+        <con:property>
+          <con:name>CustID</con:name>
+          <con:value>7487763</con:value>
+        </con:property>
+        <con:property>
+          <con:name>ResellerAccountId</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>CurrentPurchaseAmount</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>FrontEndBalanceBeforePurchase</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>FrontEndBalanceAfterPurchase</con:name>
+          <con:value>1600.0000</con:value>
+        </con:property>
+        <con:property>
+          <con:name>MeterNumber</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>BackendMeterBalanceBeforePurchase</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>BackendMeterBalanceAfterPurchase</con:name>
+          <con:value>700.0000</con:value>
+        </con:property>
+        <con:property>
+          <con:name>IsSasDmc</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>MRMFA</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>TransactionType</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>ResellerAccountLogID</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>PurchaseStatus</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>PaymentStatus</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>OrderFormStatus</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>PaymentType</con:name>
+          <con:value>CC</con:value>
+        </con:property>
+        <con:property>
+          <con:name>AccountPaymentID</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>TransactionPaymentID</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>ResellerTableMeterPostagePurchaseId</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>ResellerTablePaymentOrderId</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>AcutalBackendMeter</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>ActualBackendMeterBalanceBeforePurchase</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>ActualBackendMeterBalanceAfterPurchase</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>ActualBackendMeterCustID</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>ExpectedFlow</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>ActualFlow</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>GID</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>FailedReason</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>LastPostagePurchaseTransactionIdBeforePurchase</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>LastPostagePurchaseTransactionIdAfterPurchase</con:name>
+          <con:value>0</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Comment</con:name>
+          <con:value>Purchase SASDMC flow success</con:value>
+        </con:property>
+        <con:property>
+          <con:name>UserName</con:name>
+          <con:value>tninh_dmc_700</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Status</con:name>
+          <con:value>Pass</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Result</con:name>
+          <con:value/>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="AddResult" id="ee142805-4511-4579-be0d-0b9b14b2c78d">
+    <con:settings/>
+    <con:config service="TestrailWrappers" resourcePath="/ApiWrappers/tr/add_result_for_automationkey/{RunId}/{AutomationKey}" methodName="add_result_for_automationkey_Post" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="AddResult" id="e7fd0052-4d7c-4b5a-b9e1-d057ebfe956b" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Username" value="${TestRails_UserName}"/>
+  &lt;con:entry key="ApiKey" value="${TestRails_APIKey}"/>
+&lt;/xml-fragment></con:setting>
+        </con:settings>
+        <con:endpoint>http://qa-automate01-v</con:endpoint>
+        <con:request>{\r
+   "status_id" : "${#TestCase#TestRailCaseStatus}",\r
+   "comment" : "${#TestCase#TestRailCaseComment}"\r
+}</con:request>
+        <con:originalUri>http://qa-automate02-v/apiwrappers/tr/add_result_for_automationkey/6490/PPTS-700_UpdateMaxBalanceLimit_001_IntlAcc_UpdateBalanceLimit</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="bced6e03-eb87-4dd7-8c6f-35b0a2bc33d5" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="AutomationKey" value="${Users#AutomationKey}"/>
+          <con:entry key="RunId" value="${#Project#RunID}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>RunId</con:entry>
+          <con:entry>AutomationKey</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="CaptureDataSink" id="26fdce56-361f-41df-a3f7-bbde399fd6ea">
+    <con:settings/>
+    <con:config>
+      <script>def start = new soapUIScripts.startExec(context, testRunner, "Project") 
+start.captureDataSink("Report")</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="UsersLoop" id="fec6a228-8820-4a3e-beb9-9661c22155c9">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Users</dataSourceStep>
+      <targetStep>GetAccountInfoRequest</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="ExitScript" id="3cf83495-4a71-41ff-9c19-63223b091088">
+    <con:settings/>
+    <con:config>
+      <script>/*Exit Script*/
+def start = new soapUIScripts.startExec(context, "Project")
+start.common.slackreport("Report")
+
+/*Reset LogFileLocation*/
+testRunner.testCase.setPropertyValue("LogFileLocation", "0")
+testRunner.testCase.setPropertyValue("Header", "0")</script>
+    </con:config>
+  </con:testStep>
+  <con:setupScript>testRunner.testCase.setPropertyValue("CSVFilePath", "0")
+testRunner.testCase.setPropertyValue("LogFileLocation", "0")
+//testRunner.testCase.setPropertyValue(arg0, arg1)</con:setupScript>
+  <con:tearDownScript>testRunner.testCase.setPropertyValue("controlTotal", "")
+	testRunner.testCase.setPropertyValue("ResellerAccountID", "")
+	testRunner.testCase.setPropertyValue("meterNo", "")
+	testRunner.testCase.setPropertyValue("custID", "")
+	testRunner.testCase.setPropertyValue("UserID", "")
+	testRunner.testCase.setPropertyValue("countRow", "")
+	testRunner.testCase.setPropertyValue("TestRailCaseStatus", "")
+	testRunner.testCase.testSuite.setPropertyValue("balanceID", "")
+	testRunner.testCase.setPropertyValue("TestRailCaseComment", "")
+	testRunner.testCase.setPropertyValue("newCount", "")
+	testRunner.testCase.setPropertyValue("LogFileLocation", "0")
+	testRunner.testCase.setPropertyValue("Header", "0")</con:tearDownScript>
+  <con:properties>
+    <con:property>
+      <con:name>CurrentTestName</con:name>
+      <con:value>SWSIM_6_EXISTING_CORE_CC_DMC_Purchase</con:value>
+    </con:property>
+    <con:property>
+      <con:name>CSVFilePath</con:name>
+      <con:value>0</con:value>
+    </con:property>
+    <con:property>
+      <con:name>LogFileLocation</con:name>
+      <con:value>0</con:value>
+    </con:property>
+    <con:property>
+      <con:name>CSVHeader</con:name>
+      <con:value>1</con:value>
+    </con:property>
+    <con:property>
+      <con:name>CSVFileName</con:name>
+      <con:value>SWSIM_6_EXISTING_CORE_CC_DMC_Purchase.csv</con:value>
+    </con:property>
+    <con:property>
+      <con:name>BridgeAuthenticator</con:name>
+      <con:value><![CDATA[postal-auth=exp=1602128246&uid=391600&cty=postal&ctk=bG93UoeU38gmOnY+y3UhGI4Hvao=&eac=0&eacx=0&eac3=0&rrsid=0&raid=5000044288&rid=5483&cv=15.4.0.3535&cid=0&appcapsx=AAAAAAAAAAAAAAAAAAAAAAAAAAA=&mac=n1jRp0Xy7DBtd3kT2FcX7m0sMoI=; path=/; secure]]></con:value>
+    </con:property>
+    <con:property>
+      <con:name>BillingPlanID</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>controlTotal</con:name>
+      <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </con:property>
+    <con:property>
+      <con:name>ResellerAccountID</con:name>
+      <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </con:property>
+    <con:property>
+      <con:name>balanceID</con:name>
+      <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </con:property>
+    <con:property>
+      <con:name>meterNo</con:name>
+      <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </con:property>
+    <con:property>
+      <con:name>custID</con:name>
+      <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </con:property>
+    <con:property>
+      <con:name>UserID</con:name>
+      <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </con:property>
+    <con:property>
+      <con:name>countRow</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>TestRailCaseStatus</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>TestRailCaseComment</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>newCount</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>Header</con:name>
+      <con:value>0</con:value>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>872e5b7f-540e-451b-96a8-f2cfe4d05047</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>1e2940c9-c16e-4d79-b36c-86075aa964f3</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>01eabda3-1566-4c0d-b63d-6185f0e6ede8</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>c45e6459-f295-4d95-9cf2-500e3bf9f7e0</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>828a1eca-4114-4be8-9394-9d5a9fcfa8cb</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>a700ec02-e67f-4039-8574-f32c006b370a</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>d667708f-edae-448b-9893-1d5a55045c22</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>215c4cd3-39af-4389-a08b-451dc8c5a94a</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>a52b0932-10a4-49b8-af8a-67187e071d8d</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>c98d2306-63d9-4a94-bd6d-f333ae0ee7e5</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>0eed6b64-f818-49fd-916f-07cf50596cb3</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>b9aeea11-a5f4-4fbd-85f1-887cd4be02c4</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>18efc1ca-1574-4eae-a938-0b274402bc50</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>f7874cd0-450c-4141-82d1-35e04eb55fa0</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>140436af-3384-4398-8c9c-06093b128c65</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>91f18322-0900-48d4-87ce-afca627073f3</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>c6d69ae7-96ce-4ce1-99f3-8c5383ce9b68</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>738c5658-156c-4d82-8d21-7285073ae9ec</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>ebcecf93-7f60-4703-90a5-7be3435c097f</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>5a174c13-0072-49ec-a443-c1097bb8babb</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>de1a8be4-566b-4b62-bc80-1e5e1ff8da05</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>bcbfddbb-db2d-428b-aec7-7c507fd66483</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>db90d5de-1338-4261-ba23-8b8444311fcb</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>691505ae-7da8-4cb2-ac4e-59930b228057</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>e913f595-ffdf-4140-90aa-b629ea45ff47</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>a338a150-564c-453d-b78c-a328888811e7</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>e2913186-0c7f-4b19-a530-c111392b87fc</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>7c1ff219-662c-4a26-9720-b767be2225d5</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>62d488b2-a07a-41f0-af8d-bb1a86b1dbbd</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>9bfaaead-b250-4ea5-8afd-4af089c08021</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>1effc226-5688-4352-97a5-700e2dbe71f8</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>c5ea96a4-1b1d-4ca8-a49e-b64b24307adb</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>af4e9094-440e-4ce9-a39e-74bad92e625b</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>41a177c5-4ab1-41dc-a669-da902a283347</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>242496ff-7dc2-484e-beea-cbb61fde76fc</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>04e3d9d1-e06e-4f12-8470-a5247940d3ca</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>56e37d4b-1210-4004-bfd2-e7d5de901f47</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>08fc6284-0a63-409d-9a7a-88cb2248ef5d</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>2a2267d4-a9c3-4f3d-8dc0-350faf441f48</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>cb7b63d7-7040-4018-abe3-9a0c1f705a1c</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>219c6231-6594-47e0-b8a8-71b4d3244e50</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>0f122929-1010-45a1-9f8f-25fef4edb413</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>e86c644e-1db9-46b2-a2cd-f09ced691e2c</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>a6775ec1-1f21-40ac-bc26-d95977c3f837</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>527c043f-b345-4f7e-908d-31801454dc4d</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/meters/Resellers/{meterNumber}" path="/meters/Resellers/{meterNumber}" id="208727f7-9f28-48b1-b2dd-ac5a7926dbe0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8ef6fa9a-1cf6-42fb-8254-984dc6836045fileName">%2Fmeters%2FResellers%2F%7BmeterNumber%7D</con:setting>
+    <con:setting id="7c55179a-155c-4158-818b-3e73a675c901fileName">%2Fmeters%2FResellers%2F%7BmeterNumber%7D</con:setting>
+    <con:setting id="208727f7-9f28-48b1-b2dd-ac5a7926dbe0fileName">%2Fmeters%2FResellers%2F%7BmeterNumber%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>meterNumber</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>number</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetSasMeterInfo" id="8eeff044-a943-4ce9-818f-4bde0e4ee960" method="GET">
+    <con:description>Get Sas Meter Info</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "ResellerId" : 0,
+  "ResellerMeterPoolId" : 0,
+  "MeterNumber" : 0,
+  "ResellerMeterCustId" : 0,
+  "PostalClusterNumber" : 0,
+  "DescRegInBridge" : 1.5,
+  "AccountAutoBuyThreshold" : 1.5,
+  "AccountAutoBuyAmount" : 1.5,
+  "StampsFundingThreshold" : 1.5,
+  "StampsFundingAmount" : 1.5,
+  "AutoBuyThreshold" : 1.5,
+  "AutoBuyAmount" : 1.5,
+  "LastPostagePurchaseTransactionId" : 0,
+  "LastCustomerFundingLogId" : 0,
+  "Status" : "string",
+  "AmtAvailInPostal" : 1.5,
+  "AmtUtlInPostal" : 1.5,
+  "LastPurchaseTime" : "2015-07-20T15:49:04-07:00",
+  "LastPrintTime" : "2015-07-20T15:49:04-07:00"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="adebe846-f1da-4e2e-9de1-68a8128e52d9" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="meterNumber" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="UpdateSasMeterStatus" id="f9df2a9a-ec69-49fe-a87d-e00be6f6b52f" method="PUT">
+    <con:description>Toggle Sas Meter Status between Enabled/Disabled</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>"string"</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="82f54f28-a9c1-4fa9-9efe-528917e3eae8" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="meterNumber" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

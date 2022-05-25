@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/ibmKiosks/setKioskStatus" path="/ibmKiosks/setKioskStatus" id="7ccc69ea-7d35-4f10-b597-539a370714b7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bf8d36ce-323e-4c7e-8b71-0578c4e6c702fileName">%2FibmKiosks%2FsetKioskStatus</con:setting>
+    <con:setting id="e657f21e-d790-41ea-a8cf-d581acbe2286fileName">%2FibmKiosks%2FsetKioskStatus</con:setting>
+    <con:setting id="7ccc69ea-7d35-4f10-b597-539a370714b7fileName">%2FibmKiosks%2FsetKioskStatus</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="SetKioskStatus" id="911ccbaf-8a43-472b-8a44-7090aa4b2de8" method="POST">
+    <con:description>Set Kiosk Status</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="7b9eef82-c17f-4a8a-ac28-f643924ecb2e" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

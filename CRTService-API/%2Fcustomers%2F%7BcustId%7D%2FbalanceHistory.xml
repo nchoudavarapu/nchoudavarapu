@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/balanceHistory" path="/customers/{custId}/balanceHistory" id="118c8b14-7928-4e7c-acae-7c36957565a1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="78aa93f1-a6c0-4b94-889b-3e900fc9464dfileName">%2Fcustomers%2F%7BcustId%7D%2FbalanceHistory</con:setting>
+    <con:setting id="8a22d689-3528-45d8-9ed2-ce333a2e71ccfileName">%2Fcustomers%2F%7BcustId%7D%2FbalanceHistory</con:setting>
+    <con:setting id="118c8b14-7928-4e7c-acae-7c36957565a1fileName">%2Fcustomers%2F%7BcustId%7D%2FbalanceHistory</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetBalanceHistory" id="e3048b66-21a2-4626-a4d5-e199eb25a9ce" method="POST">
+    <con:description>Get Balance History</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "BalanceHistoryToken" : "string",
+  "TotalTransactions" : 0,
+  "TotalPages" : 0,
+  "Transactions" : [ {
+    "Date" : "2015-07-20T15:49:04-07:00",
+    "OldBalance" : 1.5,
+    "Amount" : 1.5,
+    "NewBalance" : 1.5,
+    "TransactionType" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="fcc13714-466f-4e84-98f2-6e41dec01218" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

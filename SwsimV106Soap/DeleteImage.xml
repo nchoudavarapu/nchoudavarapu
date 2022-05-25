@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="9739c528-64b5-4bf7-b744-798a837d5e15" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/DeleteImage" name="DeleteImage" bindingOperationName="DeleteImage" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3a203eac-f054-4611-94bf-31e582ba9f63fileName">DeleteImage</con:setting>
+    <con:setting id="822eebf8-a120-491a-aad4-8f39d3ed69a8fileName">DeleteImage</con:setting>
+    <con:setting id="9739c528-64b5-4bf7-b744-798a837d5e15fileName">DeleteImage</con:setting>
+  </con:settings>
+  <con:call id="60505355-226c-4f61-9a8b-70bcfbbb6dc8" name="DeleteImage Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:DeleteImage>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:ImageId>?</sws:ImageId>\r
+      </sws:DeleteImage>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/DeleteImage"/>
+  </con:call>
+</con:operation>

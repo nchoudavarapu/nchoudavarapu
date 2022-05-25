@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/getMonthlyBalanceLimit" path="/customers/getMonthlyBalanceLimit" id="a3c38558-d0b9-443d-9ced-2c293c620978" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="02345da6-f813-4388-b4fd-8bb804dcd4bbfileName">%2Fcustomers%2FgetMonthlyBalanceLimit</con:setting>
+    <con:setting id="3bfbc9e8-d773-4aa7-83b3-fe2bcf72dcecfileName">%2Fcustomers%2FgetMonthlyBalanceLimit</con:setting>
+    <con:setting id="a3c38558-d0b9-443d-9ced-2c293c620978fileName">%2Fcustomers%2FgetMonthlyBalanceLimit</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetMonthlyBalanceLimit" id="963aa8bd-0264-4939-af88-71b03e2274c4" method="GET">
+    <con:description>Get monthly balance limit for a customer</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>1.5</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="652fc22b-2617-491e-aebd-ff0fd36abcbc" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/throttle/{username}/SetDefaultThrottlingRate" path="/throttle/{username}/SetDefaultThrottlingRate" id="0757d767-3b34-402e-bfcf-69eced03c2d9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="09650226-5232-4bf2-a9f9-93eecd198bb5fileName">%2Fthrottle%2F%7Busername%7D%2FSetDefaultThrottlingRate</con:setting>
+    <con:setting id="0757d767-3b34-402e-bfcf-69eced03c2d9fileName">%2Fthrottle%2F%7Busername%7D%2FSetDefaultThrottlingRate</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>username</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Throttle_SetDefaultThrottlingRate" id="69681a0f-ee6c-4962-b55b-fe8c65180e31" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>throttleID</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="4ec19f0a-c539-4840-9c3b-b0b489c88d07" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="throttleID" value=""/>
+        <con:entry key="username" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

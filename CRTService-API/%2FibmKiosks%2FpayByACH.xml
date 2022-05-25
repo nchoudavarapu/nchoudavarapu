@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/ibmKiosks/payByACH" path="/ibmKiosks/payByACH" id="715a25f8-3b7e-4ee0-97c7-fecb8eabbdb0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ba2a49be-63ec-40b6-a796-85fe49b547c4fileName">%2FibmKiosks%2FpayByACH</con:setting>
+    <con:setting id="95958999-171f-4f7e-ab5e-3255ff236cbdfileName">%2FibmKiosks%2FpayByACH</con:setting>
+    <con:setting id="715a25f8-3b7e-4ee0-97c7-fecb8eabbdb0fileName">%2FibmKiosks%2FpayByACH</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="PayByAch" id="c87ff784-7833-4972-82a1-4e541e703acb" method="POST">
+    <con:description>Pay By ACH</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>StationId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StationName</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Amount</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{ }</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="cc46db6b-c6f7-4b4d-a8d6-c23db84a2103" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="StationName" value=""/>
+        <con:entry key="Amount" value=""/>
+        <con:entry key="StationId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

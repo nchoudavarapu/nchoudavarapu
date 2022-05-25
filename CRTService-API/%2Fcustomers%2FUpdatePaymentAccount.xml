@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/UpdatePaymentAccount" path="/customers/UpdatePaymentAccount" id="cbdde8db-2bac-4131-ba91-91f47922e8cd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="899230ec-7ef9-4a03-b5ff-d7aa61d7aad4fileName">%2Fcustomers%2FUpdatePaymentAccount</con:setting>
+    <con:setting id="4a120b26-9185-45e3-a469-3d35cd294bfefileName">%2Fcustomers%2FUpdatePaymentAccount</con:setting>
+    <con:setting id="cbdde8db-2bac-4131-ba91-91f47922e8cdfileName">%2Fcustomers%2FUpdatePaymentAccount</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="UpdatePaymentAccount" id="8e5ccb54-f4e4-4514-8d40-724f4180e211" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="f1d43732-1391-4252-985c-b9b981b23f28" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/tr/create_test_plan_for_project/{ProjectName}" path="/tr/create_test_plan_for_project/{ProjectName}" id="d14ad7bb-d8d6-4b5e-852b-a5e14a7b9c04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2e944f6f-1711-4be0-b83b-483c66e38e58fileName">%2Ftr%2Fcreate_test_plan_for_project%2F%7BProjectName%7D</con:setting>
+    <con:setting id="d14ad7bb-d8d6-4b5e-852b-a5e14a7b9c04fileName">%2Ftr%2Fcreate_test_plan_for_project%2F%7BProjectName%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>ProjectName</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="create_test_plan_for_project_Post" id="54feef83-a3ac-494b-95ed-450766e4e98b" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "name" : "string",
+  "milestone" : "string",
+  "test_suites" : [ {
+    "suite_name" : "string",
+    "include_all" : true,
+    "automation_keys" : [ "string" ],
+    "config_groups" : [ {
+      "name" : "string",
+      "configs" : [ "string" ]
+    } ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{ }</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="39261407-b142-4216-b6df-6e2f1030e1ab" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://qa-automate01-v</con:endpoint>
+      <con:request>{\r
+  "name" : "string",\r
+  "milestone" : "string",\r
+  "test_suites" : [ {\r
+    "suite_name" : "string",\r
+    "include_all" : true,\r
+    "automation_keys" : [ "string" ],\r
+    "config_groups" : [ {\r
+      "name" : "string",\r
+      "configs" : [ "string" ]\r
+    } ]\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

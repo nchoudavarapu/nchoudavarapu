@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="41bd9333-05d4-46f7-86a8-7775cf9652ad" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/AddImage" name="AddImage" bindingOperationName="AddImage" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e100673f-0353-4fd8-bae3-e9e82a4c4f0efileName">AddImage</con:setting>
+    <con:setting id="e8a4c972-f99c-49b3-9c5b-4a5e076e280afileName">AddImage</con:setting>
+    <con:setting id="41bd9333-05d4-46f7-86a8-7775cf9652adfileName">AddImage</con:setting>
+  </con:settings>
+</con:operation>

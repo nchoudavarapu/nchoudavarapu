@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/fraudConfigurations/ipAddress/unlock" path="/fraudConfigurations/ipAddress/unlock" id="27856ba0-c2bc-4f62-98c3-fff1eb86628c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fc0a8078-0fd2-4047-b159-728dfe46027ffileName">%2FfraudConfigurations%2FipAddress%2Funlock</con:setting>
+    <con:setting id="723267f2-fb81-43e5-9e93-db03d949f5b7fileName">%2FfraudConfigurations%2FipAddress%2Funlock</con:setting>
+    <con:setting id="27856ba0-c2bc-4f62-98c3-fff1eb86628cfileName">%2FfraudConfigurations%2FipAddress%2Funlock</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="UnlockIp" id="9aaf67a7-342f-43be-9d22-708277a15ec1" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>ipAddress</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>"string"</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="67362cae-b049-40a2-81c3-2d4a453eb8b1" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="ipAddress" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

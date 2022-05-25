@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/{userId}/UpdatePaymentAccountNickName/{paymentAccountId}/{nickName}" path="/customers/{custId}/{userId}/UpdatePaymentAccountNickName/{paymentAccountId}/{nickName}" id="32d9a9c0-962a-47fa-8796-f7b73abef31a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b17f2842-e3fe-4b02-9ff3-2c2b646a29c6fileName">%2Fcustomers%2F%7BcustId%7D%2F%7BuserId%7D%2FUpdatePaymentAccountNickName%2F%7BpaymentAccountId%7D%2F%7BnickName%7D</con:setting>
+    <con:setting id="1b988de9-0fbd-4fd0-9dc7-004028dd03dbfileName">%2Fcustomers%2F%7BcustId%7D%2F%7BuserId%7D%2FUpdatePaymentAccountNickName%2F%7BpaymentAccountId%7D%2F%7BnickName%7D</con:setting>
+    <con:setting id="32d9a9c0-962a-47fa-8796-f7b73abef31afileName">%2Fcustomers%2F%7BcustId%7D%2F%7BuserId%7D%2FUpdatePaymentAccountNickName%2F%7BpaymentAccountId%7D%2F%7BnickName%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>userId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>paymentAccountId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>number</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>nickName</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="UpdatePaymentAccountNickName" id="679f65ab-d497-45ae-aae3-ed2ddbcca176" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="84bf41f9-6f68-43b5-bdc9-38a0f8c44628" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="paymentAccountId" value=""/>
+        <con:entry key="nickName" value=""/>
+        <con:entry key="custId" value=""/>
+        <con:entry key="userId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/meters/BulkHoldActivateAccount" path="/meters/BulkHoldActivateAccount" id="e623a7ab-0616-4598-afbd-ac146ccfdb08" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ef1297d9-dbe6-475a-9b67-8490a025f05efileName">%2Fmeters%2FBulkHoldActivateAccount</con:setting>
+    <con:setting id="19a3fa45-1a2a-4489-982b-2a6b9c161c8ffileName">%2Fmeters%2FBulkHoldActivateAccount</con:setting>
+    <con:setting id="e623a7ab-0616-4598-afbd-ac146ccfdb08fileName">%2Fmeters%2FBulkHoldActivateAccount</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="BulkHoldActivateAccount" id="c7f32021-e732-4737-85d4-d40fe5675f21" method="POST">
+    <con:description>Hold or Activate account(Bulk Actions)</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="df8783c0-66ca-46e4-8378-ffef7ba63d73" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request>{
+  "CustId": 0,
+  "UserName": "string",
+  "Comments": "string",
+  "CsrName": "string",
+  "Status": {
+    "AdminHold": true,
+    "PaymentHold": true,
+    "ServiceFeeNotPaid": true
+  }
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/IntegrationIds" path="/IntegrationIds" id="c36ff32f-6934-461b-a57a-3f83df891e27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="059619b2-d56c-493e-9d5a-b37cad571060fileName">%2FIntegrationIds</con:setting>
+    <con:setting id="df8cf066-2662-4f89-9b61-9a3900e2b61bfileName">%2FIntegrationIds</con:setting>
+    <con:setting id="c36ff32f-6934-461b-a57a-3f83df891e27fileName">%2FIntegrationIds</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="CreateIntegrationId" id="1abbb263-2091-4074-b71e-e5623ade5c77" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="8dec8020-675b-4d26-95a4-f0369bfd49b1" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

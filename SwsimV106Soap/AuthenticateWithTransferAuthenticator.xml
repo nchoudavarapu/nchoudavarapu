@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="6517eb7e-2afe-4fe5-9723-509150a0d952" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/AuthenticateWithTransferAuthenticator" name="AuthenticateWithTransferAuthenticator" bindingOperationName="AuthenticateWithTransferAuthenticator" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bc3b46a1-3d43-4721-b9f3-ef968db21f97fileName">AuthenticateWithTransferAuthenticator</con:setting>
+    <con:setting id="e6ec1a2f-1e0f-4dce-b87a-574e640319bdfileName">AuthenticateWithTransferAuthenticator</con:setting>
+    <con:setting id="6517eb7e-2afe-4fe5-9723-509150a0d952fileName">AuthenticateWithTransferAuthenticator</con:setting>
+  </con:settings>
+  <con:call id="f7961c50-88e6-4cef-8965-648dd6dbacb7" name="AuthenticateWithTransferAuthenticator Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:AuthenticateWithTransferAuthenticator>\r
+         <sws:integrationID>?</sws:integrationID>\r
+         <sws:transferAuthenticator>?</sws:transferAuthenticator>\r
+      </sws:AuthenticateWithTransferAuthenticator>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/AuthenticateWithTransferAuthenticator"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="f33916e6-6c7b-4652-9d70-822fe497ec5f" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/CheckCarrierPickupAvailability" name="CheckCarrierPickupAvailability" bindingOperationName="CheckCarrierPickupAvailability" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7c8fe01a-14c3-461d-941b-e1ed48b499a6fileName">CheckCarrierPickupAvailability</con:setting>
+    <con:setting id="e26a5029-af24-47b8-a9e4-b1667836cad6fileName">CheckCarrierPickupAvailability</con:setting>
+    <con:setting id="f33916e6-6c7b-4652-9d70-822fe497ec5ffileName">CheckCarrierPickupAvailability</con:setting>
+  </con:settings>
+</con:operation>

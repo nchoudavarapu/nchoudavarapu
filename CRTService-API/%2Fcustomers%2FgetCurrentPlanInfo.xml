@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/getCurrentPlanInfo" path="/customers/getCurrentPlanInfo" id="01b9f667-a08c-4908-9a2d-f3a9d3dd7669" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0a896af0-46ad-46ff-997a-41ed4fc51b01fileName">%2Fcustomers%2FgetCurrentPlanInfo</con:setting>
+    <con:setting id="c8607d5e-2ae9-431c-85f1-745ecf3b8ac4fileName">%2Fcustomers%2FgetCurrentPlanInfo</con:setting>
+    <con:setting id="01b9f667-a08c-4908-9a2d-f3a9d3dd7669fileName">%2Fcustomers%2FgetCurrentPlanInfo</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetCurrentPlanInfo" id="89f3c077-611c-459a-be7e-9f5e440d9c8d" method="GET">
+    <con:description>Get features for the customer</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "CurrentPlanName" : "string",
+  "CurrentFreeMonths" : 0,
+  "ServiceFeeReason" : [ {
+    "Id" : 0,
+    "Description" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="2bfe62b4-ad73-4f10-abf5-fb10b041908a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

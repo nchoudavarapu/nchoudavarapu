@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/BulkAdjustServiceFee" path="/customers/BulkAdjustServiceFee" id="fd50ffda-6443-4816-932f-454023769a66" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2a66ec8c-40c9-40f1-8c47-430c27d38ed4fileName">%2Fcustomers%2FBulkAdjustServiceFee</con:setting>
+    <con:setting id="b510fbc4-8fe2-49d7-bee7-084994e2e7c2fileName">%2Fcustomers%2FBulkAdjustServiceFee</con:setting>
+    <con:setting id="fd50ffda-6443-4816-932f-454023769a66fileName">%2Fcustomers%2FBulkAdjustServiceFee</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="BulkAdjustServiceFee" id="9649ce0f-4085-40fd-bc2b-ba5c8a38d74c" method="POST">
+    <con:description>Adjust service fee to customer account(Bulk Actions)</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="d5f9c247-3013-4b57-95a5-6a8b231e5f52" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

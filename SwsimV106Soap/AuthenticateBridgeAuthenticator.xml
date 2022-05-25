@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4be66f2d-e586-4ca4-8247-7d9725d20ed2" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/AuthenticateBridgeAuthenticator" name="AuthenticateBridgeAuthenticator" bindingOperationName="AuthenticateBridgeAuthenticator" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8448c979-f6aa-40b6-bfa6-27036fc4d87dfileName">AuthenticateBridgeAuthenticator</con:setting>
+    <con:setting id="110def91-9dab-4123-8f32-3ad70eeda4bafileName">AuthenticateBridgeAuthenticator</con:setting>
+    <con:setting id="4be66f2d-e586-4ca4-8247-7d9725d20ed2fileName">AuthenticateBridgeAuthenticator</con:setting>
+  </con:settings>
+  <con:call id="ab9fe48e-cf08-40e8-a95c-e2feaed55800" name="AuthenticateBridgeAuthenticator Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:AuthenticateBridgeAuthenticator>\r
+         <sws:integrationID>?</sws:integrationID>\r
+         <sws:batchAuthenticator>?</sws:batchAuthenticator>\r
+      </sws:AuthenticateBridgeAuthenticator>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/AuthenticateBridgeAuthenticator"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/dynamicFeatureSettings" path="/customers/{custId}/dynamicFeatureSettings" id="5484fb4b-c6ce-42a9-9c1d-aa09d5949361" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="97b5d6da-2357-4dd4-a075-877d86f522b1fileName">%2Fcustomers%2F%7BcustId%7D%2FdynamicFeatureSettings</con:setting>
+    <con:setting id="4739e696-5b98-4c63-8878-c71843a97803fileName">%2Fcustomers%2F%7BcustId%7D%2FdynamicFeatureSettings</con:setting>
+    <con:setting id="5484fb4b-c6ce-42a9-9c1d-aa09d5949361fileName">%2Fcustomers%2F%7BcustId%7D%2FdynamicFeatureSettings</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetDynamicFeatureSettings" id="8d230fab-1087-4fe0-a371-148555048350" method="GET">
+    <con:description>Get Dynamic Feature Settings for the customer</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "FeaturesList" : {
+    "additionalProp1" : {
+      "Name" : "string",
+      "Group" : "string",
+      "DisplayGroupId" : 0,
+      "DisplayGroupOrder" : 0,
+      "HiddenUnderAdvanced" : true,
+      "Description" : "string",
+      "FormType" : "string",
+      "DataType" : "string",
+      "Value" : "string",
+      "MinValue" : 1.5,
+      "MaxValue" : 1.5,
+      "MinCharLength" : 0,
+      "MaxCharLength" : 0,
+      "FeatureOptions" : "string",
+      "Required" : "string"
+    },
+    "additionalProp2" : {
+      "Name" : "string",
+      "Group" : "string",
+      "DisplayGroupId" : 0,
+      "DisplayGroupOrder" : 0,
+      "HiddenUnderAdvanced" : true,
+      "Description" : "string",
+      "FormType" : "string",
+      "DataType" : "string",
+      "Value" : "string",
+      "MinValue" : 1.5,
+      "MaxValue" : 1.5,
+      "MinCharLength" : 0,
+      "MaxCharLength" : 0,
+      "FeatureOptions" : "string",
+      "Required" : "string"
+    },
+    "additionalProp3" : {
+      "Name" : "string",
+      "Group" : "string",
+      "DisplayGroupId" : 0,
+      "DisplayGroupOrder" : 0,
+      "HiddenUnderAdvanced" : true,
+      "Description" : "string",
+      "FormType" : "string",
+      "DataType" : "string",
+      "Value" : "string",
+      "MinValue" : 1.5,
+      "MaxValue" : 1.5,
+      "MinCharLength" : 0,
+      "MaxCharLength" : 0,
+      "FeatureOptions" : "string",
+      "Required" : "string"
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="b94db34a-b127-44d9-97d6-3c9139656db8" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="SetDynamicFeatureSettings" id="b1b3fd53-7da7-4085-a267-914c1d05a7b5" method="POST">
+    <con:description>Set Dynamic Feature Settings for the customer</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="477d3383-ee69-4fc9-a17e-51dae5e2a71d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

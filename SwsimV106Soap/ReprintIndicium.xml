@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="a20d76d1-71e2-4c68-bd5d-5697685b23ff" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/ReprintIndicium" name="ReprintIndicium" bindingOperationName="ReprintIndicium" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a5a23ccf-165c-4eb0-8c5a-9ab92fee553efileName">ReprintIndicium</con:setting>
+    <con:setting id="43c672a5-b23b-49a7-bd12-eb9df21a504efileName">ReprintIndicium</con:setting>
+    <con:setting id="a20d76d1-71e2-4c68-bd5d-5697685b23fffileName">ReprintIndicium</con:setting>
+  </con:settings>
+  <con:call id="0c01dbf7-2724-457c-88c9-dbe91b0e774d" name="ReprintIndicium Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:ReprintIndicium>\r
+         <sws:indiciumRequest>\r
+            <!--You have a CHOICE of the next 2 items at this level-->\r
+            <!--Optional:-->\r
+            <sws:Authenticator>?</sws:Authenticator>\r
+            <!--Optional:-->\r
+            <sws:Credentials>\r
+               <sws:IntegrationID>?</sws:IntegrationID>\r
+               <sws:Username>?</sws:Username>\r
+               <sws:Password>?</sws:Password>\r
+            </sws:Credentials>\r
+            <!--Optional:-->\r
+            <sws:IntegratorTxId>?</sws:IntegratorTxId>\r
+            <!--Optional:-->\r
+            <sws:StampsTxId>?</sws:StampsTxId>\r
+            <!--Optional:-->\r
+            <sws:TrackingNumber>?</sws:TrackingNumber>\r
+            <!--Optional:-->\r
+            <sws:ImageType>Auto</sws:ImageType>\r
+            <!--Optional:-->\r
+            <sws:ImageDpi>ImageDpiDefault</sws:ImageDpi>\r
+            <!--Optional:-->\r
+            <sws:EltronPrinterDpiType>Default</sws:EltronPrinterDpiType>\r
+            <sws:RotationDegrees>?</sws:RotationDegrees>\r
+            <!--Optional:-->\r
+            <sws:HorizontalOffset>-1</sws:HorizontalOffset>\r
+            <!--Optional:-->\r
+            <sws:VerticalOffset>-1</sws:VerticalOffset>\r
+            <!--Optional:-->\r
+            <sws:PrintDensity>-1</sws:PrintDensity>\r
+            <!--Optional:-->\r
+            <sws:PaperSize>Default</sws:PaperSize>\r
+            <sws:StartRow>?</sws:StartRow>\r
+            <sws:StartColumn>?</sws:StartColumn>\r
+            <!--Optional:-->\r
+            <sws:ReturnImageData>false</sws:ReturnImageData>\r
+            <!--Optional:-->\r
+            <sws:ReturnIndiciumData>false</sws:ReturnIndiciumData>\r
+         </sws:indiciumRequest>\r
+      </sws:ReprintIndicium>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/ReprintIndicium"/>
+  </con:call>
+</con:operation>

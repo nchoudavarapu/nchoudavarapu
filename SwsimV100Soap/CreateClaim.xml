@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="2258f0fc-f8e2-4936-985c-199c0c8c2857" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/CreateClaim" name="CreateClaim" bindingOperationName="CreateClaim" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e1dffa42-0042-49ee-8101-ad6a7b625511fileName">CreateClaim</con:setting>
+    <con:setting id="edc549e6-e280-44fb-8a7a-0a5d80c23466fileName">CreateClaim</con:setting>
+    <con:setting id="2258f0fc-f8e2-4936-985c-199c0c8c2857fileName">CreateClaim</con:setting>
+  </con:settings>
+</con:operation>

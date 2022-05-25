@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/DutiesAndTaxesPaymentTypes" path="/customers/DutiesAndTaxesPaymentTypes" id="0eefa353-7ff2-41cc-ae60-1c5c405734b4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1c1a07e1-ffd6-4087-8137-f8dd54f381e4fileName">%2Fcustomers%2FDutiesAndTaxesPaymentTypes</con:setting>
+    <con:setting id="1e948ba2-d357-4acf-ba6a-798b5bc6e922fileName">%2Fcustomers%2FDutiesAndTaxesPaymentTypes</con:setting>
+    <con:setting id="0eefa353-7ff2-41cc-ae60-1c5c405734b4fileName">%2Fcustomers%2FDutiesAndTaxesPaymentTypes</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetDutiesAndTaxesPaymentTypes" id="2ca98b3b-0a6d-440f-867a-0ba2d1389862" method="GET">
+    <con:description>Get duties and taxes payment types</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "DutiesAndTaxesPaymentTypesCatalog" : [ {
+    "Id" : 0,
+    "Description" : "string"
+  } ]
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="3a082dff-21ff-4608-9f75-6a20a05ccee2" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

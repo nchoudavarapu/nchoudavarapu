@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5f71920e-f395-4f38-8868-c0931125c867" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetBalanceHistory" name="GetBalanceHistory" bindingOperationName="GetBalanceHistory" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c698239f-7a4c-4802-8ff3-cdc08d1b94d8fileName">GetBalanceHistory</con:setting>
+    <con:setting id="6b8e2f0c-b86e-40e4-b4da-069fc9f56001fileName">GetBalanceHistory</con:setting>
+    <con:setting id="5f71920e-f395-4f38-8868-c0931125c867fileName">GetBalanceHistory</con:setting>
+  </con:settings>
+</con:operation>

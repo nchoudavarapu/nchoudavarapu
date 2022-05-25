@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/{resellerId}/reseller-partner" path="/platform-management/{resellerId}/reseller-partner" id="99e4613e-cec9-4dff-a0a5-2226b56b35ff" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3dc7d26f-1535-40b8-85b6-f808a19cd94ffileName">%2Fplatform-management%2F%7BresellerId%7D%2Freseller-partner</con:setting>
+    <con:setting id="99e4613e-cec9-4dff-a0a5-2226b56b35fffileName">%2Fplatform-management%2F%7BresellerId%7D%2Freseller-partner</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>resellerId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetResellerPartner" id="fd12ea9d-0317-4d6a-96b7-7bc30ae1d9b6" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="44a50cb3-5844-427c-9f32-e89cca6f7af6" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="resellerId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

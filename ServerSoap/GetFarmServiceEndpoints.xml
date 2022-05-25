@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="67465deb-5ba7-4d72-8297-b8d1b1cf72fb" isOneWay="false" action="http://qa-automate01-v/tws/server/GetFarmServiceEndpoints" name="GetFarmServiceEndpoints" bindingOperationName="GetFarmServiceEndpoints" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="34087513-a343-432e-a8e2-6923a0e13b37fileName">GetFarmServiceEndpoints</con:setting>
+    <con:setting id="c3175551-ed90-4d0c-a8ca-2beadae16bb3fileName">GetFarmServiceEndpoints</con:setting>
+    <con:setting id="67465deb-5ba7-4d72-8297-b8d1b1cf72fbfileName">GetFarmServiceEndpoints</con:setting>
+  </con:settings>
+</con:operation>

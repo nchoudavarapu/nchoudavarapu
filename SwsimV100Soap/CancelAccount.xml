@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e2e0db9d-75bb-4e72-90ef-c6cd608baa31" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/CancelAccount" name="CancelAccount" bindingOperationName="CancelAccount" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="53db66dd-874a-40f6-82a7-f43e3ac5aa12fileName">CancelAccount</con:setting>
+    <con:setting id="ce532eca-37b8-4a92-8b61-4adacb4ac88efileName">CancelAccount</con:setting>
+    <con:setting id="e2e0db9d-75bb-4e72-90ef-c6cd608baa31fileName">CancelAccount</con:setting>
+  </con:settings>
+</con:operation>

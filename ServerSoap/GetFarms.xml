@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="f52d3a3f-e6be-4298-a3cf-8f48d99a6402" isOneWay="false" action="http://qa-automate01-v/tws/server/GetFarms" name="GetFarms" bindingOperationName="GetFarms" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8d64b30b-7b93-4414-babc-f06ef79fa8fffileName">GetFarms</con:setting>
+    <con:setting id="d60aeab8-50af-4aa9-bfd7-2c0347780687fileName">GetFarms</con:setting>
+    <con:setting id="f52d3a3f-e6be-4298-a3cf-8f48d99a6402fileName">GetFarms</con:setting>
+  </con:settings>
+</con:operation>

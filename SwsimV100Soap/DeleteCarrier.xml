@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="c380791c-717c-42f3-863e-5c5008f2f873" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/DeleteCarrier" name="DeleteCarrier" bindingOperationName="DeleteCarrier" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cb770bfe-1bfa-45bf-87e7-edca477e192cfileName">DeleteCarrier</con:setting>
+    <con:setting id="aae0b3bf-28b5-4b66-9b6d-1ca70923c5a9fileName">DeleteCarrier</con:setting>
+    <con:setting id="c380791c-717c-42f3-863e-5c5008f2f873fileName">DeleteCarrier</con:setting>
+  </con:settings>
+</con:operation>

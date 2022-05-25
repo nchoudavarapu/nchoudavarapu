@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e5091acf-f9a8-4d89-8f21-cc50ca78b706" isOneWay="false" action="http://qa-automate01-v/tws/server/GetEnvironments" name="GetEnvironments" bindingOperationName="GetEnvironments" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="99b7310a-a9ea-4b8e-aaab-4ea9373ebc46fileName">GetEnvironments</con:setting>
+    <con:setting id="7d41e4c0-b2c8-403f-86b0-4a56b0660e44fileName">GetEnvironments</con:setting>
+    <con:setting id="e5091acf-f9a8-4d89-8f21-cc50ca78b706fileName">GetEnvironments</con:setting>
+  </con:settings>
+</con:operation>

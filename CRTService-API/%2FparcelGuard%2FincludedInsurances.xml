@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/parcelGuard/includedInsurances" path="/parcelGuard/includedInsurances" id="8bd683f3-b57f-44f0-a345-8fc3f7e25def" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fc80b2e7-fa7b-419e-ad2d-9a9d174b24e2fileName">%2FparcelGuard%2FincludedInsurances</con:setting>
+    <con:setting id="fb5cd06d-7726-4c33-9429-902424958a83fileName">%2FparcelGuard%2FincludedInsurances</con:setting>
+    <con:setting id="8bd683f3-b57f-44f0-a345-8fc3f7e25deffileName">%2FparcelGuard%2FincludedInsurances</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetIncludedInsurances" id="861fde8a-ce8f-4778-9328-4c44706bc09f" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Items" : [ {
+    "ServiceId" : 0,
+    "ServiceName" : "string",
+    "Description" : "string",
+    "AvailableAmounts" : [ 1.5 ],
+    "DefaultAmount" : 1.5
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="20254f47-3528-492d-b7bd-a17e9dd2d073" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

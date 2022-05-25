@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/miniStores/purchase" path="/miniStores/purchase" id="f6e17579-6779-4048-9343-29ee371e8a90" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b4b3447e-8427-43f8-b203-84ef7de34348fileName">%2FminiStores%2Fpurchase</con:setting>
+    <con:setting id="abadf69b-f0be-4e86-868d-f2cd9e22e24bfileName">%2FminiStores%2Fpurchase</con:setting>
+    <con:setting id="f6e17579-6779-4048-9343-29ee371e8a90fileName">%2FminiStores%2Fpurchase</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetMiniStorePurchaseInfo" id="6d73cd8d-2678-4cc4-a49e-dbb477ba710b" method="GET">
+    <con:description>Get Mini Store Purchase Information</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>meterNumber</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Company" : "string",
+  "FirstName" : "string",
+  "LastName" : "string",
+  "EmailAddress" : "string",
+  "Street" : "string",
+  "City" : "string",
+  "Zip" : "string",
+  "ZipPlus4" : "string",
+  "State" : "string",
+  "MiniStorePurchasesItems" : [ {
+    "Sku" : "string",
+    "Name" : "string",
+    "Description" : "string",
+    "ListPrice" : 0,
+    "MaxPurchasable" : 0
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="ca82d519-e92d-43ec-a78a-31a04c1bdd58" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="meterNumber" value=""/>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="MiniStorePurchase" id="ac390585-56ac-438c-9446-9888dfc36147" method="POST">
+    <con:description>Mini Store Purchase</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="296df74e-1d5d-4f3d-a786-4e6081eb5812" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

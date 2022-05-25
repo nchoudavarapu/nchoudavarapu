@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="0db2979b-fc8b-4659-93df-879b01715d3b" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/CreateBranding" name="CreateBranding" bindingOperationName="CreateBranding" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="083ae4b8-814e-4a83-843b-d84331ec44f4fileName">CreateBranding</con:setting>
+    <con:setting id="ad99712d-07a0-4027-b040-da6898859a75fileName">CreateBranding</con:setting>
+    <con:setting id="0db2979b-fc8b-4659-93df-879b01715d3bfileName">CreateBranding</con:setting>
+  </con:settings>
+  <con:call id="293f3eaf-779d-4689-9212-7d22f2ad1427" name="CreateBranding Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:CreateBranding>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:BrandingProperties>\r
+            <!--Optional:-->\r
+            <sws:ReturnPolicy/>\r
+            <!--Optional:-->\r
+            <sws:Email/>\r
+            <!--Optional:-->\r
+            <sws:Phone/>\r
+            <!--Optional:-->\r
+            <sws:LogoTargetUrl/>\r
+            <sws:BrandName>?</sws:BrandName>\r
+            <!--Optional:-->\r
+            <sws:LogoUrl/>\r
+            <sws:LogoType>?</sws:LogoType>\r
+            <!--Optional:-->\r
+            <sws:MenuLinks>\r
+               <!--Zero or more repetitions:-->\r
+               <sws:MenuLink>\r
+                  <sws:Url>?</sws:Url>\r
+                  <sws:Text>?</sws:Text>\r
+               </sws:MenuLink>\r
+            </sws:MenuLinks>\r
+            <!--Optional:-->\r
+            <sws:SocialMedia>\r
+               <!--Zero or more repetitions:-->\r
+               <sws:SocialMedia>\r
+                  <sws:Type>?</sws:Type>\r
+                  <sws:Url>?</sws:Url>\r
+               </sws:SocialMedia>\r
+            </sws:SocialMedia>\r
+            <!--Optional:-->\r
+            <sws:Toggles>\r
+               <!--Optional:-->\r
+               <sws:ShowLogo>?</sws:ShowLogo>\r
+               <!--Optional:-->\r
+               <sws:ShowCustomColors>?</sws:ShowCustomColors>\r
+               <!--Optional:-->\r
+               <sws:ShowSocialMedia>?</sws:ShowSocialMedia>\r
+               <!--Optional:-->\r
+               <sws:ShowStoreUrl>?</sws:ShowStoreUrl>\r
+               <!--Optional:-->\r
+               <sws:ShowMenuLinks>?</sws:ShowMenuLinks>\r
+               <!--Optional:-->\r
+               <sws:ShowReturnPolicy>?</sws:ShowReturnPolicy>\r
+               <!--Optional:-->\r
+               <sws:ShowEmail>?</sws:ShowEmail>\r
+               <!--Optional:-->\r
+               <sws:ShowPhone>?</sws:ShowPhone>\r
+               <!--Optional:-->\r
+               <sws:ShowShipmentDetails>?</sws:ShowShipmentDetails>\r
+               <!--Optional:-->\r
+               <sws:ShowItemImages>?</sws:ShowItemImages>\r
+            </sws:Toggles>\r
+            <!--Optional:-->\r
+            <sws:Colors>\r
+               <!--Optional:-->\r
+               <sws:Primary/>\r
+               <!--Optional:-->\r
+               <sws:Secondary/>\r
+               <!--Optional:-->\r
+               <sws:Tertiary/>\r
+            </sws:Colors>\r
+            <sws:Theme>?</sws:Theme>\r
+         </sws:BrandingProperties>\r
+         <!--Optional:-->\r
+         <sws:Reference>?</sws:Reference>\r
+         <!--Optional:-->\r
+         <sws:SetAsDefault>false</sws:SetAsDefault>\r
+      </sws:CreateBranding>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/CreateBranding"/>
+  </con:call>
+</con:operation>

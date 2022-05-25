@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/ResendEmails" path="/customers/ResendEmails" id="b59f0611-4e6a-4681-8f06-ac20ecf96b68" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3d623d4d-cb9c-4309-8623-8c3dc6c15e81fileName">%2Fcustomers%2FResendEmails</con:setting>
+    <con:setting id="57512d7d-af82-414f-8718-48fad1479b00fileName">%2Fcustomers%2FResendEmails</con:setting>
+    <con:setting id="b59f0611-4e6a-4681-8f06-ac20ecf96b68fileName">%2Fcustomers%2FResendEmails</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="ResendEmails" id="78daeb4f-4a2b-40ac-894a-3794fc751096" method="POST">
+    <con:description>Resend Emails</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>forwardEmail</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="78e5c20f-3eba-4c4a-ad26-111ee22ecfe1" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="forwardEmail" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

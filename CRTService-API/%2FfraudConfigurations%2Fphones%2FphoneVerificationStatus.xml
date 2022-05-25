@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/fraudConfigurations/phones/phoneVerificationStatus" path="/fraudConfigurations/phones/phoneVerificationStatus" id="b81a6c42-212c-4d52-9833-bfc8ce7cc941" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b7898c36-acfe-47ba-a5a6-c81ea8737df5fileName">%2FfraudConfigurations%2Fphones%2FphoneVerificationStatus</con:setting>
+    <con:setting id="94fa9203-0664-4d17-81a8-91434f1193fffileName">%2FfraudConfigurations%2Fphones%2FphoneVerificationStatus</con:setting>
+    <con:setting id="b81a6c42-212c-4d52-9833-bfc8ce7cc941fileName">%2FfraudConfigurations%2Fphones%2FphoneVerificationStatus</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="UpdatePhoneVerificationStatus" id="95bec003-a263-4bba-8896-3d89bda37300" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="730d4447-4608-4b2f-ac62-71ee1d9de5ed" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

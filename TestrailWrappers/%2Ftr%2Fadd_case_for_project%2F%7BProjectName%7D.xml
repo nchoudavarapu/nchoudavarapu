@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/tr/add_case_for_project/{ProjectName}" path="/tr/add_case_for_project/{ProjectName}" id="bdaa75da-7e69-4b4b-97b8-7eabb2b46a5e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6fe36659-da61-47c4-a74c-9ec8b1fcfb2bfileName">%2Ftr%2Fadd_case_for_project%2F%7BProjectName%7D</con:setting>
+    <con:setting id="bdaa75da-7e69-4b4b-97b8-7eabb2b46a5efileName">%2Ftr%2Fadd_case_for_project%2F%7BProjectName%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>ProjectName</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="add_case_for_project_Post" id="8b0d8987-9158-433f-aaab-7218f8591db6" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "test_suite" : "string",
+  "section" : "string",
+  "title" : "string",
+  "priority" : "string",
+  "estimate" : "string",
+  "automation_key" : "string",
+  "automation_type" : "string",
+  "regression_test" : true,
+  "custom_steps_separated" : [ {
+    "content" : "string",
+    "expected" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{ }</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="2112d9de-6d92-4fa6-a634-4e1f9a399e49" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://qa-automate01-v</con:endpoint>
+      <con:request>{\r
+  "test_suite" : "string",\r
+  "section" : "string",\r
+  "title" : "string",\r
+  "priority" : "string",\r
+  "estimate" : "string",\r
+  "automation_key" : "string",\r
+  "automation_type" : "string",\r
+  "regression_test" : true,\r
+  "custom_steps_separated" : [ {\r
+    "content" : "string",\r
+    "expected" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/dynamicpayment/NullifyDynamicPaymentFields" path="/dynamicpayment/NullifyDynamicPaymentFields" id="c0c43f4f-3d04-4e99-b5d3-43f2b2693da6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="59cc9b02-53e1-4675-8795-acb16f8900eafileName">%2Fdynamicpayment%2FNullifyDynamicPaymentFields</con:setting>
+    <con:setting id="c0c43f4f-3d04-4e99-b5d3-43f2b2693da6fileName">%2Fdynamicpayment%2FNullifyDynamicPaymentFields</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="NullifyDynamicPaymentFields" id="4fb3cd2d-d4db-4c0b-a78a-0a8a02da00d6" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="ae8e633f-f7a2-433c-b630-4a7a417f43cd" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="field" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="7272e560-9b64-4468-8f40-e1f64fcf1813" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/RecoverUsername" name="RecoverUsername" bindingOperationName="RecoverUsername" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="19caa231-9575-4ef0-8dcb-13020eb868d3fileName">RecoverUsername</con:setting>
+    <con:setting id="f0a066fe-3223-4956-8715-df522af4f151fileName">RecoverUsername</con:setting>
+    <con:setting id="7272e560-9b64-4468-8f40-e1f64fcf1813fileName">RecoverUsername</con:setting>
+  </con:settings>
+</con:operation>

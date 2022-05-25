@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="256e7d30-a328-4f9b-b1a0-d47e38fd6f46" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetChangePlanStatus" name="GetChangePlanStatus" bindingOperationName="GetChangePlanStatus" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a17c07fd-4dda-4146-ba6d-4a2c2f0953e0fileName">GetChangePlanStatus</con:setting>
+    <con:setting id="880dd319-1e11-40dc-a6c1-dc76cfd51256fileName">GetChangePlanStatus</con:setting>
+    <con:setting id="256e7d30-a328-4f9b-b1a0-d47e38fd6f46fileName">GetChangePlanStatus</con:setting>
+  </con:settings>
+</con:operation>

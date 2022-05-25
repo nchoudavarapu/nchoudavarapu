@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/loadProfile" path="/customers/loadProfile" id="36fef6c2-9119-456b-9803-e38e1c3903da" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1a860411-c799-4ce7-9548-0b074fa90131fileName">%2Fcustomers%2FloadProfile</con:setting>
+    <con:setting id="b9f06776-a26a-42a9-94f3-145f625d52b8fileName">%2Fcustomers%2FloadProfile</con:setting>
+    <con:setting id="36fef6c2-9119-456b-9803-e38e1c3903dafileName">%2Fcustomers%2FloadProfile</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="LoadProfile" id="3b3f5d00-e83a-42d0-b721-4845b79f5f25" method="GET">
+    <con:description>Load customer profile</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custID</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>userID</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "UserName" : "string",
+  "CompanyName" : "string",
+  "UserFullName" : {
+    "FirstName" : "string",
+    "Middlename" : "string",
+    "LastName" : "string"
+  },
+  "Merchant" : "string",
+  "MeterProvider" : "string",
+  "AccountType" : 0,
+  "RateSetType" : -1,
+  "Platform" : 0,
+  "ResellerAccountId" : 0,
+  "IsSasDmc" : true,
+  "IsBackendMeter" : true,
+  "CorpId" : 0,
+  "ProfileId" : "string",
+  "TermsVersion" : 0,
+  "TermsDescription" : "string",
+  "UserRole" : "string",
+  "CurrentNoOfUsers" : 0,
+  "HasUspsRep" : true,
+  "SingleSignOnEnabled" : true,
+  "ShipWorkLink" : "string",
+  "OmasAccountId" : "string",
+  "EpsAccount" : "string",
+  "GppUsername" : "string",
+  "AccountStatus" : 0,
+  "StatusReason" : 0,
+  "UserStatus" : 0,
+  "ResubmissionRequired" : true,
+  "LicenseStatus" : 0,
+  "DateOpened" : "string",
+  "DateClosed" : "string",
+  "TrialEndDate" : "string",
+  "LastPrintDate" : "string",
+  "CustFullName" : {
+    "FirstName" : "string",
+    "Middlename" : "string",
+    "LastName" : "string"
+  },
+  "MailingAddress" : {
+    "Street" : "string",
+    "City" : "string",
+    "State" : "string",
+    "Zip" : "string"
+  },
+  "PhysicalAddress" : {
+    "Street" : "string",
+    "City" : "string",
+    "State" : "string",
+    "Zip" : "string"
+  },
+  "UserEmailAddress" : "string",
+  "CompanyEmailAddress" : "string",
+  "PhoneNumber" : "string",
+  "StoreBillingInfo" : {
+    "PaymentType" : 0,
+    "DefaultPayment" : "string",
+    "BillingName" : "string",
+    "BillingAddress" : {
+      "Street" : "string",
+      "City" : "string",
+      "State" : "string",
+      "Zip" : "string"
+    }
+  },
+  "ServiceBillingInfo" : {
+    "PaymentType" : 0,
+    "DefaultPayment" : "string",
+    "BillingName" : "string",
+    "BillingAddress" : {
+      "Street" : "string",
+      "City" : "string",
+      "State" : "string",
+      "Zip" : "string"
+    }
+  },
+  "PostageBillingInfo" : {
+    "PaymentType" : 0,
+    "DefaultPayment" : "string",
+    "BillingName" : "string",
+    "BillingAddress" : {
+      "Street" : "string",
+      "City" : "string",
+      "State" : "string",
+      "Zip" : "string"
+    }
+  },
+  "PostageDefaultedAsServiceBilling" : true,
+  "CurrentPricingPlan" : {
+    "Sku" : 1.5,
+    "Name" : "string",
+    "MonthlyFee" : 1.5,
+    "AnnualFee" : 1.5
+  },
+  "MultiUserPlan" : true,
+  "PendingPricingPlan" : {
+    "Sku" : 1.5,
+    "Name" : "string",
+    "MonthlyFee" : 1.5,
+    "AnnualFee" : 1.5
+  },
+  "NextStatementDate" : "string",
+  "IsLabelFeeRateEnabled" : true,
+  "PromoCode" : "string",
+  "OfferName" : "string",
+  "OfferDescription" : "string",
+  "RegistrationCookie" : "string",
+  "DuplicatePromoCheck" : 0,
+  "CurrentBalance" : 1.5,
+  "TotalLabelsPrinted" : 0,
+  "PurchasedAndCredited" : 1.5,
+  "TotalPostagePurchased" : 1.5,
+  "InitialFreePostage" : 1.5,
+  "Comment" : "string",
+  "ActiveUsers" : [ {
+    "UserId" : 0,
+    "UserName" : "string",
+    "UserRoles" : "string",
+    "PerPrintLimit" : 1.5,
+    "PurchasePostageEnabled" : true,
+    "FedExEnabled" : true,
+    "StoreEnabled" : true,
+    "CostCodeRequired" : true
+  } ],
+  "InactiveUsers" : [ {
+    "UserId" : 0,
+    "UserName" : "string",
+    "UserRoles" : "string",
+    "PerPrintLimit" : 1.5,
+    "PurchasePostageEnabled" : true,
+    "FedExEnabled" : true,
+    "StoreEnabled" : true,
+    "CostCodeRequired" : true
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="d0dc66ac-bcec-40b2-ba9d-bd62f814711e" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custID" value=""/>
+        <con:entry key="userID" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

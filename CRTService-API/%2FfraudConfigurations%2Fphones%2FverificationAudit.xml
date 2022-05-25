@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/fraudConfigurations/phones/verificationAudit" path="/fraudConfigurations/phones/verificationAudit" id="8fb4db86-e575-4109-83ab-162822b55d9b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3ea79043-6b86-47d5-bf76-737bb2303816fileName">%2FfraudConfigurations%2Fphones%2FverificationAudit</con:setting>
+    <con:setting id="95189388-0604-41ef-a8e4-7fda691114dffileName">%2FfraudConfigurations%2Fphones%2FverificationAudit</con:setting>
+    <con:setting id="8fb4db86-e575-4109-83ab-162822b55d9bfileName">%2FfraudConfigurations%2Fphones%2FverificationAudit</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetPhoneVerificationAudit" id="fdda1553-26a9-4328-bc8b-d811b897c2da" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Page</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>PageSize</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>BridgeIdFilter</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>AccountNoFilter</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>UsernameFilter</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>PhoneFilter</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>RequiredLatestAuditId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>boolean</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "TotalCount" : 0,
+  "Records" : [ {
+    "AccountNo" : 0,
+    "Phone" : "string",
+    "PhoneExtension" : "string",
+    "PhoneVerificationStatus" : "string",
+    "PhoneIsBlackListed" : true,
+    "PhoneBlackListComments" : "string",
+    "AuditID" : 0,
+    "LatestAuditID" : 0,
+    "AuditDate" : "string",
+    "AuditBridgeID" : 0,
+    "AuditUsername" : "string",
+    "AuditPhone" : "string",
+    "AuditPhoneExtension" : "string",
+    "AuditPhoneIsBlackListed" : true,
+    "AuditPhoneBlackListComments" : "string",
+    "AuditPhoneVerificationStatus" : "string",
+    "AuditPhoneVerificationReason" : "string",
+    "AuditVerifyCode" : "string",
+    "AuditVerifyCodeExpiration" : "string",
+    "VerifyCodeReferenceId" : "string",
+    "VerificationOption" : "string",
+    "AuditIPAddress" : "string",
+    "AuditDoneBy" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="26313bfe-55d5-4b32-8bec-3cf7150433d5" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="UsernameFilter" value=""/>
+        <con:entry key="RequiredLatestAuditId" value=""/>
+        <con:entry key="PageSize" value=""/>
+        <con:entry key="BridgeIdFilter" value=""/>
+        <con:entry key="AccountNoFilter" value=""/>
+        <con:entry key="PhoneFilter" value=""/>
+        <con:entry key="Page" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="AddPhoneVerificationAudit" id="a4dd36f3-b37a-4de6-8d6e-2c5479b250bc" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="fabdb4e1-cdf4-4de1-802d-c4224cbcda11" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

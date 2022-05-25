@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="2e93ec00-7a27-4770-9255-b55e027c1a1a" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/AddCarrier" name="AddCarrier" bindingOperationName="AddCarrier" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d7c82185-af24-4147-9840-81ae4fde3346fileName">AddCarrier</con:setting>
+    <con:setting id="feeb9a7b-7b10-476e-a688-495f3fb10c3bfileName">AddCarrier</con:setting>
+    <con:setting id="2e93ec00-7a27-4770-9255-b55e027c1a1afileName">AddCarrier</con:setting>
+  </con:settings>
+</con:operation>

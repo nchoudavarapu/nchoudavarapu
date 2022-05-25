@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/AdjustServiceFee" path="/customers/AdjustServiceFee" id="f4f41c0a-c044-445a-a773-84c274dc9514" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7213e1cf-268d-40f8-8eff-cb9aa5f359d5fileName">%2Fcustomers%2FAdjustServiceFee</con:setting>
+    <con:setting id="ca4c863a-beb0-4cc1-9fad-ffe658e4eeeafileName">%2Fcustomers%2FAdjustServiceFee</con:setting>
+    <con:setting id="f4f41c0a-c044-445a-a773-84c274dc9514fileName">%2Fcustomers%2FAdjustServiceFee</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="AdjustServiceFee" id="f655daca-0c97-4054-a688-9a08c54b0e74" method="POST">
+    <con:description>Adjust service fee to customer account</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="ebc50742-0b04-4ed3-a71f-f5054a046fc4" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ea5fedd2-5b69-4d97-ab97-36ff7fa34387" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetNetStampsImages" name="GetNetStampsImages" bindingOperationName="GetNetStampsImages" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="682f0a25-dc1d-4f14-a603-5d3702dbebd8fileName">GetNetStampsImages</con:setting>
+    <con:setting id="3d1ec572-b3ec-4cd8-a9a4-8e36352f6e07fileName">GetNetStampsImages</con:setting>
+    <con:setting id="ea5fedd2-5b69-4d97-ab97-36ff7fa34387fileName">GetNetStampsImages</con:setting>
+  </con:settings>
+  <con:call id="831301d8-d159-4b09-aa0d-9594f3e723ff" name="GetNetStampsImages Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetNetStampsImages>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+      </sws:GetNetStampsImages>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetNetStampsImages"/>
+  </con:call>
+</con:operation>

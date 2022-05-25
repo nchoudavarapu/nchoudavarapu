@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="90496eee-7041-4e3d-abd8-b4182619f8a6" name="ErrorTesting" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="68b0819c-09ee-448a-b777-950cca5a8189fileName">ErrorTesting</con:setting>
+    <con:setting id="876ad05c-7d3f-4959-861f-3d3c9d3601bafileName">ErrorTesting</con:setting>
+    <con:setting id="90496eee-7041-4e3d-abd8-b4182619f8a6fileName">ErrorTesting</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:setupScript>new soapUIProperties.setProperties(testSuite.project)</con:setupScript>
+  <con:reportParameters/>
+</con:testSuite>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4ccec84f-0a1e-47f2-8efe-a1e1477d5637" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/CheckCarrierPickupAvailability" name="CheckCarrierPickupAvailability" bindingOperationName="CheckCarrierPickupAvailability" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8cda601a-b1df-40f7-b71f-b7d9c7053a91fileName">CheckCarrierPickupAvailability</con:setting>
+    <con:setting id="9dc9c68d-01b9-4a94-ba40-edee4eef49cffileName">CheckCarrierPickupAvailability</con:setting>
+    <con:setting id="4ccec84f-0a1e-47f2-8efe-a1e1477d5637fileName">CheckCarrierPickupAvailability</con:setting>
+  </con:settings>
+  <con:call id="fb4a8e8d-beac-47b5-973e-eee73027be1e" name="CheckCarrierPickupAvailability Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:CheckCarrierPickupAvailability>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:Date>0001-01-01</sws:Date>\r
+         <sws:Address>\r
+            <!--Optional:-->\r
+            <sws:Company/>\r
+            <sws:Address>?</sws:Address>\r
+            <!--Optional:-->\r
+            <sws:SuiteOrApt/>\r
+            <sws:City>?</sws:City>\r
+            <sws:State>?</sws:State>\r
+            <sws:ZIP>?</sws:ZIP>\r
+            <!--Optional:-->\r
+            <sws:ZIP4/>\r
+         </sws:Address>\r
+         <!--Optional:-->\r
+         <sws:Carrier>USPS</sws:Carrier>\r
+      </sws:CheckCarrierPickupAvailability>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/CheckCarrierPickupAvailability"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="6ccaf9e1-72e1-49c9-b10a-3617018381c4" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/AuthenticateBridgeAuthenticator" name="AuthenticateBridgeAuthenticator" bindingOperationName="AuthenticateBridgeAuthenticator" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3f152e65-3592-4402-9cf7-6e7cc5251b76fileName">AuthenticateBridgeAuthenticator</con:setting>
+    <con:setting id="c49168c7-4a66-4a9b-a956-b34e9f75b237fileName">AuthenticateBridgeAuthenticator</con:setting>
+    <con:setting id="6ccaf9e1-72e1-49c9-b10a-3617018381c4fileName">AuthenticateBridgeAuthenticator</con:setting>
+  </con:settings>
+</con:operation>

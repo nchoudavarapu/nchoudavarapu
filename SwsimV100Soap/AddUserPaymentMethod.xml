@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="2f929a70-0328-46c2-99da-cb5d530776bb" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/AddUserPaymentMethod" name="AddUserPaymentMethod" bindingOperationName="AddUserPaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9b0525b7-560b-4834-bb6f-372a62f79f89fileName">AddUserPaymentMethod</con:setting>
+    <con:setting id="e2e463f7-afe2-4faa-a978-357a8e1c4ca9fileName">AddUserPaymentMethod</con:setting>
+    <con:setting id="2f929a70-0328-46c2-99da-cb5d530776bbfileName">AddUserPaymentMethod</con:setting>
+  </con:settings>
+</con:operation>

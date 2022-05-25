@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="6d56f5fd-446b-43e4-a633-446d87fe4909" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/ChangeDefaultPaymentMethod" name="ChangeDefaultPaymentMethod" bindingOperationName="ChangeDefaultPaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="96b214b8-8f72-4859-82b8-9180ce2b4832fileName">ChangeDefaultPaymentMethod</con:setting>
+    <con:setting id="bff16d23-6223-4a2d-8a37-d7cac25107d6fileName">ChangeDefaultPaymentMethod</con:setting>
+    <con:setting id="6d56f5fd-446b-43e4-a633-446d87fe4909fileName">ChangeDefaultPaymentMethod</con:setting>
+  </con:settings>
+</con:operation>

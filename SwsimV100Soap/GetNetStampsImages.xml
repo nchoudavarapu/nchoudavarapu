@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="8034ed3f-b84a-47a7-803f-91971776eb19" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetNetStampsImages" name="GetNetStampsImages" bindingOperationName="GetNetStampsImages" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="30d84e23-fc4d-4c41-8f8a-6f07e0125d05fileName">GetNetStampsImages</con:setting>
+    <con:setting id="738075a2-ed7f-4044-b4a1-8865d3c5043afileName">GetNetStampsImages</con:setting>
+    <con:setting id="8034ed3f-b84a-47a7-803f-91971776eb19fileName">GetNetStampsImages</con:setting>
+  </con:settings>
+</con:operation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="674b1e69-f325-46c3-aff9-6142017538db" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/FinishAccountVerification" name="FinishAccountVerification" bindingOperationName="FinishAccountVerification" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b344ca0d-52df-4bab-9b10-875242d212e4fileName">FinishAccountVerification</con:setting>
+    <con:setting id="d2b9b227-908d-4abb-89c0-c93e055525defileName">FinishAccountVerification</con:setting>
+    <con:setting id="674b1e69-f325-46c3-aff9-6142017538dbfileName">FinishAccountVerification</con:setting>
+  </con:settings>
+  <con:call id="f445da8c-2d12-4fdc-861b-af4f8b9ffe6d" name="FinishAccountVerification Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:FinishAccountVerification>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:PhoneVerificationCode>?</sws:PhoneVerificationCode>\r
+      </sws:FinishAccountVerification>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/FinishAccountVerification"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/AchCredit" path="/customers/AchCredit" id="43e1d3bb-38b1-40db-acfe-ebef3d0c8e81" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3830f1c9-fc67-4879-bdc9-17de2ad7b3c8fileName">%2Fcustomers%2FAchCredit</con:setting>
+    <con:setting id="b93b7106-4219-42c2-ac66-7d2e4583cc3dfileName">%2Fcustomers%2FAchCredit</con:setting>
+    <con:setting id="43e1d3bb-38b1-40db-acfe-ebef3d0c8e81fileName">%2Fcustomers%2FAchCredit</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="AchCredit" id="7e745ae9-5d42-4d70-b6fa-a0c5ca37a472" method="POST">
+    <con:description>Ach Credit</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>amount</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>comment</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>csrName</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="cba5f832-196e-407a-94d3-93cba492f8b4" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="amount" value=""/>
+        <con:entry key="custId" value=""/>
+        <con:entry key="comment" value=""/>
+        <con:entry key="csrName" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/AddMetersToCorporation" path="/customers/AddMetersToCorporation" id="b34dfc77-48ad-41cb-a4de-c0669b9cb62a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6f5bcb56-f562-4279-b3e1-56d54718c546fileName">%2Fcustomers%2FAddMetersToCorporation</con:setting>
+    <con:setting id="e7f06519-a35a-4bb5-a662-5caf0a58ae6cfileName">%2Fcustomers%2FAddMetersToCorporation</con:setting>
+    <con:setting id="b34dfc77-48ad-41cb-a4de-c0669b9cb62afileName">%2Fcustomers%2FAddMetersToCorporation</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="AddMetersToCorporation" id="98dbf5a6-98e7-4b0d-bb54-f0ed55178913" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="99d62ea9-db74-4d98-9c8c-3b055af7760f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

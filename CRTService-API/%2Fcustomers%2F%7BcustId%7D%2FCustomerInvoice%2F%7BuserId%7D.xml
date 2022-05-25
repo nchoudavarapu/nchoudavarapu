@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/CustomerInvoice/{userId}" path="/customers/{custId}/CustomerInvoice/{userId}" id="784662cf-2b7f-4788-8628-6415867d0b19" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f912b44d-c935-4356-9448-6469f6d484d5fileName">%2Fcustomers%2F%7BcustId%7D%2FCustomerInvoice%2F%7BuserId%7D</con:setting>
+    <con:setting id="72cd2220-4484-4613-a1bd-7a3d93b48f39fileName">%2Fcustomers%2F%7BcustId%7D%2FCustomerInvoice%2F%7BuserId%7D</con:setting>
+    <con:setting id="784662cf-2b7f-4788-8628-6415867d0b19fileName">%2Fcustomers%2F%7BcustId%7D%2FCustomerInvoice%2F%7BuserId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>userId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetCustomerInvoice" id="ff953798-ce32-49bb-963c-cd4ca79ddc75" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "CustomerId" : 0,
+  "UserId" : 0,
+  "IsPostageInvoiced" : true,
+  "IsStoreInvoiced" : true,
+  "IsServiceFeeInvoiced" : true,
+  "MonthlyInvoiceAmountLimit" : 1.5,
+  "FirstName" : "string",
+  "LastName" : "string",
+  "Address1" : "string",
+  "Address2" : "string",
+  "City" : "string",
+  "State" : "string",
+  "Zip" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="b9b86f9d-0c3c-47f2-8f5f-bd7207878878" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+        <con:entry key="userId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

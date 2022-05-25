@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4ad02a80-ac0b-4199-8c87-f356eeb6631f" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/ResubmitPurchase" name="ResubmitPurchase" bindingOperationName="ResubmitPurchase" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="014c70f8-5293-44d9-82c8-2a2d61188386fileName">ResubmitPurchase</con:setting>
+    <con:setting id="14618c17-dde6-46c0-9f16-a7bfe336ad8ffileName">ResubmitPurchase</con:setting>
+    <con:setting id="4ad02a80-ac0b-4199-8c87-f356eeb6631ffileName">ResubmitPurchase</con:setting>
+  </con:settings>
+  <con:call id="e759cfbc-6a07-4173-9281-246a07670221" name="ResubmitPurchase Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:ResubmitPurchase>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:ResubmitCookie>?</sws:ResubmitCookie>\r
+      </sws:ResubmitPurchase>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/ResubmitPurchase"/>
+  </con:call>
+</con:operation>

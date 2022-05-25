@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/GetServiceFeeAdjustmentReason" path="/customers/GetServiceFeeAdjustmentReason" id="c2d61e40-0e4b-408c-9581-42805ff0b438" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="66825781-d55c-4b2b-a3ca-230010874c36fileName">%2Fcustomers%2FGetServiceFeeAdjustmentReason</con:setting>
+    <con:setting id="7b419b59-cb86-4ac4-8bd1-63c4fd8693d0fileName">%2Fcustomers%2FGetServiceFeeAdjustmentReason</con:setting>
+    <con:setting id="c2d61e40-0e4b-408c-9581-42805ff0b438fileName">%2Fcustomers%2FGetServiceFeeAdjustmentReason</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetServiceFeeAdjustmentReasonCatalog" id="3a735fd9-ae03-4ae9-a098-cbdf0d60c400" method="GET">
+    <con:description>Get Service Fee Adjustment Reason</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "Id" : 0,
+  "Description" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="188a70f1-688e-43d8-932e-0475244b0457" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

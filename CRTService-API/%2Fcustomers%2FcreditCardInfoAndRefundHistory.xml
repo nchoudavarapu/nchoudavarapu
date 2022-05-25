@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/creditCardInfoAndRefundHistory" path="/customers/creditCardInfoAndRefundHistory" id="d88c9e85-afa9-4534-b69b-81451639237e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="86ccf563-2e03-448f-b39d-11c4209e5b49fileName">%2Fcustomers%2FcreditCardInfoAndRefundHistory</con:setting>
+    <con:setting id="f4d91573-bc1a-4093-b912-1f443c2b83b5fileName">%2Fcustomers%2FcreditCardInfoAndRefundHistory</con:setting>
+    <con:setting id="d88c9e85-afa9-4534-b69b-81451639237efileName">%2Fcustomers%2FcreditCardInfoAndRefundHistory</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetCreditCardRefund" id="6f977baf-b8a9-46d8-bf3c-e8f57d90aa8c" method="GET">
+    <con:description>Get info about credit card refund for the customer</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custID</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>profileId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>maxInstantCreditSummary</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>userId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "PurchaseSummary" : [ {
+    "PurchaseName" : "string",
+    "PaymentTypeName" : "string",
+    "OrderCount" : 0,
+    "AmmountTotalCents" : 0,
+    "TaxTotalCents" : 0,
+    "ShippingTotalCents" : 0,
+    "GrandTotalCents" : 0
+  } ],
+  "InstantCreditSummary" : [ {
+    "TransactionType" : "string",
+    "CreationDate" : "string",
+    "Amount" : 1.5,
+    "OrderStatusName" : "string",
+    "ReasonCode" : 0,
+    "Comments" : "string",
+    "CSRName" : "string"
+  } ],
+  "ContainsPaymentInfo" : true,
+  "CreditCardPaymentInfo" : {
+    "AccounType" : "string",
+    "ExpiryDate" : "string",
+    "AccountLast4" : "string",
+    "Holder" : "string",
+    "Street" : "string",
+    "City" : "string",
+    "State" : "string",
+    "Zip" : "string"
+  },
+  "InstantCreditReasons" : [ {
+    "Id" : 0,
+    "Description" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="84435418-afbe-42a9-a6fd-a7d0ca94d0c9" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="maxInstantCreditSummary" value=""/>
+        <con:entry key="profileId" value=""/>
+        <con:entry key="custID" value=""/>
+        <con:entry key="userId" value=""/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>custID</con:entry>
+        <con:entry>profileId</con:entry>
+        <con:entry>maxInstantCreditSummary</con:entry>
+        <con:entry>userId</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

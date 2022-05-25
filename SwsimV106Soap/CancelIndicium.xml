@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="38854639-5245-44ca-91b5-b3744ca8ef9e" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/CancelIndicium" name="CancelIndicium" bindingOperationName="CancelIndicium" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="84422905-db7b-431c-81da-5ea1f0a846ebfileName">CancelIndicium</con:setting>
+    <con:setting id="5e64d9e6-2781-4fa3-a3b8-843e625ee5c7fileName">CancelIndicium</con:setting>
+    <con:setting id="38854639-5245-44ca-91b5-b3744ca8ef9efileName">CancelIndicium</con:setting>
+  </con:settings>
+  <con:call id="1722a156-8cbd-427e-b752-215fe348ea0d" name="CancelIndicium Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:CancelIndicium>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:TrackingNumber>?</sws:TrackingNumber>\r
+         <sws:StampsTxID>?</sws:StampsTxID>\r
+         <!--Optional:-->\r
+         <sws:SendEmail>?</sws:SendEmail>\r
+      </sws:CancelIndicium>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/CancelIndicium"/>
+  </con:call>
+</con:operation>

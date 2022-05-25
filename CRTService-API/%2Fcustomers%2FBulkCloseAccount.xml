@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/BulkCloseAccount" path="/customers/BulkCloseAccount" id="2a82b279-adf6-49dc-85e3-ababcba0f8be" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fadc17fa-5f54-405e-8fa5-8ee0390796c8fileName">%2Fcustomers%2FBulkCloseAccount</con:setting>
+    <con:setting id="927f1877-eeac-4b56-be5b-f8ac85d30ae7fileName">%2Fcustomers%2FBulkCloseAccount</con:setting>
+    <con:setting id="2a82b279-adf6-49dc-85e3-ababcba0f8befileName">%2Fcustomers%2FBulkCloseAccount</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="BulkCloseAccount" id="44b8dd9a-eefb-4cc1-9bf3-5740571db208" method="POST">
+    <con:description>Closes customer account(Bulk Actions)</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="57c63351-5238-471f-9e9f-0accbbc59203" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/closeAccount" path="/customers/closeAccount" id="d0e11522-c799-4fd2-96ff-1246fa19831c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b46ae7ca-5cb8-4546-bf90-f472db323199fileName">%2Fcustomers%2FcloseAccount</con:setting>
+    <con:setting id="e321992f-276a-4455-acb4-0a6c7e248966fileName">%2Fcustomers%2FcloseAccount</con:setting>
+    <con:setting id="d0e11522-c799-4fd2-96ff-1246fa19831cfileName">%2Fcustomers%2FcloseAccount</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetCloseAccountInfo" id="726343ed-2104-4f24-90a3-6338f0a28c53" method="GET">
+    <con:description>Get Close Account Information</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>resellerAccountId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Address" : {
+    "Street" : "string",
+    "City" : "string",
+    "State" : "string",
+    "Zip" : "string"
+  },
+  "CancelReasonsCatalog" : [ {
+    "Id" : 0,
+    "Description" : "string"
+  } ],
+  "NewMailingMethodsCatalog" : [ {
+    "Id" : 0,
+    "Description" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="520a9d4c-1762-4a93-9c3b-5efaf395758e" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="resellerAccountId" value=""/>
+        <con:entry key="custId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="CloseAccount" id="aba26f32-ec30-4f80-a595-1fa71e9dbda6" method="POST">
+    <con:description>Close Account</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="358e3e31-a1b3-4919-8ea5-7323d32f1d44" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request>{
+  "CustId": 0,
+  "UserId": 0,
+  "Address": {
+    "Street": "string",
+    "City": "string",
+    "State": "string",
+    "Zip": "string"
+  },
+  "CancelReason": {
+    "Id": 0,
+    "Description": "string"
+  },
+  "NewMailingMethod": {
+    "Id": 0,
+    "Description": "string"
+  },
+  "CsrName": "string",
+  "ReasonForClosure": "string"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

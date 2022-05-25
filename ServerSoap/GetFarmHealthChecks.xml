@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="06fc90b6-5879-4e42-ad3d-057438064a48" isOneWay="false" action="http://qa-automate01-v/tws/server/GetFarmHealthChecks" name="GetFarmHealthChecks" bindingOperationName="GetFarmHealthChecks" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2f0b314b-3ce0-43e2-be79-f4f73e7c7315fileName">GetFarmHealthChecks</con:setting>
+    <con:setting id="6428fac2-ef3b-4477-a72d-be11aba77ee7fileName">GetFarmHealthChecks</con:setting>
+    <con:setting id="06fc90b6-5879-4e42-ad3d-057438064a48fileName">GetFarmHealthChecks</con:setting>
+  </con:settings>
+</con:operation>

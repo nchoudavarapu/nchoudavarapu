@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="66b06523-194a-4492-a07e-b5d18d347344" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/CleanseAddress" name="CleanseAddress" bindingOperationName="CleanseAddress" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="18b3c473-dd7f-4c52-8709-77ce0169e14dfileName">CleanseAddress</con:setting>
+    <con:setting id="85f768c4-43d5-43a5-8a64-fbaefed90198fileName">CleanseAddress</con:setting>
+    <con:setting id="66b06523-194a-4492-a07e-b5d18d347344fileName">CleanseAddress</con:setting>
+  </con:settings>
+</con:operation>

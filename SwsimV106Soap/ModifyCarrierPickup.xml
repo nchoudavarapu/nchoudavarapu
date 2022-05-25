@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="3bf63ff1-29d0-4c40-a816-2b1387a0e58e" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/ModifyCarrierPickup" name="ModifyCarrierPickup" bindingOperationName="ModifyCarrierPickup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3878fa8b-2c9a-42d8-95b7-311a385253cafileName">ModifyCarrierPickup</con:setting>
+    <con:setting id="e3768d7a-d994-4ea7-80ad-2ad6a4bcb3c3fileName">ModifyCarrierPickup</con:setting>
+    <con:setting id="3bf63ff1-29d0-4c40-a816-2b1387a0e58efileName">ModifyCarrierPickup</con:setting>
+  </con:settings>
+  <con:call id="13ac8b8e-fb30-408d-aa17-ce7606b872fe" name="ModifyCarrierPickup Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:ModifyCarrierPickup>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:ContactInformation>\r
+            <sws:FirstName>?</sws:FirstName>\r
+            <sws:LastName>?</sws:LastName>\r
+            <sws:PhoneNumber>?</sws:PhoneNumber>\r
+            <!--Optional:-->\r
+            <sws:PhoneExt/>\r
+         </sws:ContactInformation>\r
+         <!--Optional:-->\r
+         <sws:PackageInformation>\r
+            <!--Optional:-->\r
+            <sws:NumberOfExpressMailPieces>0</sws:NumberOfExpressMailPieces>\r
+            <!--Optional:-->\r
+            <sws:NumberOfPriorityMailPieces>0</sws:NumberOfPriorityMailPieces>\r
+            <!--Optional:-->\r
+            <sws:NumberOfInternationalPieces>0</sws:NumberOfInternationalPieces>\r
+            <!--Optional:-->\r
+            <sws:NumberOfFirstClassPieces>0</sws:NumberOfFirstClassPieces>\r
+            <!--Optional:-->\r
+            <sws:NumberOfParcelSelectPieces>0</sws:NumberOfParcelSelectPieces>\r
+            <!--Optional:-->\r
+            <sws:NumberOfOtherPieces>0</sws:NumberOfOtherPieces>\r
+            <!--Optional:-->\r
+            <sws:TotalWeightOfPackagesLbs>0</sws:TotalWeightOfPackagesLbs>\r
+            <sws:PackageLocation>?</sws:PackageLocation>\r
+            <!--Optional:-->\r
+            <sws:SpecialInstruction>?</sws:SpecialInstruction>\r
+         </sws:PackageInformation>\r
+         <sws:ConfirmationNumber>?</sws:ConfirmationNumber>\r
+         <!--Optional:-->\r
+         <sws:Carrier>USPS</sws:Carrier>\r
+         <!--Optional:-->\r
+         <sws:PickupType>Default</sws:PickupType>\r
+      </sws:ModifyCarrierPickup>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/ModifyCarrierPickup"/>
+  </con:call>
+</con:operation>

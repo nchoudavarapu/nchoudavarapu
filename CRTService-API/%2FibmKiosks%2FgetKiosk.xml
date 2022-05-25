@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/ibmKiosks/getKiosk" path="/ibmKiosks/getKiosk" id="7996052c-6efd-4a47-8693-fc4db9998b9b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="64dc7cc0-5979-4841-839b-3de7acd0eb77fileName">%2FibmKiosks%2FgetKiosk</con:setting>
+    <con:setting id="9db35c5b-11c4-43ad-85a0-71c8de8fb68cfileName">%2FibmKiosks%2FgetKiosk</con:setting>
+    <con:setting id="7996052c-6efd-4a47-8693-fc4db9998b9bfileName">%2FibmKiosks%2FgetKiosk</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetKiosk" id="b7ef905d-ae96-41c1-937f-c65d667e18c5" method="GET">
+    <con:description>Get Kiosk</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>idOrName</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Id" : 0,
+  "Name" : "string",
+  "Status" : 0,
+  "IsErrorReturned" : true,
+  "ErrorDescription" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="c343c9f8-e1dd-4646-a267-7edf23b180ab" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="idOrName" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

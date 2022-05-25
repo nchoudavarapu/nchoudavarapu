@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/convertToSas" path="/customers/convertToSas" id="f02aef12-c64e-4f11-ae09-3a16140627f8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="63802d14-c3d4-4b98-b7f5-b4ab742d5503fileName">%2Fcustomers%2FconvertToSas</con:setting>
+    <con:setting id="7afbc642-66d6-4f24-8162-0a6167ac44f4fileName">%2Fcustomers%2FconvertToSas</con:setting>
+    <con:setting id="f02aef12-c64e-4f11-ae09-3a16140627f8fileName">%2Fcustomers%2FconvertToSas</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="ConvertToSas" id="f45e8088-2b4b-48e8-9f5a-4e16e945336b" method="POST">
+    <con:description>Convert To Sas</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>profileId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>promoCode</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>integrationId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>0</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e83e65ef-f765-4bab-be2d-73f7caf77fb0" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="profileId" value=""/>
+        <con:entry key="integrationId" value=""/>
+        <con:entry key="promoCode" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

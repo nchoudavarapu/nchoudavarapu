@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ddf58734-7293-4812-adc2-2142c890d871" isOneWay="false" action="http://qa-automate01-v/tws/server/GetWSDL" name="GetWSDL" bindingOperationName="GetWSDL" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6f277653-8553-40dd-8a46-e5d3f94fab47fileName">GetWSDL</con:setting>
+    <con:setting id="7c84df13-b03b-48a6-820c-ea527d1febe4fileName">GetWSDL</con:setting>
+    <con:setting id="ddf58734-7293-4812-adc2-2142c890d871fileName">GetWSDL</con:setting>
+  </con:settings>
+</con:operation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e223964e-4e13-4cb7-b74d-998de67c6e9f" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/ChangePlan" name="ChangePlan" bindingOperationName="ChangePlan" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3f358406-f229-453f-95f1-11407d8bf5b7fileName">ChangePlan</con:setting>
+    <con:setting id="7793abb3-f076-4e08-87fe-4153937b7758fileName">ChangePlan</con:setting>
+    <con:setting id="e223964e-4e13-4cb7-b74d-998de67c6e9ffileName">ChangePlan</con:setting>
+  </con:settings>
+  <con:call id="f7d9fabd-f573-49e9-936b-2c1fc24f68c9" name="ChangePlan Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:ChangePlan>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:PlanId>0</sws:PlanId>\r
+         <!--Optional:-->\r
+         <sws:PromoCode>?</sws:PromoCode>\r
+         <!--Optional:-->\r
+         <sws:SendEmail>?</sws:SendEmail>\r
+      </sws:ChangePlan>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/ChangePlan"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/fraudConfigurations/integrationId/enableIpLockout" path="/fraudConfigurations/integrationId/enableIpLockout" id="46fe2882-e854-47dd-b21e-3061ae0f0785" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="eaedc2bd-c075-4f80-9ba3-fa945381158bfileName">%2FfraudConfigurations%2FintegrationId%2FenableIpLockout</con:setting>
+    <con:setting id="76d12239-d5a8-4c33-a9e5-37658ceac3c9fileName">%2FfraudConfigurations%2FintegrationId%2FenableIpLockout</con:setting>
+    <con:setting id="46fe2882-e854-47dd-b21e-3061ae0f0785fileName">%2FfraudConfigurations%2FintegrationId%2FenableIpLockout</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="EnableIntegrationIdIpLockout" id="23b90f5c-ab8e-4f23-a119-9609aed4dc3f" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>integrationId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>"string"</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e2f5139f-5392-4b06-bf27-ab9fc8fe6f45" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="integrationId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

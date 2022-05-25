@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/labelFeeRateSetDetails/{rateSetId}" path="/customers/labelFeeRateSetDetails/{rateSetId}" id="08989046-d300-4fab-ab7a-4c7e33a35a64" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="981c968a-e97c-4e57-8926-fc77c956bfa7fileName">%2Fcustomers%2FlabelFeeRateSetDetails%2F%7BrateSetId%7D</con:setting>
+    <con:setting id="8aca407f-5660-462f-91c5-7df01b2e6948fileName">%2Fcustomers%2FlabelFeeRateSetDetails%2F%7BrateSetId%7D</con:setting>
+    <con:setting id="08989046-d300-4fab-ab7a-4c7e33a35a64fileName">%2Fcustomers%2FlabelFeeRateSetDetails%2F%7BrateSetId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>rateSetId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetLabelFeeRateSetDetails" id="4754c1c8-0d64-48e4-a4ee-06d7c48ccb16" method="GET">
+    <con:description>Get Label Fee Rate Set Details</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Result" : {
+    "LabelFeeRateID" : 0,
+    "UsesDynamicTiers" : true,
+    "LabelRatePostageTypeID" : 0,
+    "MinFeeAmount" : 1.5,
+    "Ranges" : [ {
+      "RangeStart" : 0,
+      "RangeEnd" : 0,
+      "RangeAmount" : 1.5
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="3d976d63-7f2f-4ff7-b6a4-b4e4095d6732" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="rateSetId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

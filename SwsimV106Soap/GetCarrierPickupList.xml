@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="efdaf652-02a2-4698-a1da-e2109887d69b" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetCarrierPickupList" name="GetCarrierPickupList" bindingOperationName="GetCarrierPickupList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3de89a5f-8608-4a19-a593-039e664a4adffileName">GetCarrierPickupList</con:setting>
+    <con:setting id="43dab4d4-e8ca-4d31-ad79-80f7defd0dbcfileName">GetCarrierPickupList</con:setting>
+    <con:setting id="efdaf652-02a2-4698-a1da-e2109887d69bfileName">GetCarrierPickupList</con:setting>
+  </con:settings>
+  <con:call id="29cf81b1-cb81-4b1e-b9a7-5e2121213293" name="GetCarrierPickupList Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetCarrierPickupList>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+      </sws:GetCarrierPickupList>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetCarrierPickupList"/>
+  </con:call>
+</con:operation>

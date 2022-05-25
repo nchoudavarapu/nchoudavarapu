@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="06cdf5b1-0e47-4bbe-b16f-699b6253b987" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/SetAutoBuy" name="SetAutoBuy" bindingOperationName="SetAutoBuy" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="57627fe7-822c-4d3b-890e-cda88e68dcd6fileName">SetAutoBuy</con:setting>
+    <con:setting id="71c1b6d2-9ea2-4f08-a0f0-8801bff9eea3fileName">SetAutoBuy</con:setting>
+    <con:setting id="06cdf5b1-0e47-4bbe-b16f-699b6253b987fileName">SetAutoBuy</con:setting>
+  </con:settings>
+</con:operation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/{resellerId}/platform-meter-pool-mid" path="/platform-management/{resellerId}/platform-meter-pool-mid" id="4b44de35-1d1d-4c0a-9525-38a6e5caf0cc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9ddac2ff-458a-4d62-aa34-e17fe578f501fileName">%2Fplatform-management%2F%7BresellerId%7D%2Fplatform-meter-pool-mid</con:setting>
+    <con:setting id="4b44de35-1d1d-4c0a-9525-38a6e5caf0ccfileName">%2Fplatform-management%2F%7BresellerId%7D%2Fplatform-meter-pool-mid</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>resellerId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetPlatformMeterPoolMID" id="dda555cb-8460-4a94-8073-539d65f55b9f" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="34c47d04-64a7-4485-bb42-ce1511a56ed7" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="resellerId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

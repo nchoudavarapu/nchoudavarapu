@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/tr/add_result_for_automationkey/{RunId}/{AutomationKey}" path="/tr/add_result_for_automationkey/{RunId}/{AutomationKey}" id="aa4b0d7a-0f3f-4b36-83ea-50d075152e44" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="936a474f-b044-43da-973d-f937d46e90cefileName">%2Ftr%2Fadd_result_for_automationkey%2F%7BRunId%7D%2F%7BAutomationKey%7D</con:setting>
+    <con:setting id="aa4b0d7a-0f3f-4b36-83ea-50d075152e44fileName">%2Ftr%2Fadd_result_for_automationkey%2F%7BRunId%7D%2F%7BAutomationKey%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>RunId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>AutomationKey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="add_result_for_automationkey_Post" id="28e93e41-e66f-474c-a7c6-aaf11e8556f1" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "status_id" : "string",
+  "created_by" : 0,
+  "created_on" : "string",
+  "assignedto_id" : 0,
+  "comment" : "string",
+  "version" : "string",
+  "elapsed" : "string",
+  "defects" : "string",
+  "custom_step_results" : "string",
+  "custom_custom_tr_auto_key" : "string",
+  "attachment_ids" : [ 0 ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{ }</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="0367f9fe-6a1b-4ec9-874e-7c86d069f980" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://qa-automate01-v</con:endpoint>
+      <con:request>{\r
+  "status_id" : "string",\r
+  "created_by" : 0,\r
+  "created_on" : "string",\r
+  "assignedto_id" : 0,\r
+  "comment" : "string",\r
+  "version" : "string",\r
+  "elapsed" : "string",\r
+  "defects" : "string",\r
+  "custom_step_results" : "string",\r
+  "custom_custom_tr_auto_key" : "string",\r
+  "attachment_ids" : [ 0 ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

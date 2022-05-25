@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="21891afc-8d33-4719-b651-ced6d8181eb6" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/CreateNetStampsIndicia" name="CreateNetStampsIndicia" bindingOperationName="CreateNetStampsIndicia" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8c887263-55d1-4772-bc48-6ba42394b33efileName">CreateNetStampsIndicia</con:setting>
+    <con:setting id="6fe4174e-1cb7-4b92-b4b2-d8f4f5eae7f8fileName">CreateNetStampsIndicia</con:setting>
+    <con:setting id="21891afc-8d33-4719-b651-ced6d8181eb6fileName">CreateNetStampsIndicia</con:setting>
+  </con:settings>
+</con:operation>

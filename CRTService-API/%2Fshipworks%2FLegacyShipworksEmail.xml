@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/shipworks/LegacyShipworksEmail" path="/shipworks/LegacyShipworksEmail" id="63ae71db-5cac-45f6-8dae-23609b562b36" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5a8c91d1-acb2-4e8b-b14a-052eeda261e4fileName">%2Fshipworks%2FLegacyShipworksEmail</con:setting>
+    <con:setting id="63ae71db-5cac-45f6-8dae-23609b562b36fileName">%2Fshipworks%2FLegacyShipworksEmail</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="BulkUpdateLegacyShipworksEmail" id="14c07fc0-1fd4-415b-b935-3b08d4e72fd9" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>currentEmail</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>newEmail</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="f69e42ef-52c9-4cbd-a1d6-3ba4357a9791" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="newEmail" value=""/>
+        <con:entry key="currentEmail" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

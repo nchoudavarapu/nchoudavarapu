@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/fraudConfigurations/ipAddress/getStatus" path="/fraudConfigurations/ipAddress/getStatus" id="fa0a49db-9b7e-4a3f-b8e1-3d7cce2329fe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e7d17424-219b-4d8c-b6f0-f82ebe912061fileName">%2FfraudConfigurations%2FipAddress%2FgetStatus</con:setting>
+    <con:setting id="93b2a839-0603-4513-9c2e-e16e006db98efileName">%2FfraudConfigurations%2FipAddress%2FgetStatus</con:setting>
+    <con:setting id="fa0a49db-9b7e-4a3f-b8e1-3d7cce2329fefileName">%2FfraudConfigurations%2FipAddress%2FgetStatus</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetIpStatus" id="513c3d95-9e0e-4c6d-a2a5-e32714324c11" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>ipAddress</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>"string"</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="65f968a7-222c-4e58-9708-04a5557f3799" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="ipAddress" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="7e74b03e-7bf2-40d4-a28c-b6ceb1d381e7" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/CreateMailingLabelIndicia" name="CreateMailingLabelIndicia" bindingOperationName="CreateMailingLabelIndicia" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="262cb05a-44c3-4f23-8277-10727f4745d1fileName">CreateMailingLabelIndicia</con:setting>
+    <con:setting id="e5987bae-cec2-45c4-a16b-4c925aa7b106fileName">CreateMailingLabelIndicia</con:setting>
+    <con:setting id="7e74b03e-7bf2-40d4-a28c-b6ceb1d381e7fileName">CreateMailingLabelIndicia</con:setting>
+  </con:settings>
+</con:operation>

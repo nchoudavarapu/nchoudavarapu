@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/EmailHistory/{custId}" path="/customers/EmailHistory/{custId}" id="a3dac5b9-1d20-4f8b-914e-73241e22ec19" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b533c788-a79d-41ef-9d47-0aac6318fe11fileName">%2Fcustomers%2FEmailHistory%2F%7BcustId%7D</con:setting>
+    <con:setting id="f9689c94-2461-49e4-8793-d88a68a0c5e2fileName">%2Fcustomers%2FEmailHistory%2F%7BcustId%7D</con:setting>
+    <con:setting id="a3dac5b9-1d20-4f8b-914e-73241e22ec19fileName">%2Fcustomers%2FEmailHistory%2F%7BcustId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetEmailHistory" id="71424fe9-b923-42dd-98e2-c9210bc3f619" method="GET">
+    <con:description>Get Email History</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>startDate</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>endDate</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pageSize</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Items" : [ {
+    "MsgID" : 0,
+    "DateSent" : "2015-07-20T15:49:04-07:00",
+    "MsgTo" : "string",
+    "MsgSubject" : "string",
+    "IsSilverPop" : true,
+    "MessageStatusDesc" : "string"
+  } ],
+  "LinkHeader" : {
+    "Links" : [ {
+      "Url" : "string",
+      "Rel" : "string",
+      "Method" : "string"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="09791a2b-5701-4f21-af2d-418e2b7fdba3" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="endDate" value=""/>
+        <con:entry key="custId" value=""/>
+        <con:entry key="pageSize" value=""/>
+        <con:entry key="page" value=""/>
+        <con:entry key="startDate" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

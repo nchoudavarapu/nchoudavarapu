@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/search" path="/customers/search" id="20e52f7f-b1ad-47b9-a285-339b0d35474b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c31edaee-c3c4-428b-b430-4f51df1fd65ffileName">%2Fcustomers%2Fsearch</con:setting>
+    <con:setting id="a8c638bf-d4ec-4f84-b880-c42e246acc93fileName">%2Fcustomers%2Fsearch</con:setting>
+    <con:setting id="20e52f7f-b1ad-47b9-a285-339b0d35474bfileName">%2Fcustomers%2Fsearch</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="SearchCustomers" id="2fcac09c-2a1b-4501-9713-e06d71041bfa" method="GET">
+    <con:description>Search customer(s)</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>maxRows</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>CustId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>MeterNo</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>UserId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>StoreId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>UserName</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>CompanyName</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>FirstName</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>LastName</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>EmailAddress</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>PhoneNumber</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "UserName" : "string",
+  "CustId" : 0,
+  "UserId" : 0,
+  "MeterNo" : 1.5,
+  "IsActiveUser" : true,
+  "FirstName" : "string",
+  "LastName" : "string",
+  "PhoneNumber" : "string",
+  "EmailAddress" : "string",
+  "CompanyName" : "string",
+  "DateOpened" : "string",
+  "DateClosed" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="363644a8-21ef-4da3-a0b6-af27a6b3e697" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://CRTSERVICE.stage02.aws.local/CRTService/v1/customers/search</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="MeterNo" value=""/>
+        <con:entry key="CompanyName" value=""/>
+        <con:entry key="maxRows" value="1"/>
+        <con:entry key="UserName" value="abaskett"/>
+        <con:entry key="StoreId" value=""/>
+        <con:entry key="CustId" value=""/>
+        <con:entry key="UserId" value=""/>
+        <con:entry key="FirstName" value=""/>
+        <con:entry key="PhoneNumber" value=""/>
+        <con:entry key="LastName" value=""/>
+        <con:entry key="EmailAddress" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

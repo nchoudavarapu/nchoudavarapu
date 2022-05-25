@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="300e5a6c-6306-466f-8e4f-c58021d38bd9" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/EnumCostCodes" name="EnumCostCodes" bindingOperationName="EnumCostCodes" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="97eb47d9-d734-4ba3-9f5c-fe23a065df28fileName">EnumCostCodes</con:setting>
+    <con:setting id="0780176c-0732-4a50-a712-3e0243d4a47cfileName">EnumCostCodes</con:setting>
+    <con:setting id="300e5a6c-6306-466f-8e4f-c58021d38bd9fileName">EnumCostCodes</con:setting>
+  </con:settings>
+</con:operation>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/tr/add_results_for_automationkeys/{RunId}" path="/tr/add_results_for_automationkeys/{RunId}" id="ae82d137-f01f-456a-80e8-e0613cb93605" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a25e3851-2a43-4c56-ae6d-771ddee4316efileName">%2Ftr%2Fadd_results_for_automationkeys%2F%7BRunId%7D</con:setting>
+    <con:setting id="ae82d137-f01f-456a-80e8-e0613cb93605fileName">%2Ftr%2Fadd_results_for_automationkeys%2F%7BRunId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>RunId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="add_results_for_automationkeys_Post" id="50194304-2c58-4c30-9d9a-cef9ffd164ee" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "results" : [ {
+    "automation_key" : "string",
+    "status_id" : "string",
+    "created_by" : 0,
+    "created_on" : "string",
+    "assignedto_id" : 0,
+    "comment" : "string",
+    "version" : "string",
+    "elapsed" : "string",
+    "defects" : "string",
+    "custom_step_results" : "string",
+    "custom_custom_tr_auto_key" : "string",
+    "attachment_ids" : [ 0 ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{ }</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e7c6415b-7613-43d9-a202-d8ad192beaea" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://qa-automate01-v</con:endpoint>
+      <con:request>{\r
+  "results" : [ {\r
+    "automation_key" : "string",\r
+    "status_id" : "string",\r
+    "created_by" : 0,\r
+    "created_on" : "string",\r
+    "assignedto_id" : 0,\r
+    "comment" : "string",\r
+    "version" : "string",\r
+    "elapsed" : "string",\r
+    "defects" : "string",\r
+    "custom_step_results" : "string",\r
+    "custom_custom_tr_auto_key" : "string",\r
+    "attachment_ids" : [ 0 ]\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="bd62f7d4-f46f-4bf0-867c-8d4132084b3d" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/CancelCarrierPickup" name="CancelCarrierPickup" bindingOperationName="CancelCarrierPickup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9ad81070-456c-4811-b5dc-2b949b594e4dfileName">CancelCarrierPickup</con:setting>
+    <con:setting id="116f5930-203d-4d20-abd9-3499a2b6ba39fileName">CancelCarrierPickup</con:setting>
+    <con:setting id="bd62f7d4-f46f-4bf0-867c-8d4132084b3dfileName">CancelCarrierPickup</con:setting>
+  </con:settings>
+</con:operation>

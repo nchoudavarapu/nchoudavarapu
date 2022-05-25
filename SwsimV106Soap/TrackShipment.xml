@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e96ee1fe-957c-452b-97e3-7624fdefaae5" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/TrackShipment" name="TrackShipment" bindingOperationName="TrackShipment" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7a92fdba-65dd-4d07-bdfa-39268121a137fileName">TrackShipment</con:setting>
+    <con:setting id="9291c594-35e8-4b12-bab5-55954a2a534efileName">TrackShipment</con:setting>
+    <con:setting id="e96ee1fe-957c-452b-97e3-7624fdefaae5fileName">TrackShipment</con:setting>
+  </con:settings>
+  <con:call id="b894aabe-545b-4f45-9d50-27b79a344dd0" name="TrackShipment Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:TrackShipment>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:TrackingNumber>?</sws:TrackingNumber>\r
+         <sws:StampsTxID>?</sws:StampsTxID>\r
+         <!--Optional:-->\r
+         <sws:Carrier>All</sws:Carrier>\r
+      </sws:TrackShipment>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/TrackShipment"/>
+  </con:call>
+</con:operation>

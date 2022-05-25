@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="98169e97-21ad-4d36-ae9d-90eeb51da1d4" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/GetCodewordQuestions" name="GetCodewordQuestions" bindingOperationName="GetCodewordQuestions" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="422fc795-3a26-470e-85a2-3b50702cd770fileName">GetCodewordQuestions</con:setting>
+    <con:setting id="a05ccdc9-b713-402c-8b61-79cb1af25c4efileName">GetCodewordQuestions</con:setting>
+    <con:setting id="98169e97-21ad-4d36-ae9d-90eeb51da1d4fileName">GetCodewordQuestions</con:setting>
+  </con:settings>
+</con:operation>

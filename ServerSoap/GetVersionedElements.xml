@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="456c08cb-dcf2-48c8-8d7b-e98809846a20" isOneWay="false" action="http://qa-automate01-v/tws/server/GetVersionedElements" name="GetVersionedElements" bindingOperationName="GetVersionedElements" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="acaced23-d2ea-4601-a8b7-484f5a7b47c7fileName">GetVersionedElements</con:setting>
+    <con:setting id="98160bf0-892b-4f57-b045-04754e221f6efileName">GetVersionedElements</con:setting>
+    <con:setting id="456c08cb-dcf2-48c8-8d7b-e98809846a20fileName">GetVersionedElements</con:setting>
+  </con:settings>
+</con:operation>

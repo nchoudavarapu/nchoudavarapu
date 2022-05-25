@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="11a5ade0-6998-462d-ab69-3c385ac601bc" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/DeleteImage" name="DeleteImage" bindingOperationName="DeleteImage" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="12b0b8b0-8f28-49a4-bf97-a39d13b8dc04fileName">DeleteImage</con:setting>
+    <con:setting id="e3247d3a-763c-4f46-be78-8297cbcafe7cfileName">DeleteImage</con:setting>
+    <con:setting id="11a5ade0-6998-462d-ab69-3c385ac601bcfileName">DeleteImage</con:setting>
+  </con:settings>
+</con:operation>

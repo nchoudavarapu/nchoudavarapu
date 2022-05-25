@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/{userName}/sas-platform" path="/platform-management/{userName}/sas-platform" id="132ed3fa-56a7-4661-80b8-cccbe1841c17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="657b7427-b7bf-46b4-8481-13ba7912afccfileName">%2Fplatform-management%2F%7BuserName%7D%2Fsas-platform</con:setting>
+    <con:setting id="132ed3fa-56a7-4661-80b8-cccbe1841c17fileName">%2Fplatform-management%2F%7BuserName%7D%2Fsas-platform</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>userName</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="CreateSASPlatform" id="b299bef9-1d5e-4696-9505-4bedbaf76c3a" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="df593be7-3c05-4ee0-a519-6c01f7f2cfe5" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="userName" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

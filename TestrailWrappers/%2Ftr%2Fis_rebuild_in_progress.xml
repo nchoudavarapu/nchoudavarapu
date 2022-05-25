@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/tr/is_rebuild_in_progress" path="/tr/is_rebuild_in_progress" id="9af005a0-03a5-45cb-ae20-40fd743a1704" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="eeaf3e46-580f-49ab-b116-546c9666f187fileName">%2Ftr%2Fis_rebuild_in_progress</con:setting>
+    <con:setting id="9af005a0-03a5-45cb-ae20-40fd743a1704fileName">%2Ftr%2Fis_rebuild_in_progress</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="is_rebuild_in_progress_Get" id="e193dfd8-8420-435f-89de-f82c34b46344" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{ }</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="43a62c9d-7b2b-41f2-b270-cec1b8565c8d" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://qa-automate01-v</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://qa-automate01-v/ApiWrappers/tr/is_rebuild_in_progress</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+    </con:request>
+  </con:method>
+</con:resource>

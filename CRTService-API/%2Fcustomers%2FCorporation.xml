@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/Corporation" path="/customers/Corporation" id="c2267266-d401-43cd-8657-1f7378a55be1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a659ba46-2dee-46cf-9ee1-73530a5bee65fileName">%2Fcustomers%2FCorporation</con:setting>
+    <con:setting id="676661e3-acad-4203-bff5-4dca3ef20179fileName">%2Fcustomers%2FCorporation</con:setting>
+    <con:setting id="c2267266-d401-43cd-8657-1f7378a55be1fileName">%2Fcustomers%2FCorporation</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="CreateCorporation" id="1693adb1-091d-4eba-bb7b-80640b5d098b" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e679f7c0-0685-4c87-bf0b-773c0bb91a9c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/meters/ContactInfo" path="/meters/ContactInfo" id="69c07dbc-b2aa-4e7a-a876-9f64318e45a6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2fb92c0d-8e67-4e05-9ae6-d94aaf842a89fileName">%2Fmeters%2FContactInfo</con:setting>
+    <con:setting id="7e4528c9-b1af-4c35-9c01-19c56fd9d988fileName">%2Fmeters%2FContactInfo</con:setting>
+    <con:setting id="69c07dbc-b2aa-4e7a-a876-9f64318e45a6fileName">%2Fmeters%2FContactInfo</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetContactInfo" id="aab01d9f-8ffd-4e98-be25-58fb053351c3" method="GET">
+    <con:description>Get Contact Information</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>userId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "MailingAddress" : {
+    "Address1" : "string",
+    "Address2" : "string",
+    "City" : "string",
+    "State" : "string",
+    "Zip" : "string",
+    "Country" : "string",
+    "PhoneNumber" : "string",
+    "UserEmailAddress" : "string",
+    "OrganizationEmailAddress" : "string"
+  },
+  "PhysicalMeterAddress" : {
+    "Address1" : "string",
+    "City" : "string",
+    "State" : "string",
+    "Zip" : "string",
+    "ZipPlus4" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="3c06cc7c-539c-4a0d-8486-0bb3e10f8725" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="custId" value=""/>
+        <con:entry key="userId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="SetContactInfo" id="2ba8e4fe-ced7-4fbd-835d-2be158755f13" method="POST">
+    <con:description>Set Contact Information</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="36667ef6-78aa-4ebb-9781-5b5364635daa" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

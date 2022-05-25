@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="08990501-4fb4-4cb1-b8ca-c530e08eb65f" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetSupportedCountries" name="GetSupportedCountries" bindingOperationName="GetSupportedCountries" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1d4e2323-57da-47fc-bb5d-364f1d7e8ea8fileName">GetSupportedCountries</con:setting>
+    <con:setting id="e4aa36cd-9338-4e28-992b-6d94ad3463d1fileName">GetSupportedCountries</con:setting>
+    <con:setting id="08990501-4fb4-4cb1-b8ca-c530e08eb65ffileName">GetSupportedCountries</con:setting>
+  </con:settings>
+  <con:call id="969e590f-34b2-419d-973e-5622c623c937" name="GetSupportedCountries Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetSupportedCountries>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+      </sws:GetSupportedCountries>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetSupportedCountries"/>
+  </con:call>
+</con:operation>

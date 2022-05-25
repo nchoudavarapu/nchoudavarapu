@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="838e3dc5-5de8-4029-bfe1-d70a4dbf836b" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/PlaceOrder" name="PlaceOrder" bindingOperationName="PlaceOrder" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="44ce95a1-55f1-49cf-a648-b0716903079afileName">PlaceOrder</con:setting>
+    <con:setting id="0a0a9dab-9b21-4319-9a91-ec669ded353efileName">PlaceOrder</con:setting>
+    <con:setting id="838e3dc5-5de8-4029-bfe1-d70a4dbf836bfileName">PlaceOrder</con:setting>
+  </con:settings>
+</con:operation>

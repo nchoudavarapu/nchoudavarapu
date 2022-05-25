@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4da395c0-0f38-418c-8f9f-a497f2bdcbd4" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/CreateEnvelopeIndicium" name="CreateEnvelopeIndicium" bindingOperationName="CreateEnvelopeIndicium" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8b1b2906-fbfc-4ef8-a58b-d0d8716a7a5efileName">CreateEnvelopeIndicium</con:setting>
+    <con:setting id="31810553-6b7a-4af5-aadf-6c5653ed3ee7fileName">CreateEnvelopeIndicium</con:setting>
+    <con:setting id="4da395c0-0f38-418c-8f9f-a497f2bdcbd4fileName">CreateEnvelopeIndicium</con:setting>
+  </con:settings>
+</con:operation>

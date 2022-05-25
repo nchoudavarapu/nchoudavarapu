@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/ShipWorks/{storeId}" path="/customers/ShipWorks/{storeId}" id="076178f6-066a-4734-a2b7-7e2d03bc01cd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="70dc6887-9639-4866-aad8-6bf705bd06eafileName">%2Fcustomers%2FShipWorks%2F%7BstoreId%7D</con:setting>
+    <con:setting id="0f645f15-4347-4a44-bfff-3755093e6ffbfileName">%2Fcustomers%2FShipWorks%2F%7BstoreId%7D</con:setting>
+    <con:setting id="076178f6-066a-4734-a2b7-7e2d03bc01cdfileName">%2Fcustomers%2FShipWorks%2F%7BstoreId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>storeId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetShipWorksInfo" id="da0647ab-ef86-461c-a70a-b82141572041" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "CustId" : 0,
+  "AssociatedCustId" : 0,
+  "RecurlyAccountCode" : "string",
+  "ContactInfo" : {
+    "FirstName" : "string",
+    "LastName" : "string",
+    "Company" : "string",
+    "Phone" : "string",
+    "Email" : "string",
+    "Address1" : "string",
+    "Address2" : "string",
+    "City" : "string",
+    "Zip" : "string",
+    "State" : "string",
+    "Country" : "string"
+  },
+  "RecurlyStatusInfo" : {
+    "BillingStartDate" : "2015-07-20T15:49:04-07:00",
+    "BillingEndDate" : "2015-07-20T15:49:04-07:00",
+    "TrialEndDate" : "2015-07-20T15:49:04-07:00",
+    "CustomerStatus" : "Legacy",
+    "Reason" : "string",
+    "DateChanged" : "2015-07-20T15:49:04-07:00",
+    "Username" : "string",
+    "HostedLoginToken" : "string"
+  },
+  "CloseAccountReasons" : [ {
+    "Id" : 0,
+    "Description" : "string"
+  } ],
+  "CancelReactivateSubscriptionReasons" : [ {
+    "Id" : 0,
+    "Description" : "string"
+  } ],
+  "BillingPlans" : {
+    "PlanId" : 0,
+    "RecurlyAddOnCodes" : [ "string" ],
+    "PendingPlanId" : 0,
+    "PendingRecurlyAddOnCodes" : [ "string" ],
+    "BillingPlans" : {
+      "Id" : 0,
+      "Name" : "string",
+      "RecurlyAddOnCodes" : [ {
+        "Id" : 0,
+        "Description" : "string"
+      } ]
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="6e571d03-9a09-432a-8ecc-c5b3ee63d10f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="storeId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

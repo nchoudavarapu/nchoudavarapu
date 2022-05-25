@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/platform-meters/retry" path="/platform-management/platform-meters/retry" id="dc2308e2-7011-4ede-b4dc-003ce8b38513" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3f7f716b-04ad-455e-8b54-fa6216ef10a5fileName">%2Fplatform-management%2Fplatform-meters%2Fretry</con:setting>
+    <con:setting id="dc2308e2-7011-4ede-b4dc-003ce8b38513fileName">%2Fplatform-management%2Fplatform-meters%2Fretry</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="RetryFailedMeterRegistration" id="b503d513-d085-4751-b9e1-d4effbc8f76c" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="343096de-730d-4144-94b2-8c74a003e462" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

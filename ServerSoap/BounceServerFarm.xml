@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="f085dca7-9353-4c50-b80e-2fed02ee2ed4" isOneWay="false" action="http://qa-automate01-v/tws/server/BounceServerFarm" name="BounceServerFarm" bindingOperationName="BounceServerFarm" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="db0c6722-afda-4762-ba27-701fef638c8dfileName">BounceServerFarm</con:setting>
+    <con:setting id="9fe881d9-3942-485e-9d7b-c84e94f0d9dafileName">BounceServerFarm</con:setting>
+    <con:setting id="f085dca7-9353-4c50-b80e-2fed02ee2ed4fileName">BounceServerFarm</con:setting>
+  </con:settings>
+</con:operation>

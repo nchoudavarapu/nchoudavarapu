@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/adjustmentHistory" path="/customers/{custId}/adjustmentHistory" id="2ecbeb18-fbc4-4ee7-93ab-643cf0cba352" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b81d63ef-8588-49f2-8e77-64fd447a8e67fileName">%2Fcustomers%2F%7BcustId%7D%2FadjustmentHistory</con:setting>
+    <con:setting id="556dd567-39d1-41fc-b038-3590399080e1fileName">%2Fcustomers%2F%7BcustId%7D%2FadjustmentHistory</con:setting>
+    <con:setting id="2ecbeb18-fbc4-4ee7-93ab-643cf0cba352fileName">%2Fcustomers%2F%7BcustId%7D%2FadjustmentHistory</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:default/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetAdjustmentHistory" id="72a7021c-7fe9-4a7e-8a8c-d3565972d905" method="GET">
+    <con:description>Get Adjustment History</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>startDate</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>endDate</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pageSize</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Transactions" : [ {
+    "AdjustmentDate" : "2015-07-20T15:49:04-07:00",
+    "AdjustmentStatus" : "string",
+    "TrackingNumber" : "string",
+    "AdjustmentId" : "string",
+    "AdjustmentReason" : "string",
+    "ActualAmount" : 1.5,
+    "AdjAmount" : 1.5,
+    "OriginalAmount" : 1.5,
+    "Carrier" : "string",
+    "OriginalService" : "string",
+    "OriginalPackaging" : "string",
+    "OriginalWeight" : 1.5,
+    "OriginalLength" : 1.5,
+    "OriginalWidth" : 1.5,
+    "OriginalHeight" : 1.5,
+    "OriginalFromZip" : "string",
+    "OriginalToZip" : "string",
+    "OriginalToCountry" : "string",
+    "PrintDate" : "2015-07-20T15:49:04-07:00",
+    "ActualService" : "string",
+    "ActualPackaging" : "string",
+    "ActualWeight" : 1.5,
+    "ActualLength" : 1.5,
+    "ActualWidth" : 1.5,
+    "ActualHeight" : 1.5,
+    "ActualFromZip" : "string",
+    "ActualToZip" : "string",
+    "ActualToCountry" : "string"
+  } ],
+  "LinkHeaders" : {
+    "Links" : [ {
+      "Url" : "string",
+      "Rel" : "string",
+      "Method" : "string"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="22b6742d-bbd6-4c8a-b535-75ba19551046" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="endDate" value=""/>
+        <con:entry key="custId" value=""/>
+        <con:entry key="pageSize" value=""/>
+        <con:entry key="page" value=""/>
+        <con:entry key="startDate" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

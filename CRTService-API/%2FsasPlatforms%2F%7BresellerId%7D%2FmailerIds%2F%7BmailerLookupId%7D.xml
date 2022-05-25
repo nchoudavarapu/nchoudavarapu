@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/sasPlatforms/{resellerId}/mailerIds/{mailerLookupId}" path="/sasPlatforms/{resellerId}/mailerIds/{mailerLookupId}" id="b9b35dc7-217d-4484-99a4-2e9cc691b086" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="092f70e1-2c08-48b9-aa3c-11e622a01083fileName">%2FsasPlatforms%2F%7BresellerId%7D%2FmailerIds%2F%7BmailerLookupId%7D</con:setting>
+    <con:setting id="b9b35dc7-217d-4484-99a4-2e9cc691b086fileName">%2FsasPlatforms%2F%7BresellerId%7D%2FmailerIds%2F%7BmailerLookupId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>resellerId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+    </con:parameter>
+    <con:parameter>
+      <con:name>mailerLookupId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="UpdateMailerIdForSasPlatform" id="714c04ae-d211-4ea3-be83-4238f3dedcc3" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="15fbbfb5-1112-4257-a6ae-d78c1d3b8cd7" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="resellerId" value=""/>
+        <con:entry key="mailerLookupId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

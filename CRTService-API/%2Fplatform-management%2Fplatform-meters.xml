@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/platform-meters" path="/platform-management/platform-meters" id="54f684cc-ea78-4ef8-bd11-aaf37d750893" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c2585562-a2ec-4561-ae2e-b5d2ba867587fileName">%2Fplatform-management%2Fplatform-meters</con:setting>
+    <con:setting id="54f684cc-ea78-4ef8-bd11-aaf37d750893fileName">%2Fplatform-management%2Fplatform-meters</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="AddPlatformMeters" id="c659f1aa-87d7-439d-b793-74e80178e6be" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="21c2027d-7fb2-4233-8185-79c5df3e54e0" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

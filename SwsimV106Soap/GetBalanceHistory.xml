@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="d899aa4b-4f40-4d64-a51c-2ce8985da5d1" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetBalanceHistory" name="GetBalanceHistory" bindingOperationName="GetBalanceHistory" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="84d80bf0-eb62-4b3c-927f-affc5287de16fileName">GetBalanceHistory</con:setting>
+    <con:setting id="9b8685af-b35a-481c-ac8c-b6bf4b0f8d1efileName">GetBalanceHistory</con:setting>
+    <con:setting id="d899aa4b-4f40-4d64-a51c-2ce8985da5d1fileName">GetBalanceHistory</con:setting>
+  </con:settings>
+  <con:call id="97cb1a58-39da-407c-95f5-972f00fe5fbb" name="GetBalanceHistory Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetBalanceHistory>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:TransactionsPerPage>?</sws:TransactionsPerPage>\r
+         <sws:TransactionDateMin>?</sws:TransactionDateMin>\r
+         <!--Optional:-->\r
+         <sws:TransactionDateMax>?</sws:TransactionDateMax>\r
+         <sws:Filters>\r
+            <!--Zero or more repetitions:-->\r
+            <sws:TransactionType>?</sws:TransactionType>\r
+         </sws:Filters>\r
+      </sws:GetBalanceHistory>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetBalanceHistory"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/BulkDebitAccount" path="/customers/BulkDebitAccount" id="fe54343d-8a41-4ce7-99c5-ed4858012a3c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d3e0a88a-63be-443b-bbea-7acc1eafb97ffileName">%2Fcustomers%2FBulkDebitAccount</con:setting>
+    <con:setting id="e7aa15f5-9999-45ce-bf56-8de4f218c37efileName">%2Fcustomers%2FBulkDebitAccount</con:setting>
+    <con:setting id="fe54343d-8a41-4ce7-99c5-ed4858012a3cfileName">%2Fcustomers%2FBulkDebitAccount</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="BulkDebitAccount" id="e57c4ae9-d8cf-4bb2-9ef6-46882d3be01b" method="POST">
+    <con:description>Debit amount from customer account(Bulk Actions)</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="7a109969-d9b2-49bf-b32a-bbb73b3738a6" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

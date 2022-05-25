@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="cce27dad-85af-4c4b-9d41-57f5c6db4836" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/ListPaymentMethods" name="ListPaymentMethods" bindingOperationName="ListPaymentMethods" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e89a6f4b-64f7-49d3-9c87-e5885ffc43aefileName">ListPaymentMethods</con:setting>
+    <con:setting id="9b5b7594-c4c3-41b7-a7e9-535b23af8792fileName">ListPaymentMethods</con:setting>
+    <con:setting id="cce27dad-85af-4c4b-9d41-57f5c6db4836fileName">ListPaymentMethods</con:setting>
+  </con:settings>
+  <con:call id="dbed5205-ac83-420c-b8ee-42a0fc07600f" name="ListPaymentMethods Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:ListPaymentMethods>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:PaymentMethodID>?</sws:PaymentMethodID>\r
+      </sws:ListPaymentMethods>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/ListPaymentMethods"/>
+  </con:call>
+</con:operation>

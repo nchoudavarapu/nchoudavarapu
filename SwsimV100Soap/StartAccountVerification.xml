@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="1509b17d-8100-44a9-9d4d-55b1fcfbcdcd" isOneWay="false" action="http://stamps.com/xml/namespace/2020/11/swsim/SwsimV100/StartAccountVerification" name="StartAccountVerification" bindingOperationName="StartAccountVerification" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="dd9d8625-52bd-43e9-8fce-c70855b5f7d6fileName">StartAccountVerification</con:setting>
+    <con:setting id="40b2eb2b-8c51-4cb5-9b48-e36689670329fileName">StartAccountVerification</con:setting>
+    <con:setting id="1509b17d-8100-44a9-9d4d-55b1fcfbcdcdfileName">StartAccountVerification</con:setting>
+  </con:settings>
+</con:operation>

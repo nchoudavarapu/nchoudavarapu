@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="5c3bc290-f106-42e8-9e3e-911cece656d7" name="PurchasePostage" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c5116519-92ad-4c95-9883-52f9ca8acd81fileName">PurchasePostage</con:setting>
+    <con:setting id="9fd3e2be-19a9-4ecf-93ef-7188119995fefileName">PurchasePostage</con:setting>
+    <con:setting id="2b53eb21-1d0c-4e9c-9f7c-9c2e82c458fafileName">PurchasePostage</con:setting>
+    <con:setting id="5c3bc290-f106-42e8-9e3e-911cece656d7fileName">PurchasePostage</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties>
+    <con:property>
+      <con:name>balanceID</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>RunId</con:name>
+      <con:value>6490</con:value>
+    </con:property>
+  </con:properties>
+  <con:setupScript>new soapUIProperties.setProperties(testSuite.project)</con:setupScript>
+  <con:reportParameters/>
+</con:testSuite>

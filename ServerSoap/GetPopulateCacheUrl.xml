@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="48342e19-98be-428a-8c23-1b6bb23902e3" isOneWay="false" action="http://qa-automate01-v/tws/server/GetPopulateCacheUrl" name="GetPopulateCacheUrl" bindingOperationName="GetPopulateCacheUrl" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d5a8e096-5b7a-4823-bf19-dd899acdba39fileName">GetPopulateCacheUrl</con:setting>
+    <con:setting id="9e872f40-a722-4df9-9529-7c90996c4268fileName">GetPopulateCacheUrl</con:setting>
+    <con:setting id="48342e19-98be-428a-8c23-1b6bb23902e3fileName">GetPopulateCacheUrl</con:setting>
+  </con:settings>
+</con:operation>

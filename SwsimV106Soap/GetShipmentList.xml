@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="d4028f9e-7c74-4389-94cc-eb178462612f" isOneWay="false" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetShipmentList" name="GetShipmentList" bindingOperationName="GetShipmentList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="90e9a262-9991-4ec4-bc7d-9326ac9604adfileName">GetShipmentList</con:setting>
+    <con:setting id="fdcb26a8-0e92-41ae-89cb-8526eab4a6f6fileName">GetShipmentList</con:setting>
+    <con:setting id="d4028f9e-7c74-4389-94cc-eb178462612ffileName">GetShipmentList</con:setting>
+  </con:settings>
+  <con:call id="98baba89-f3fb-4350-b864-8b3949111c43" name="GetShipmentList Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv106.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetShipmentList>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:ShipmentsPerPage>50</sws:ShipmentsPerPage>\r
+         <sws:Filters>\r
+            <sws:PrintDateMin>?</sws:PrintDateMin>\r
+            <!--Optional:-->\r
+            <sws:PrintDateMax>?</sws:PrintDateMax>\r
+            <!--Optional:-->\r
+            <sws:SearchCriteria>\r
+               <!--Zero or more repetitions:-->\r
+               <sws:SearchFor>?</sws:SearchFor>\r
+            </sws:SearchCriteria>\r
+         </sws:Filters>\r
+         <!--Optional:-->\r
+         <sws:IncludeFields>\r
+            <!--Zero or more repetitions:-->\r
+            <sws:IncludeField>?</sws:IncludeField>\r
+         </sws:IncludeFields>\r
+      </sws:GetShipmentList>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2020/21/swsim/SwsimV106/GetShipmentList"/>
+  </con:call>
+</con:operation>

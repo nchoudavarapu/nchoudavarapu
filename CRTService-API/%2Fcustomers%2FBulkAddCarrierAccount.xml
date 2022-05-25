@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/BulkAddCarrierAccount" path="/customers/BulkAddCarrierAccount" id="68c3e65e-7485-48f5-9250-10a26eb7ee8e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="dc0a6905-ef23-4a47-8d66-e54aab118329fileName">%2Fcustomers%2FBulkAddCarrierAccount</con:setting>
+    <con:setting id="68c3e65e-7485-48f5-9250-10a26eb7ee8efileName">%2Fcustomers%2FBulkAddCarrierAccount</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="BulkAddCarrierAccount" id="967bb274-cb2e-4234-9468-2bfcb0052ddd" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="af2575fb-0bfb-42fc-94ee-0d3b0ad095e2" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/meters/GetAccountStatusHistory" path="/meters/GetAccountStatusHistory" id="7107dcff-b0cb-4446-9507-168c3be9e2a3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="733a6de3-da75-44b9-8582-23d26b0ca43ffileName">%2Fmeters%2FGetAccountStatusHistory</con:setting>
+    <con:setting id="df0553a1-38f3-496c-be5c-e3e91744b8dcfileName">%2Fmeters%2FGetAccountStatusHistory</con:setting>
+    <con:setting id="7107dcff-b0cb-4446-9507-168c3be9e2a3fileName">%2Fmeters%2FGetAccountStatusHistory</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetAccountStatusHistory" id="522c9698-812d-4f9d-8914-60186b9d1f20" method="GET">
+    <con:description>Get history of account status</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>userId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>meterNo</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>resellerAccountId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:default/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "AccountStatus" : 0,
+  "StatusHistory" : [ {
+    "Reason" : "string",
+    "ChangeDate" : "string",
+    "LoggedUser" : "string",
+    "Comments" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="3e0c5259-a86e-4ad5-acf2-4898c8787ecf" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="resellerAccountId" value=""/>
+        <con:entry key="meterNo" value=""/>
+        <con:entry key="userId" value=""/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>
